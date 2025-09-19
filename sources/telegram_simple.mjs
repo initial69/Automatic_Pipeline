@@ -3,7 +3,7 @@
 import 'dotenv/config';
 import { TelegramClient } from 'telegram';
 import { StringSession } from 'telegram/sessions/index.js';
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { CRYPTO_KEYWORDS } from '../keywords.mjs';
 import { cutoffMs24h, localISO } from '../utils/time_window.mjs';
 
@@ -20,11 +20,21 @@ async function readTelegramMessages() {
   console.log('🚀 Membaca pesan Telegram...');
   console.log('='.repeat(50));
   
+  // Debug environment and paths
+  console.log(`🔑 API_ID: ${process.env.API_ID ? 'SET' : 'NOT SET'}`);
+  console.log(`🔑 API_HASH: ${process.env.API_HASH ? 'SET' : 'NOT SET'}`);
+  console.log(`📁 Working directory: ${process.cwd()}`);
+  console.log(`📁 Session path: ${SESSION_PATH}`);
+  console.log(`📁 Config exists: ${existsSync('config')}`);
+  if (existsSync('config')) {
+    console.log(`📁 Config contents: ${readdirSync('config').join(', ')}`);
+  }
+  
   if (!existsSync(SESSION_PATH)) {
     console.error('❌ File session tidak ditemukan. Jalankan: node scripts/tg_login.mjs');
     console.error(`📁 Looking for session at: ${SESSION_PATH}`);
     console.error(`📁 Current working directory: ${process.cwd()}`);
-    console.error(`📁 Files in config/: ${existsSync('config') ? require('fs').readdirSync('config').join(', ') : 'config directory does not exist'}`);
+    console.error(`📁 Files in config/: ${existsSync('config') ? readdirSync('config').join(', ') : 'config directory does not exist'}`);
     return [];
   }
 
