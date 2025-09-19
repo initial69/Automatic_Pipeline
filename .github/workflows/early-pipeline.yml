@@ -1,0 +1,75 @@
+name: Crypto Early Detection Pipeline
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Run every day at 06:00 UTC (adjust as needed)
+    - cron: '0 6 * * *'
+
+permissions:
+  contents: read
+
+env:
+  TZ: Europe/Zurich
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Prepare Telegram session file
+        env:
+          TELEGRAM_SESSION: ${{ secrets.TELEGRAM_SESSION }}
+        run: |
+          mkdir -p config
+          if [ -n "$TELEGRAM_SESSION" ]; then
+            printf "%s" "$TELEGRAM_SESSION" > config/telegram.session
+          else
+            echo "TELEGRAM_SESSION is not set; Telegram collection will be skipped or fail."
+          fi
+
+      - name: Run complete phase
+        env:
+          # Telegram bot/channel
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          # Telegram client (reader) for Phase 1
+          API_ID: ${{ secrets.API_ID }}
+          API_HASH: ${{ secrets.API_HASH }}
+          TELEGRAM_SESSION: ${{ secrets.TELEGRAM_SESSION }}
+          # Gemini API keys (multi-key manager supports up to 6)
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          GEMINI_API_KEY2: ${{ secrets.GEMINI_API_KEY2 }}
+          GEMINI_API_KEY3: ${{ secrets.GEMINI_API_KEY3 }}
+          GEMINI_API_KEY4: ${{ secrets.GEMINI_API_KEY4 }}
+          GEMINI_API_KEY5: ${{ secrets.GEMINI_API_KEY5 }}
+          GEMINI_API_KEY6: ${{ secrets.GEMINI_API_KEY6 }}
+          # OpenAI (optional; if used elsewhere)
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          node complete_phase.mjs
+
+      - name: Upload daily data artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-data-${{ github.run_id }}
+          path: |
+            data/**
+            !node_modules/**
+          if-no-files-found: ignore
+
+

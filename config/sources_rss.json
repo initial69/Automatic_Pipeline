@@ -1,0 +1,32 @@
+{
+  "news_core": [
+    { "name": "CoinDesk",        "url": "https://www.coindesk.com/arc/outboundfeeds/rss/" },
+    { "name": "CoinTelegraph",   "url": "https://cointelegraph.com/rss" },
+    { "name": "Decrypt",         "url": "https://decrypt.co/feed" },
+    { "name": "Bitcoin Magazine (GNews)", "url": "https://news.google.com/rss/search?q=site:bitcoinmagazine.com&hl=en-US&gl=US&ceid=US:en" },
+    { "name": "The Defiant",     "url": "https://thedefiant.io/feed" },
+    { "name": "Messari",         "url": "https://messari.io/rss" },
+    { "name": "Bankless",        "url": "https://www.bankless.com/feed" },
+    { "name": "DappRadar",       "url": "https://dappradar.com/blog/feed" }
+  ],
+  "airdrops_events": [
+    { "name": "Airdrops.io",     "url": "https://airdrops.io/feed/" }
+  ],
+  "foundation_ecosystem": [
+    { "name": "Ethereum Foundation", "url": "https://blog.ethereum.org/feed.xml" },
+    { "name": "Polygon Labs",    "url": "https://blog.polygon.technology/rss.xml" },
+    { "name": "Ethereum Magicians", "url": "https://ethereum-magicians.org/latest.rss" },
+    { "name": "Cosmos Hub",      "url": "https://forum.cosmos.network/latest.rss" },
+    { "name": "Crypto Fundraising", "url": "https://crypto-fundraising.info/feed/" }
+  ],
+  "governance_forums": [
+    { "name": "Uniswap Gov",     "url": "https://gov.uniswap.org/latest.rss" },
+    { "name": "Aave Gov",        "url": "https://governance.aave.com/latest.rss" },
+    { "name": "Lido Research",   "url": "https://research.lido.fi/latest.rss" },
+    { "name": "MakerDAO Forum",  "url": "https://forum.makerdao.com/latest.rss" },
+    { "name": "Arbitrum Forum",  "url": "https://forum.arbitrum.foundation/latest.rss" },
+    { "name": "Optimism Forum",  "url": "https://gov.optimism.io/latest.rss" },
+    { "name": "Celestia Forum",  "url": "https://forum.celestia.org/latest.rss" }
+  ]
+}
+
