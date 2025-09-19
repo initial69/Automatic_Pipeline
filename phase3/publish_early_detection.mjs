@@ -241,8 +241,15 @@ async function publishEarlyDetection() {
   if (existsSync(geminiFile)) {
     console.log('📊 Loading Gemini analysis results...');
     const geminiData = JSON.parse(readFileSync(geminiFile, 'utf8'));
-    analyses = geminiData.all_analyses || [];
-    console.log(`✅ Loaded ${analyses.length} analyses from Gemini analysis`);
+    
+    // Use new analyses if available, otherwise fall back to all analyses
+    if (geminiData.new_analyses && geminiData.new_analyses.length > 0) {
+      analyses = geminiData.new_analyses;
+      console.log(`✅ Loaded ${analyses.length} NEW analyses for publishing`);
+    } else {
+      analyses = geminiData.all_analyses || [];
+      console.log(`✅ Loaded ${analyses.length} analyses from Gemini analysis (no new_analyses found)`);
+    }
   } else {
     console.error('❌ No analysis results found. Run Phase 2 first.');
     console.log('   Use: node phase2/analyze_all_signals.mjs');

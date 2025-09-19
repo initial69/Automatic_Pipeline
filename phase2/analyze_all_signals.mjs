@@ -56,6 +56,15 @@ async function analyzeAllSignals() {
         console.log(`   Analyzed: ${geminiResults.analyzed_signals}/${geminiResults.total_signals} signals`);
         console.log(`   Errors: ${geminiResults.errors.length}`);
         
+        // Mark new analyses for Phase 3 publishing
+        geminiResults.new_analyses = geminiResults.all_analyses.filter(analysis => 
+          newSignals.some(signal => 
+            signal.link === analysis.evidence?.[0] || 
+            signal.url === analysis.evidence?.[0]
+          )
+        );
+        console.log(`📤 New analyses for publishing: ${geminiResults.new_analyses.length}`);
+        
         // Mark analyzed signals in tracker
         newSignals.forEach(signal => {
           tracker.markAsAnalyzed(signal);
