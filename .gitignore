@@ -11,6 +11,9 @@ config/*.session
 
 # Runtime data and artifacts
 data/
+!data/analysis_tracker.json
+!data/collection_tracker.json
+!data/deduplication_tracker.json
 *.log
 npm-debug.log*
 yarn-debug.log*
