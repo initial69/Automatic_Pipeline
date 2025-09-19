@@ -45,15 +45,23 @@ jobs:
         env:
           TELEGRAM_SESSION: ${{ secrets.TELEGRAM_SESSION }}
         run: |
+          echo "🔍 Debugging Telegram session setup..."
+          echo "📏 TELEGRAM_SESSION length: ${#TELEGRAM_SESSION}"
+          echo "🔤 First 50 chars: ${TELEGRAM_SESSION:0:50}"
+          echo "🔤 Last 50 chars: ${TELEGRAM_SESSION: -50}"
+          
           mkdir -p config
           if [ -n "$TELEGRAM_SESSION" ]; then
-            printf "%s" "$TELEGRAM_SESSION" > config/telegram.session
+            echo "$TELEGRAM_SESSION" > config/telegram.session
             echo "✅ Telegram session file created"
             echo "📏 Session file size: $(wc -c < config/telegram.session) bytes"
+            echo "📁 Files in config/: $(ls -la config/)"
             echo "🔤 First 50 chars: $(head -c 50 config/telegram.session)"
             echo "🔤 Last 50 chars: $(tail -c 50 config/telegram.session)"
           else
             echo "❌ TELEGRAM_SESSION is not set; Telegram collection will be skipped or fail."
+            echo "📁 Creating empty session file for debugging..."
+            touch config/telegram.session
           fi
 
       - name: Run complete phase
