@@ -37,8 +37,12 @@ jobs:
           mkdir -p config
           if [ -n "$TELEGRAM_SESSION" ]; then
             printf "%s" "$TELEGRAM_SESSION" > config/telegram.session
+            echo "✅ Telegram session file created"
+            echo "📏 Session file size: $(wc -c < config/telegram.session) bytes"
+            echo "🔤 First 50 chars: $(head -c 50 config/telegram.session)"
+            echo "🔤 Last 50 chars: $(tail -c 50 config/telegram.session)"
           else
-            echo "TELEGRAM_SESSION is not set; Telegram collection will be skipped or fail."
+            echo "❌ TELEGRAM_SESSION is not set; Telegram collection will be skipped or fail."
           fi
 
       - name: Run complete phase

@@ -22,8 +22,17 @@ async function readTelegramMessages() {
   
   if (!existsSync(SESSION_PATH)) {
     console.error('❌ File session tidak ditemukan. Jalankan: node scripts/tg_login.mjs');
+    console.error(`📁 Looking for session at: ${SESSION_PATH}`);
+    console.error(`📁 Current working directory: ${process.cwd()}`);
+    console.error(`📁 Files in config/: ${existsSync('config') ? require('fs').readdirSync('config').join(', ') : 'config directory does not exist'}`);
     return [];
   }
+
+  // Debug session file
+  const sessionContent = readFileSync(SESSION_PATH, 'utf8');
+  console.log(`📏 Session file size: ${sessionContent.length} characters`);
+  console.log(`🔤 First 50 chars: ${sessionContent.substring(0, 50)}...`);
+  console.log(`🔤 Last 50 chars: ...${sessionContent.substring(sessionContent.length - 50)}`);
 
   // Overall timeout untuk seluruh proses Telegram (2 menit)
   const telegramTimeout = setTimeout(() => {
