@@ -60,10 +60,10 @@ jobs:
           echo "🧪 Test Mode: Running pipeline without Telegram publishing"
           # Set a dummy TG_TOKEN to prevent publishing
           export TG_TOKEN="test_mode"
-          node run_pipeline.mjs
+            node complete_phase.mjs
         else
           echo "🚀 Production Mode: Running full pipeline with Telegram publishing"
-          node run_pipeline.mjs
+            node complete_phase.mjs
         fi
         
     - name: Upload results as artifacts
