@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history to ensure latest code
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -29,6 +31,15 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci --no-audit --no-fund
+
+      - name: Verify code deployment
+        run: |
+          echo "🔍 Verifying latest code deployment..."
+          echo "📁 Current working directory: $(pwd)"
+          echo "📁 Files in sources/: $(ls -la sources/)"
+          echo "📏 telegram_simple.mjs size: $(wc -c < sources/telegram_simple.mjs) bytes"
+          echo "🔤 First 10 lines of telegram_simple.mjs:"
+          head -10 sources/telegram_simple.mjs
 
       - name: Prepare Telegram session file
         env:
