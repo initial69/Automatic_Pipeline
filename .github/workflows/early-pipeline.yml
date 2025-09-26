@@ -53,6 +53,10 @@ jobs:
           fi
           echo "🔤 First 40 lines of phase2/analyze_all_signals.mjs:"
           sed -n '1,40p' phase2/analyze_all_signals.mjs
+          echo "🔤 First 40 lines of agents/analysis_gemini_all_signals.mjs:"
+          sed -n '1,40p' agents/analysis_gemini_all_signals.mjs
+          echo "🔤 First 40 lines of phase3/publish_early_detection.mjs:"
+          sed -n '1,40p' phase3/publish_early_detection.mjs
 
       - name: Prepare Telegram session file
         env:

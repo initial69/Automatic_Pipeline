@@ -169,11 +169,15 @@ async function processBatchWithGeminiAllSignals(signals, batchIndex, keyManager)
       
       const genAI = new GoogleGenerativeAI(keyInfo.key);
       // Try a sequence of model ids to avoid 404s on restricted versions
+      const preferred = process.env.GEMINI_MODEL && process.env.GEMINI_MODEL.trim();
       const candidateModels = [
+        ...(preferred ? [preferred] : []),
+        'gemini-1.5-pro',
+        'gemini-1.5-pro-001',
         'gemini-1.5-flash',
         'gemini-1.5-flash-001',
-        'gemini-1.5-pro',
-        'gemini-1.0-pro'
+        'gemini-1.0-pro',
+        'gemini-1.0-pro-001'
       ];
 
       let result;

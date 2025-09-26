@@ -23,7 +23,11 @@ async function runCompletePhase() {
     // Phase 3: Publishing
     console.log('\n📢 Phase 3: Publishing to Telegram...');
     const phase3Results = await publishEarlyDetection();
-    console.log(`✅ Phase 3 complete: ${phase3Results.hot} hot, ${phase3Results.early} early, ${phase3Results.watch} watch, ${phase3Results.risk} risk alerts published`);
+    if (phase3Results) {
+      console.log(`✅ Phase 3 complete: ${phase3Results.hot} hot, ${phase3Results.early} early, ${phase3Results.watch} watch, ${phase3Results.risk} risk alerts published`);
+    } else {
+      console.log('✅ Phase 3 complete: No analyses to publish');
+    }
     
     console.log('\n🎉 Complete Phase finished successfully!');
     console.log('=====================================');
