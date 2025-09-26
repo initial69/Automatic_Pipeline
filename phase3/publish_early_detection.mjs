@@ -266,7 +266,15 @@ async function publishEarlyDetection() {
   
   if (analyses.length === 0) {
     console.log('⚠️  No analyses to publish');
-    return;
+    // Return a safe empty result object to prevent caller from accessing undefined
+    return {
+      hot: 0,
+      early: 0,
+      watch: 0,
+      risk: 0,
+      duplicates: 0,
+      publish: { total: 0, sent: 0, failed: 0, failedMessages: [] }
+    };
   }
   
   // Categorize analyses with early detection focus

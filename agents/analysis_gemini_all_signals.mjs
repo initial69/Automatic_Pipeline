@@ -168,9 +168,35 @@ async function processBatchWithGeminiAllSignals(signals, batchIndex, keyManager)
       console.log(`🔄 Attempt ${retry + 1}/${maxRetries} with ${keyInfo.name}`);
       
       const genAI = new GoogleGenerativeAI(keyInfo.key);
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      // Try a sequence of model ids to avoid 404s on restricted versions
+      const candidateModels = [
+        'gemini-1.5-flash',
+        'gemini-1.5-flash-001',
+        'gemini-1.5-pro',
+        'gemini-1.0-pro'
+      ];
 
-      const result = await model.generateContent(prompt);
+      let result;
+      let lastModelError = null;
+      for (const modelId of candidateModels) {
+        try {
+          console.log(`🔧 Trying Gemini model: ${modelId}`);
+          const model = genAI.getGenerativeModel({ model: modelId });
+          result = await model.generateContent(prompt);
+          console.log(`✅ Model worked: ${modelId}`);
+          lastModelError = null;
+          break;
+        } catch (modelErr) {
+          lastModelError = modelErr;
+          console.log(`⚠️  Model failed (${modelId}): ${modelErr.message}`);
+          // Try next candidate model
+        }
+      }
+
+      if (!result) {
+        throw new Error(lastModelError ? lastModelError.message : 'No Gemini model succeeded');
+      }
+
       const response = await result.response;
       const text = response.text();
       
