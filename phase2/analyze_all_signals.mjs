@@ -19,9 +19,9 @@ async function analyzeAllSignals() {
   // Debug tracker file
   console.log(`🔍 Debug Analysis Tracker:`);
   console.log(`📁 Tracker file path: ${tracker.trackerFile}`);
-  console.log(`📁 File exists: ${require('fs').existsSync(tracker.trackerFile)}`);
-  if (require('fs').existsSync(tracker.trackerFile)) {
-    const content = require('fs').readFileSync(tracker.trackerFile, 'utf8');
+  console.log(`📁 File exists: ${existsSync(tracker.trackerFile)}`);
+  if (existsSync(tracker.trackerFile)) {
+    const content = readFileSync(tracker.trackerFile, 'utf8');
     console.log(`📏 File size: ${content.length} characters`);
     console.log(`🔤 First 100 chars: ${content.substring(0, 100)}...`);
   }
