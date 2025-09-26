@@ -33,7 +33,9 @@ async function runCompletePhase() {
     console.log('=====================================');
     console.log(`📊 Signals collected: ${phase1Results.signals.length}`);
     console.log(`📢 Opportunities published: ${phase3Results.hot} hot, ${phase3Results.early} early, ${phase3Results.watch} watch, ${phase3Results.risk} risk alerts`);
-    console.log(`📊 Success rate: ${phase3Results.publish ? Math.round((phase3Results.publish.sent / phase3Results.publish.total) * 100) : 0}%`);
+    const publish = phase3Results.publish;
+    const successRate = publish && publish.total > 0 ? Math.round((publish.sent / publish.total) * 100) : 0;
+    console.log(`📊 Success rate: ${successRate}%`);
     
     // Ensure process exits cleanly after completion
     process.exit(0);
