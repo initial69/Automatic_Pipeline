@@ -41,6 +41,19 @@ jobs:
           echo "🔤 First 10 lines of telegram_simple.mjs:"
           head -10 sources/telegram_simple.mjs
 
+      - name: Verify Phase 2 code freshness
+        run: |
+          echo "🔍 Git commit info:"
+          git --no-pager log -1 --pretty=oneline
+          echo "🔍 Checking for any lingering require( ) in repo (should be none):"
+          if grep -R "require(" -n . --exclude-dir node_modules; then
+            echo "❌ Found require( ) usages above"
+          else
+            echo "✅ No require( ) usages found"
+          fi
+          echo "🔤 First 40 lines of phase2/analyze_all_signals.mjs:"
+          sed -n '1,40p' phase2/analyze_all_signals.mjs
+
       - name: Prepare Telegram session file
         env:
           TELEGRAM_SESSION: ${{ secrets.TELEGRAM_SESSION }}
