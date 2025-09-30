@@ -1,7 +1,13 @@
 name: Crypto Early Detection Pipeline
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      reset_trackers:
+        description: 'Reset all trackers for fresh analysis'
+        required: false
+        default: false
+        type: boolean
   schedule:
     # Run every 2 hours at minute 0 UTC (reduced frequency for production)
     - cron: '0 */2 * * *'
@@ -86,7 +92,42 @@ jobs:
             touch config/telegram.session
           fi
 
+      - name: Reset trackers (if requested)
+        if: ${{ github.event.inputs.reset_trackers == 'true' }}
+        run: |
+          echo "🔄 Resetting all trackers for fresh analysis..."
+          mkdir -p data
+          
+          # Reset Analysis Tracker
+          cat > data/analysis_tracker.json << 'EOF'
+          {
+            "analyzed": {},
+            "lastUpdated": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)"
+          }
+          EOF
+          
+          # Reset Collection Tracker
+          cat > data/collection_tracker.json << 'EOF'
+          {
+            "collected": {},
+            "lastUpdated": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)"
+          }
+          EOF
+          
+          # Reset Deduplication Tracker
+          cat > data/deduplication_tracker.json << 'EOF'
+          {
+            "published": {},
+            "contentHashes": {},
+            "titleHashes": {},
+            "lastUpdated": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)"
+          }
+          EOF
+          
+          echo "✅ All trackers reset for fresh analysis"
+
       - name: Initialize trackers (if not exist)
+        if: ${{ github.event.inputs.reset_trackers != 'true' }}
         run: |
           echo "🔍 Checking if trackers exist..."
           mkdir -p data
