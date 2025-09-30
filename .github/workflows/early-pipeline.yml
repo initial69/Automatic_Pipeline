@@ -27,6 +27,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
 
       - name: Install dependencies
         run: |
@@ -57,6 +58,10 @@ jobs:
           sed -n '1,40p' agents/analysis_gemini_all_signals.mjs
           echo "🔤 First 40 lines of phase3/publish_early_detection.mjs:"
           sed -n '1,40p' phase3/publish_early_detection.mjs
+          echo "🔍 Verifying Gemini model configuration:"
+          grep -A 5 "candidateModels" agents/analysis_gemini_all_signals.mjs
+          echo "🔍 Checking for gemini-2.0-flash-exp:"
+          grep "gemini-2.0-flash-exp" agents/analysis_gemini_all_signals.mjs
 
       - name: Prepare Telegram session file
         env:
