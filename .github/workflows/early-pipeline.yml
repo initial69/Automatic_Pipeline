@@ -86,29 +86,35 @@ jobs:
             touch config/telegram.session
           fi
 
-      - name: Reset trackers for fresh analysis
+      - name: Initialize trackers (if not exist)
         run: |
-          echo "🔄 Resetting trackers for fresh analysis..."
+          echo "🔍 Checking if trackers exist..."
           mkdir -p data
           
-          # Reset Analysis Tracker
-          cat > data/analysis_tracker.json << 'EOF'
+          # Only create trackers if they don't exist
+          if [ ! -f "data/analysis_tracker.json" ]; then
+            echo "📝 Creating analysis_tracker.json..."
+            cat > data/analysis_tracker.json << 'EOF'
           {
             "analyzed": {},
             "lastUpdated": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)"
           }
           EOF
+          fi
           
-          # Reset Collection Tracker
-          cat > data/collection_tracker.json << 'EOF'
+          if [ ! -f "data/collection_tracker.json" ]; then
+            echo "📝 Creating collection_tracker.json..."
+            cat > data/collection_tracker.json << 'EOF'
           {
             "collected": {},
             "lastUpdated": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)"
           }
           EOF
+          fi
           
-          # Reset Deduplication Tracker
-          cat > data/deduplication_tracker.json << 'EOF'
+          if [ ! -f "data/deduplication_tracker.json" ]; then
+            echo "📝 Creating deduplication_tracker.json..."
+            cat > data/deduplication_tracker.json << 'EOF'
           {
             "published": {},
             "contentHashes": {},
@@ -116,8 +122,9 @@ jobs:
             "lastUpdated": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)"
           }
           EOF
+          fi
           
-          echo "✅ All trackers reset for fresh analysis"
+          echo "✅ Trackers initialized (incremental mode)"
 
       - name: Run complete phase
         env:

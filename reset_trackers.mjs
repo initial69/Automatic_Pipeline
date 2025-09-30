@@ -1,8 +1,13 @@
 #!/usr/bin/env node
 
-import { writeFileSync, existsSync } from 'node:fs';
+import { writeFileSync, existsSync, mkdirSync } from 'node:fs';
 
 console.log('🔄 Resetting all trackers for fresh start...\n');
+
+// Create data directory if it doesn't exist
+if (!existsSync('data')) {
+  mkdirSync('data');
+}
 
 // Reset Analysis Tracker
 const analysisTracker = {
@@ -34,3 +39,7 @@ console.log('✅ Collection Tracker reset');
 console.log('✅ Deduplication Tracker reset');
 console.log('\n🎉 All trackers reset successfully!');
 console.log('📊 Next run will analyze ALL signals from scratch');
+console.log('\n💡 Usage:');
+console.log('   - Run this script manually when you want fresh analysis');
+console.log('   - GitHub Actions will use incremental mode by default');
+console.log('   - This saves API quota and runs faster');
