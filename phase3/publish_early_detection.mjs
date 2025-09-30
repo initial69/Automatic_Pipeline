@@ -277,6 +277,19 @@ async function publishEarlyDetection() {
     };
   }
   
+  // Ensure analyses is an array
+  if (!Array.isArray(analyses)) {
+    console.error('❌ Analyses is not an array:', typeof analyses);
+    return {
+      hot: 0,
+      early: 0,
+      watch: 0,
+      risk: 0,
+      duplicates: 0,
+      publish: { total: 0, sent: 0, failed: 0, failedMessages: [] }
+    };
+  }
+
   // Categorize analyses with early detection focus
   const hotOpportunities = analyses.filter(analysis => Math.round(analysis.score / 10) >= 8);
   const earlySignals = analyses.filter(analysis => {
@@ -330,7 +343,12 @@ async function publishEarlyDetection() {
   }
 
   // Combine all analyses and enrich for deduplication
-  const allAnalyses = [...hotOpportunities, ...earlySignals, ...watchClosely, ...potentialRisks];
+  const allAnalyses = [
+    ...(hotOpportunities || []), 
+    ...(earlySignals || []), 
+    ...(watchClosely || []), 
+    ...(potentialRisks || [])
+  ];
   const allAnalysesForDedup = allAnalyses.map(enrichForDedup);
   
   // Apply advanced deduplication
