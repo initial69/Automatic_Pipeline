@@ -91,6 +91,10 @@ export class AdvancedDeduplication {
     }
 
     // Check fuzzy similarity with existing content
+    if (!this.tracker.content_hashes || typeof this.tracker.content_hashes !== 'object') {
+      return { isDuplicate: false, similarity: 0 };
+    }
+    
     const existingHashes = Object.keys(this.tracker.content_hashes);
     for (const existingHash of existingHashes) {
       const similarity = this.calculateSimilarity(contentHash, existingHash);
@@ -141,6 +145,10 @@ export class AdvancedDeduplication {
     }
 
     // Check fuzzy title similarity
+    if (!this.tracker.title_hashes || typeof this.tracker.title_hashes !== 'object') {
+      return { isDuplicate: false, similarity: 0 };
+    }
+    
     const existingHashes = Object.keys(this.tracker.title_hashes);
     for (const existingHash of existingHashes) {
       const similarity = this.calculateSimilarity(titleHash, existingHash);
@@ -365,10 +373,10 @@ export class AdvancedDeduplication {
 
   // Get statistics
   getStats() {
-    const publishedCount = Object.keys(this.tracker.published).length;
-    const contentHashesCount = Object.keys(this.tracker.content_hashes).length;
-    const titleHashesCount = Object.keys(this.tracker.title_hashes).length;
-    const sourceCount = Object.keys(this.tracker.source_hashes).length;
+    const publishedCount = this.tracker.published ? Object.keys(this.tracker.published).length : 0;
+    const contentHashesCount = this.tracker.content_hashes ? Object.keys(this.tracker.content_hashes).length : 0;
+    const titleHashesCount = this.tracker.title_hashes ? Object.keys(this.tracker.title_hashes).length : 0;
+    const sourceCount = this.tracker.source_hashes ? Object.keys(this.tracker.source_hashes).length : 0;
 
     return {
       published: publishedCount,
