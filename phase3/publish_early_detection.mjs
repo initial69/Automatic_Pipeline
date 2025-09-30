@@ -242,13 +242,21 @@ async function publishEarlyDetection() {
     console.log('📊 Loading Gemini analysis results...');
     const geminiData = JSON.parse(readFileSync(geminiFile, 'utf8'));
     
+    console.log('🔍 Debug geminiData structure:');
+    console.log(`   - geminiData type: ${typeof geminiData}`);
+    console.log(`   - geminiData.new_analyses: ${geminiData.new_analyses ? 'exists' : 'undefined'}`);
+    console.log(`   - geminiData.all_analyses: ${geminiData.all_analyses ? 'exists' : 'undefined'}`);
+    
     // Use new analyses if available, otherwise fall back to all analyses
-    if (geminiData.new_analyses && geminiData.new_analyses.length > 0) {
+    if (geminiData.new_analyses && Array.isArray(geminiData.new_analyses) && geminiData.new_analyses.length > 0) {
       analyses = geminiData.new_analyses;
       console.log(`✅ Loaded ${analyses.length} NEW analyses for publishing`);
-    } else {
-      analyses = geminiData.all_analyses || [];
+    } else if (geminiData.all_analyses && Array.isArray(geminiData.all_analyses)) {
+      analyses = geminiData.all_analyses;
       console.log(`✅ Loaded ${analyses.length} analyses from Gemini analysis (no new_analyses found)`);
+    } else {
+      console.log('⚠️  No valid analyses found in geminiData, using empty array');
+      analyses = [];
     }
   } else {
     console.error('❌ No analysis results found. Run Phase 2 first.');
@@ -278,8 +286,14 @@ async function publishEarlyDetection() {
   }
   
   // Ensure analyses is an array
+  console.log(`🔍 Debug analyses before processing:`);
+  console.log(`   - analyses type: ${typeof analyses}`);
+  console.log(`   - analyses is array: ${Array.isArray(analyses)}`);
+  console.log(`   - analyses length: ${analyses ? analyses.length : 'N/A'}`);
+  
   if (!Array.isArray(analyses)) {
     console.error('❌ Analyses is not an array:', typeof analyses);
+    console.error('❌ Analyses value:', analyses);
     return {
       hot: 0,
       early: 0,
@@ -325,8 +339,26 @@ async function publishEarlyDetection() {
   
   // Helper to find original signal info for dedup keys
   function enrichForDedup(analysis) {
+    // Ensure analysis is valid
+    if (!analysis || typeof analysis !== 'object') {
+      console.error('❌ Invalid analysis in enrichForDedup:', analysis);
+      return {
+        project_name: 'Unknown',
+        opportunity_type: 'Unknown',
+        investment_angle: 'Unknown',
+        evidence: [],
+        score: 0,
+        importance: 'Low',
+        market_impact: 'Low',
+        source: 'Unknown',
+        title: 'Unknown',
+        link: '',
+        content: ''
+      };
+    }
+    
     let originalSignal = null;
-    if (analysis.evidence && analysis.evidence[0]) {
+    if (analysis.evidence && Array.isArray(analysis.evidence) && analysis.evidence[0]) {
       originalSignal = originalSignals.find(signal => 
         signal.link === analysis.evidence[0] || 
         signal.url === analysis.evidence[0]
@@ -336,7 +368,7 @@ async function publishEarlyDetection() {
     return {
       ...analysis,
       source: originalSignal?.source || 'Unknown',
-      title: analysis.project_name, // use project name as title key
+      title: analysis.project_name || 'Unknown', // use project name as title key
       link: analysis.evidence?.[0] || '',
       content: analysis.investment_angle || ''
     };
