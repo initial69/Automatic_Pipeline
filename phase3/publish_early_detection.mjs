@@ -281,7 +281,7 @@ async function publishEarlyDetection() {
   const hotOpportunities = analyses.filter(analysis => Math.round(analysis.score / 10) >= 8);
   const earlySignals = analyses.filter(analysis => {
     const score = Math.round(analysis.score / 10);
-    return score >= 6 && score < 8;
+    return score >= 5 && score < 8;
   });
   const watchClosely = analyses.filter(analysis => {
     const score = Math.round(analysis.score / 10);
@@ -299,7 +299,8 @@ async function publishEarlyDetection() {
       analysis.project_name.toLowerCase().includes('beta') ||
       analysis.project_name.toLowerCase().includes('alpha')
     );
-    return isEarlyType && score >= 4;
+    // Lower threshold for early projects
+    return isEarlyType && score >= 3;
   });
   
   console.log(`📊 Early Detection Categorization:`);
@@ -363,7 +364,7 @@ async function publishEarlyDetection() {
   const finalHotOpportunities = approvedAnalyses.filter(analysis => Math.round(analysis.score / 10) >= 8);
   const finalEarlySignals = approvedAnalyses.filter(analysis => {
     const score = Math.round(analysis.score / 10);
-    return score >= 6 && score < 8;
+    return score >= 5 && score < 8;
   });
   const finalWatchClosely = approvedAnalyses.filter(analysis => {
     const score = Math.round(analysis.score / 10);

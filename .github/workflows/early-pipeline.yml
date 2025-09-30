@@ -3,8 +3,8 @@ name: Crypto Early Detection Pipeline
 on:
   workflow_dispatch: {}
   schedule:
-    # Run every hour at minute 0 UTC
-    - cron: '0 * * * *'
+    # Run every 2 hours at minute 0 UTC (reduced frequency for production)
+    - cron: '0 */2 * * *'
 
 permissions:
   contents: read
@@ -99,8 +99,14 @@ jobs:
           GEMINI_API_KEY6: ${{ secrets.GEMINI_API_KEY6 }}
           # OpenAI (optional; if used elsewhere)
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # GitHub token for rate limiting
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          echo "🚀 Starting Crypto Early Detection Pipeline..."
+          echo "📅 Run time: $(date)"
+          echo "🔄 Running complete phase..."
           node complete_phase.mjs
+          echo "✅ Pipeline completed successfully!"
 
       - name: Upload daily data artifacts
         if: always()

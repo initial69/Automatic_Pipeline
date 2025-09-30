@@ -1,1437 +1,653 @@
 {
   "analyzed": {
-    "ethereum/go-ethereum:https://github.com/ethereum/go-ethereum/commit/339cae81d8992dfc6cf15c856b565f562fb46af4:corefixforkreadinesslog32623": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "ethereum/go-ethereum:https://github.com/ethereum/go-ethereum/commit/c1e9d78f1f8339b8dafed994530fb6fd231c48b0:coretxpoolremoveunusedsignerfieldfromtxpool32787": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "offchainlabs/nitro:https://github.com/offchainlabs/nitro/releases/tag/v3.8.0-rc.4:arbitrumnitrov380rc4": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "erigontech/erigon:https://github.com/erigontech/erigon/commit/a3e89138dbf7942a6c76cc311800b51e6ecbf128:bumpethmainnetdefaultblockgaslimitto60m16949": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/44d3429d2913c8c90fbb0848e14c1022b8ca2267:cleanupktdevnets17455": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "sigp/lighthouse:https://github.com/sigp/lighthouse/releases/tag/v8.0.0-rc.0:memoryrick": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "scroll-tech/scroll:https://github.com/scroll-tech/scroll/releases/tag/vdrawin-bridge-history-rc0:vdrawinbridgehistoryrc0": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/ac0485408efbbcb2e6afbe73a142503b9650ab0d:updateopcmupgradenatspectoexplainthedelegatecallerassumptions17644": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "scroll-tech/scroll:https://github.com/scroll-tech/scroll/releases/tag/vshadowfork-darwin:vshadowforkdarwin": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/30daae44a1134b029e09afbbdebf95f2aa7b5c14:ope2etweakelsynctesttochecknongenesis17440": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "taikoxyz/taiko-mono:https://github.com/taikoxyz/taiko-mono/commit/9d182878765d667664998c480b4159b06d954a4f:fixprotocolcorrectmainnetinboxtitleandnoticereferences20181": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/94451065d34bbeb7c4bc412857bd34e5562926cc:opdeployersetupforgecallersforapplydeployscripts17637": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "taikoxyz/taiko-mono:https://github.com/taikoxyz/taiko-mono/commit/31374a6647b4d65f337f1e5ef749314a0893f6ec:fixbridgeuifixgrammarissuesandtypos20174": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/71a81e758be5c1b88bdef8eaa6a8109e3ec1de6f:opnoderollupremovereceivedunsafepayloadeventevent17530": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "taikoxyz/taiko-mono:https://github.com/taikoxyz/taiko-mono/commit/fdb7c5819aebca168ab0cefdb62299a4a4b1d069:ciprotocolforgefmtandbotcommitwillbeskippedonforks20171": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "celestiaorg/celestia-app:https://github.com/celestiaorg/celestia-app/commit/cf4eb408a0a77a892d38522c1e0a413dd3dcf17c:choredepsupgradetosdkv05135833": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "taikoxyz/taiko-mono:https://github.com/taikoxyz/taiko-mono/commit/b8dc8a119e28bffc30b4410dbcc0b81936c8454f:docsprotocolcontractdeploymentlogsoftolbatestnet20123": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "aptos-labs/aptos-core:https://github.com/aptos-labs/aptos-core/commit/04d4126476e5c62c2e4a66713c5f695f9e8bcc49:aptosnodedisablefeatureflagmovevmruntimedebuggingbymovingmoveclioutofitsdependencytree17703": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "celestiaorg/celestia-app:https://github.com/celestiaorg/celestia-app/commit/aea9dd7ff07387aa6cae6d20f3fc339e5fde7724:chorecreateconstructedsfunctiontobeusedinprocessproposalandbynode5781": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "aptos-labs/aptos-core:https://github.com/aptos-labs/aptos-core/releases/tag/aptos-node-v1.36.1-rc:testnetaptosnodereleasev1361": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "mystenlabs/sui:https://github.com/mystenlabs/sui/commit/44878ea71fc19b96d952f7c0aa347b4dec9e1935:graphqlaltimplementiaddressablewithvalidator23623": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "celestiaorg/celestia-app:https://github.com/celestiaorg/celestia-app/commit/0be260e573393ac80ac9f880b0ec729cfa7c5ee4:refactorwrapperremoveunusedoptionsfieldsfromnmtwrappers5893": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "aptos-labs/aptos-core:https://github.com/aptos-labs/aptos-core/releases/tag/aptos-node-v1.35.3:mainnetaptosnodereleasev1353": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "layr-labs/eigenda:https://github.com/layr-labs/eigenda/commit/26f7555cc706272a0fc9e477fa1f357101b28b40:testinaboxdeployproxyinstance2091": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "mystenlabs/sui:https://github.com/mystenlabs/sui/releases/tag/mainnet-v1.56.2:mainnetv1562": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://announcements.bybit-global.com/en/article/bybit-launchpool-stake-ff-mnt-or-usdt-to-earn-a-share-of-8-000-000-ff--blt9f35b2060bceb79c/:bybitlaunchpoolstakeffmntorusdttoearnashareof8000000ff": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "layr-labs/eigenda:https://github.com/layr-labs/eigenda/commit/de300c113443f809843906ecb0bacc895b22a046:featpaymentsimplementreservationpaymentvalidator2003": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://t.me/airdropfind/55514:httpstmeairdropfind55514": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "starkware-libs/cairo:https://github.com/starkware-libs/cairo/commit/3461d74912baac83447acb91e88736ee8ba8b54d:performanceloweringusingvecinsteadofhashmapformappingvars8442": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://zkverify.io/blog/phase-1-of-usdvfy-rewards-claiming-starts-on-9-30:phase1ofthevfyclaimbegins": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "starkware-libs/cairo:https://github.com/starkware-libs/cairo/commit/3c926fd08a2971946d625a59569a6383bf721496:performancesemanticremovedarcfromfunctionbody8438": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/30/sec-willing-to-engage-with-tokenized-asset-issuers-sec-s-hester-peirce-says:secwillingtoengagewithtokenizedassetissuerssecshesterpeircesays": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368396398:nvidiainvests683millionincryptominerspinoff": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://dune.com/vadymdi/legion-yieldbasis-sale-analytics:ybstatistik": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340146/vitalik-buterin-defends-ethereum-staking-exit-times-amid-industry-criticism:vitalikbuterindefendsethereumstakingexittimesamidindustrycriticism": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://testnet.pharosnetwork.xyz/sumbittask:pharoscreatorsarenawave1isdropping": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368398301:australiaeasesstablecoindistributionrules": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/342085/study-ai-outpaces-humans-game-testing:newstudyshowsaioutpaceshumansingametesting": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cupang ventures:https://pro.whales.market/pre/ethereum/xpl:httpsprowhalesmarketpreethereumxpl": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://x.com/tomketlovers/status/1972830360947028269:happybdaysetyamickala28": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340016/pixelverse-expands-telegram-ai-agent-powered-game-farcaster:pixelverseexpandsfromtelegramwithaiagentgameonfarcaster": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/342055/anthropic-claims-best-coding-model-world-claude-sonnet-4-5-tested:anthropicclaimsbestcodingmodelintheworldwithclaudesonnet45wetestedit": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340142/morning-minute-forward-industries-eyes-4b-to-buy-more-solana:morningminuteforwardindustrieseyes4btobuymoresolana": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:http://cantonwallet.com:cantonwalletbyseed": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/arca-cio-on-why-crypto-s-2025-rally-isn-t-a-true-bull-market-and-why-some-tokens-have-outperformed:arcacioonwhycryptos2025rallyisntatruebullmarketandwhysometokenshaveoutperformed": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://docs.google.com/forms/d/e/1faipqlsczbqtucpxrdlxpm0gibjm3iu56zgkrhfku0kgqvthqoqjyxw/viewform:someusersminimumrequestedallocationdidntsavedisplaycorrectlypleasesubmitthedetailsbe": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cupang ventures:https://debank.com/profile/0x54cbcd1bd3f409f7620093dd6b2a8302e664ba9a/:povyapperdengansaldo49": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://x.com/talus_labs/status/1972662568213987756:talushasraisedover10mwithaninvestmentfromsuifoundationwalrusprotocolalongsidelead": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "airdrop finder:https://www.ghostmplay.com/:ghostmpreregister": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "uniswap gov:https://gov.uniswap.org/t/uniswap-community-proposal-factory/25838:uniswapcommunityproposalfactory": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/bitcoin-cash-rallies-to-nearly-usd650-the-highest-since-april-2024:bitcoincashralliestonearly650highestlevelsinceapril2024": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://docs.google.com/forms/d/e/1faipqlsdjz2xixtlqsixubmhs1j-0s5cw8w1shsr0mrnp41igek5-aa/viewform:newwaitlistneurathesovereignstackbuiltforstablecoinsandglobalfinancepoweredbyankr": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "ethereum magicians:https://ethereum-magicians.org/t/draft-erc-eip-data-anchoring-token-dat/25512:drafterceipdataanchoringtokendat": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/342016/bitcoin-whale-awakens-after-12-years-move-44-million-btc:bitcoinwhaleawakensafter12yearstomove44millioninbtc": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/crypto-markets-today-bnb-avax-and-dot-lead-futures-trends:cryptomarketstodaybnbavaxanddotleadfuturestrends": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/342079/crypto-regulator-adrienne-harris-resigns:cryptoregulatoradrienneharrisresignsasheadofdydfs": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cupang ventures:https://crypto-fundraising.info/projects/cross-protocol/:bacadulu": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/massachusetts-hearing-bitcoin-reserve-bill?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:massachusettstoholdhearingtoconsiderbitcoinreservebill": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cupang ventures:https://www.rohan2.com/event:gamekorea": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/342050/woman-pleads-guilty-7-billion-bitcoin-fraud-scheme-in-uk:womanpleadsguiltyto7billionbitcoinfraudschemeinuk": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340128/pudgy-penguins-pengu-up-double-digits-as-predictors-bullish-on-upward-momentum:pudgypenguinspenguupdoubledigitsaspredictorsbullishonupwardmomentum": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/policy/2025/09/29/nydfs-chief-harris-to-leave-new-york-regulator-next-month:nydfschiefharristoleavenewyorkregulatornextmonth": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "airdrop finder:https://www.bmwweb.biz/activity/trading-competition/spot-bard-listing-campaign?ref=59029290:bardxbinancelistingcampaign": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmivafbvv95cuxnemyttww1zwlfsvradupvmuxuuhndc1pubk9ksw9mukz0xzroamtktxc2zfjfdhr2z2mtdvbrutr1dgdqbmrodfz0sudzxy1scmwznkx4bllcytvywwrwzxzwdfdzsy0yueq2ctdvc2hfmnzxwnc4smhezejfmw02dnhfa1rnagdhanbvbdhvadj1wunewk0ymejiyu9hs2fkwfrptlrgsgjqbhh5ennbbzkxcfzsywjsqwxqmg?oc=5:manwithworldshighestiqgoesallinonbitcoinbitcoinmagazine": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/daybook-us/2025/09/18/with-fed-done-here-s-3-stories-to-watch-crypto-daybook-americas:withfeddoneheres3storiestowatchcryptodaybookamericas": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "the defiant:https://thedefiant.io/news/defi/andre-cronje-s-flying-tulip-raises-usd200-million-ahead-of-ico:andrecronjesflyingtulipraises200millionaheadofico": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cupang ventures:https://x.com/sunperp_dex:followdulu": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341978/ai-study-chatbots-strategically-lie-current-safety-tools-cant-catch-them:aistudyfindschatbotscanstrategicallylieandcurrentsafetytoolscantcatchthem": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340120/bdacs-woori-bank-launch-south-koreas-first-won-backed-stablecoin-on-avalanche:bdacswooribanklaunchsouthkoreasfirstwonbackedstablecoinonavalanche": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "ethereum magicians:https://ethereum-magicians.org/t/all-core-devs-execution-acde-222-october-9-2025/25624:allcoredevsexecutionacde222october92025": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "airdrop finder:https://claim.lombard.finance:claimyourlombardairdrop": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bankless:https://www.bankless.com/read/tether-raise-bigger-than-goldman:tetherbiggerthangoldmanchasingjpmorgan": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-test-all-time-high-quickly-if-bulls-reclaim-118k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcointotestalltimehighquicklyifbullsreclaim118ktrader": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368910951:dotstablecoinproposalseesstrongcommunitysupport": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/bnb-hits-usd1-000-all-time-high-as-binance-nears-doj-deal-rumors-of-cz-s-return-grow:bnbhits1000alltimehighasbinancenearsdojdealrumorsofczsreturngrow": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/business/2025/09/29/crypto-anti-money-laundering-firm-notabene-launches-compliance-platform-for-stablecoin-payments:cryptocompliancefirmnotabeneintroducesplatformforstablecoinpayments": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/business/2025/09/18/tether-tokenization-pioneers-unveil-startup-focused-on-genius-aligned-digital-dollars:tethertokenizationpioneersunveilstartupfocusedongeniusaligneddigitaldollars": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368913464:bitminepurchases961minethsolidifiesmarketposition": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cupang ventures:https://www.dextools.io/app/en/ether/pair-explorer/0x07156b84fb69efbb4a886e4ea88c8545b182ec0820cbba3af2eae419ccb207ef?t=1758189807317:httpswwwdextoolsioappenetherpairexplorer0x07156b84fb69efbb4a886e4ea88c8545b182ec0820cbba3": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368913479:strategyadds196btcin22mtreasurypurchase": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cupang ventures:https://www.binance.com/activity/trading-competition/spot-bard-listing-campaign:httpswwwbinancecomactivitytradingcompetitionspotbardlistingcampaign": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368912552:polandcryptobilladvancesamidindustryconcern": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cupang ventures:https://upbit.com/service_center/notice?id=5536:upbitlistingbardkrwbtcusdt": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/tokenized-gold-market-nears-usd3b-as-bullion-blasts-to-fresh-record-highs:tokenizedgoldmarketnears3basbullionblaststofreshrecordhighs": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/explained/what-happens-if-bitcoin-reaches-1-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:whathappensifbitcoinreaches1million": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368912559:cryptoinvestmentproductssee812minweeklyoutflows": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "airdrop finder:https://dill.xyz/airdrop:nowyoucancheckdilleligibility": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/342044/sec-halts-trading-bitcoin-ethereum-treasury-qmmm-2000-stock-surge:sechaltstradingofbitcoinethereumtreasuryfirmqmmmafter2000stocksurge": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/sec-first-us-multi-crypto-etp-grayscale-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:secapprovesfirstusmultiassetcryptoetpfromgrayscale": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "arbitrum forum:https://forum.arbitrum.foundation/t/october-2025-security-council-elections-mandatory-voting-for-dip-incentives/30037:october2025securitycouncilelectionsmandatoryvotingfordipincentives": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/policy/2025/09/18/australian-s-financial-watchdog-offers-exemptions-to-stablecoin-intermediaries:australiasfinancialwatchdogoffersexemptionstostablecoinintermediaries": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/342033/swift-ethereum-software-giant-consensys-blockchain-prototype:swiftteamswithethereumsoftwaregiantconsensysforblockchainprototype": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "airdrop finder:http://portfolio.metamask.io:metamaskogcampaignisbackforround2": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/price-predictions-9-29-spx-dxy-btc-eth-xrp-bnb-sol-doge-ada-hype?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:pricepredictions929spxdxybtcethxrpbnbsoldogeadahype": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "messari:https://messari.io/article/state-of-aleo-q2-2025:stateofaleoq22025": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/policy/2025/09/29/crypto-is-job-one-as-u-s-sec-cftc-move-into-lockstep-on-policies-chairman-atkins:cryptoisjoboneasusseccftcmoveintoharmonyonpolicieschairmanatkins": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/crypto-lobby-study-40-percent-americans-would-try-defi-with-laws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:40ofamericanswouldusedefiwithlawsinplacecryptolobbypoll": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/342021/bitcoin-solana-crypto-market-green-where-prices-next:bitcoinbouncesascryptomarketturnsgreenwheredopricesgonext": {
+      "timestamp": "2025-09-30T03:33:19.126Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/bitcoin-etf-inflows-reverse-as-fed-s-hawkish-outlook-triggers-market-caution:bitcoinetfinflowsreverseasfedshawkishoutlooktriggersmarketcaution": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:http://flixizen.com:newwaitlistflixizen": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "ethereum magicians:https://ethereum-magicians.org/t/all-core-devs-testing-acdt-54-sep-22-2025/25509:allcoredevstestingacdt54sep222025": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341957/leaked-documents-expose-8-billion-crypto-web-russia-sanctions-evasion:leakeddocumentsexpose8billioncryptowebbehindrussiassanctionsevasion": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://magiceden.io/launchpad/solana/beamable_s2?preview=:beamableseason2mintareopenednow": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmiywfbvv95cuxqnlhfbndfwf9fwfnvndlen1rzbjf2q25rb2pwykzzslp3t1piazvanwm4dzkwwvd4auyzwgv5v0lvvznrahbocwtzqvjudxrhng10bnmysghjzknjatdva1m3chz0q1rrb2not1jtcm42rldun0vtm1a4nfc3wlrayzu4dhrwogzsunhucw9vmk9ms3a5vwc2t2taoep3s1frshfuv1rjnxa1wux0qxfccuvqmmpqy0rqvhjjs2i2r3hyu0vxdtfsq2pwoa?oc=5:wallstreettakestheleadinbitcoinoptionsasblackrocksisharesovertakescoinbasesderibitbitcoinmagazine": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://docs.google.com/spreadsheets/d/1thmh8ek0olujbknl9yzqoqfamuvff0miufegcbzwlvc/edit?usp=drivesdk:dillairdropruleseligibility": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/bitcoin-bulls-are-back-here-s-what-is-needed-for-a-rally-to-120k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoinbullsarebackhereswhatisneededforarallyto120k": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmipwfbvv95cuxpzhjcbjjkcgthnurhrk5krfh0svazum1lshzvmfnnnzvwlwfwnmtqrev0c2xtwmzktetqdmrnwkm0oc1cuerra21iy01vqwdws18yq19fc011whbrrjlpvfqxc0pnduk0ohlqnvvevhb6nnbkoernehdqrkniwke2cxbzytzoqzllltrnluhiamm5and4y3ozvgzqss12cgj1tmnuz0diaw?oc=5:housespeakermikejohnsononcongresscryptowereinthistogetherbitcoinmagazine": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "makerdao forum:https://forum.sky.money/t/september-29-2025-proposal-1-set-target-risk-tolerance-ratio/27239:september292025proposal1settargetrisktoleranceratio": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:http://base.org/name:checkyourbaseonchainscoreactivityandbadge": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "the defiant:https://thedefiant.io/news/nfts-and-web3/hyperliquid-s-hypurr-nfts-settle-at-usd55-000-floor-amid-ecosystem-expansion:hyperliquidshypurrnftssettleat55000flooramidecosystemexpansion": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://coinmarketcap.com/currencies/base:baseoncoinmarketcap": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmiwafbvv95cuxoahjoyuzxzkj5zthiau1qavrjatm2medioelnahrpwevzzdzbce9btnutvnfjsnziai1zzzvit1ozvne1s0y4qxzzlvrnzhljbxzxr2jxm2ytrewyvxnkcki1djfznlc2me5vwf9krgj2r3u2tvnceedktw5sotfoelbrwkwyru9zlu9cs3layvjjz0q2wv9madzls002nxvarmxptlu5zg1hdvzdthczc1hvtxflvk9lue1uzlvlyuq?oc=5:chinesewomanpleadsguiltyinukbitcoinlaunderingcasetiedto7billioncryptoseizurebitcoinmagazine": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "dappradar:https://dappradar.com/blog/prediction-markets-crypto-guide:predictionmarketsincryptotheultimateguidetodecentralizedforecasting2025": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341948/trillions-meme-coin-surges-60-million-stablecoin-network-plasma:trillionsmemecoinsurgesto60millionmarketcaponstablecoinnetworkplasma": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340117/avalanche-hyperliquid-crypto-rally-post-fed-rate-cut:avalancheandhyperliquidleadcryptorallypostfedratecut": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bankless:https://www.bankless.com/read/news/andre-cronjes-flying-tulip-raises-200m-at-1b-token-valuation-the-block:andrecronjesflyingtulipraises200mat1btokenvaluationtheblock": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://taskon.xyz/quest/449260739:newairdropssaxchain": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://docs.mawari.net/decentralized-infrastructure-offering-dio/operating-the-guardian-node-testnet:adayanggarapini": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340115/ceo-textbook-ponzi-pleads-guilty-200m-bitcoin-fraud:ceooftextbookponzipleadsguiltyin200mbitcoinfraudcase": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://odyssey.somnia.network/:somniaodysseyweek4": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "ethereum magicians:https://ethereum-magicians.org/t/not-all-state-is-equal/25508:notallstateisequal": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/sec-tells-issuers-to-pull-19b-4s-etfs-could-be-approved-absurdly-fast:sectellsissuerstopull19b4setfscouldbeapprovedabsurdlyfast": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/btc-xrp-sol-doge-resume-slow-grind-higher-after-fed-but-dollar-index-is-resilient-too:btcxrpsoldogeresumeslowgrindhigherafterfeddollarindexisresilienttoo": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341930/someone-built-working-ai-chatbot-inside-minecraft:someonebuiltaworkingaichatbotinsideminecrafthereshow": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/rich-dad-poor-dad-author-kids-brainwashed-fake-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:richdadpoordadkidsarebrainwashedtoslaveforfakemoney": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bankless:https://www.bankless.com/read/news/another-week-another-buy-bitmine-stacks-234k-eth:anotherweekanotherbuybitminestacks234keth": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-yield-lacking-not-disadvantage-luke-gromen-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:knockingbitcoinslackofyieldshowsyourwesternfinancialprivilege": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341946/etf-investors-turn-bearish-bitcoin-bullish-xrp-solana-coinshares:etfinvestorsturnbearishonbitcoinbullishonxrpandsolanacoinshares": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://citrea.elitra.xyz:citreaxelitraanothernewappjoiningthecitreaecosystem": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/bitcoin-gears-up-for-uptober-after-dollar114k-rally-revives-bulls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoingearsupforuptoberafter114krallyrevivesbulls": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/business/2025/09/18/ripple-franklin-templeton-and-dbs-to-offer-token-lending-and-trading:ripplefranklintempletonanddbstooffertokenlendingandtrading": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/resources/what-is-the-fusaka-upgrade-ethereums-biggest-scaling-bet-yet:whatisthefusakaupgradeethereumsbiggestscalingbetyet": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340096/australias-regulator-eases-rules-stablecoin-intermediaries:australiasregulatoreasesrulesonstablecoinintermediaries": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/xlm-surges-3-7-as-final-hour-breakout-drives-fresh-momentum:xlmsurges37asfinalhourbreakoutdrivesfreshmomentum": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://docs.google.com/forms/d/e/1faipqlsdwpsqerxit9kxgnr3ywj3_f8r_jnv7lo8fl2rfuoxjdd-lca/viewform:newairdropsroninflower": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "the defiant:https://thedefiant.io/news/markets/crypto-market-edges-up-as-investors-weigh-fed-moves-and-government-shutdown-risks:cryptomarketedgesupasinvestorsweighfedmovesandgovernmentshutdownrisks": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "messari:https://messari.io/article/understanding-spheron-a-comprehensive-overview:understandingspheronacomprehensiveoverview": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/tech/2025/09/29/firedancer-devs-from-jump-crypto-pushes-solana-toward-bigger-blocks:firedancerdevsfromjumpcryptopushsolanatowardbiggerblocks": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "dappradar:https://dappradar.com/blog/88-of-airdropped-tokens-lose-value-within-3-months:88ofairdroppedtokenslosevaluewithin3months": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/30/leveraged-bitcoin-longs-are-back-in-force-trading-firm-says:leveragedbitcoinlongsarebackinforcetradingfirmsays": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://docs.google.com/forms/d/e/1faipqlsdikvpppdy8rtrug0sqkzb3zxzo2nbznucm8d_0nkbylvhkma/viewform:photalabsbetawaitlist": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/hbar-climbs-on-strong-volume-testing-resistance-near-usd0-217:hbarclimbsonstrongvolumetestingresistancenear0217": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368379295:soltreasuryplaydefidevelopmentbuys15mmoretokens": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bankless:https://www.bankless.com/read/news/swift-to-develop-blockchain-ledger-for-global-cross-border-payments:swifttodevelopblockchainledgerforglobalcrossborderpayments": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://shiftfdn.com/?ref_id=j9502kvap:shiftfdnearlyaccess": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmipafbvv95cuxnbwtbcnnfalfwbnz4aenssuvhcxpewk9obkh2atrqcg9vu0nha0myq29zzm9psg9ic1zqa2dqzjbfa2rvcghyzw1tynlvr0jswexfsmtzdmvadgtsyxjtznjtc1e3afkxdzbcszzra3faefnnu1jvtdz0vgdeotltbhzyewr0zc0wbnztt0niddjjvuvaohexlxvxd19vwlfurxjoda?oc=5:bitcoinsurgespast114kaserictrumppredictsanunbelievableq4bitcoinmagazine": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368380138:bullishstockjumps5afterwinningnewyorkbitlicense": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341928/bitcoin-us-government-shutdown:whathappenstobitcoiniftheusgovernmentshutsdown": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/memecoiners-golden-trump-bitcoin-statue-us-capitol?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:memecoinerserecta12footgoldentrumpbitcoinstatuenearuscapitol": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/ftx-payouts-u-s-tariffs-nonfarm-payrolls-crypto-week-ahead:ftxpayoutsustariffsnonfarmpayrollscryptoweekahead": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368379114:btcreservebillgainsmomentumaslawmakersmeetindustryleaders": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/videos/interviews/9ego3sle/crypto-rebounds-aster-metrics-soar-plasma-hits-13b:cryptoreboundsastermetricssoarplasmahits13b": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://quest.nexus.xyz/loyalty:nexustagneticbadgeandnexuspodcast": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/bitcoin-above-usd114k-amid-shutdown-uncertainty-october-could-offer-relief:bitcoinsurgesabove114kastraderslookaheadtouptober": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368378952:solanapartnerswithkalshiasplatformclosespolymarketgap": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341929/strategy-third-smallest-bitcoin-purchase-2025-dividend-payments:strategynotchesthirdsmallestbitcoinpurchasein2025asdividendpaymentsapproach": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cupang ventures:https://www.asterdex.com/en/referral/185e9a:httpswwwasterdexcomenreferral185e9a": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://www.ethgas.com/community/onboarding?referral=airdropfind:ethgasgaslessfuturechapter1continues": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368377942:btcstaysstableasfedcutsratesby25basispoints": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://etherscan.io/token/0xfa1c09fc8b491b6a4d3ff53a10cad29381b3f949?a=0xc78d8097862723a66baab6a84716745e2ffdb2b4:ffkenadumpyappers": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://odyssey.somnia.network/:somniamainnetweek3task": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/bitcoin-traders-110k-cme-gap-dip-next-btc-price-gains-1-5?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcointraderssee110kcmegapdipnextasbtcpricegains15": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/vitalik-pushes-back-staking-queue-fud-galaxy-defi-head?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:vitalikbuterinfinallypushesbackafterweeksofstakingqueuefud": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/business/2025/09/29/algorand-foundation-names-former-ripple-engineer-nikolaos-bougalis-cto:algorandfoundationnamesformerrippleengineernikolaosbougaliscto": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340094/sec-clears-path-waves-of-crypto-etfs-new-listing-standards:secclearspathforwavesofcryptoetfswithnewlistingstandards": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/business/2025/09/29/dl-holdings-spends-usd41m-in-push-to-become-hong-kong-s-top-publicly-traded-bitcoin-miner:dlholdingsspends41minpushtobecomehongkongstoppubliclytradedbitcoinminer": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://app.galxe.com/quest/chaingpt/gcpget6jsn:updatedgmacompletethetasksandlockinyourwlentryashotatthe50000dgmaprizepool": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368901438:hypenftcollectiongenerates45mvolumefloorhits689k": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "optimism forum:https://gov.optimism.io/t/season-8-budget-transparency-report/10286:season8budgettransparencyreport": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/opinion/2025/09/29/merz-and-macron-are-right-the-internet-of-value-needs-global-stablecoin-alignment:merzandmacronarerighttheinternetofvalueneedsglobalstablecoinalignment": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://app.galxe.com/quest/forteprotocol/gc5mtt8px6:forteprotocolquest2spreadtheword": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://dexscreener.com/bsc/0x3228185dbde96b592a76151edf0fd3234ebf1bdc:apedsmallforthis": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "the defiant:https://thedefiant.io/news/blockchains/bnb-approaches-usd1-000-as-binance-looks-to-escape-doj-monitor:bnbapproaches1000asbinancelookstoescapedojmonitor": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368901463:asterdextops25mdailyfeessurpasseshyperliquid": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340090/bitcoin-headed-next-following-fed-chair-powells-remarks:whereisbitcoinheadednextfollowingfedchairpowellsremarks": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "the defiant:https://thedefiant.io/news/markets/bitcoin-top-signals-coinglass:overhalfofbullmarkettopindicatorshavereached50datashows": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://sweep.haus/quests/mint/zer0:zerionxsweep": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368899946:16cryptoetfdecisionsdueinoctober": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://www.kaiju.fi/:kaijufinancedefilendingbyconnectingonchainborrowingwithrealworldpayments": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368902102:btcbullmarketintactdespitevolatilityanalystssay": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340088/fbi-asks-safemoon-victims-info-restitution-efforts:fbiaskssafemoonvictimsforinfoamidrestitutionefforts": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368902134:solanadevelopersproposeremovingblocklimitsafteralpenglow": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://x.com/mavryknetwork/status/1968335619501043966:mavrykcloses10mstrategicinvestmentledbymultibankgrouptopowerinstitutionalrwatokenizati": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368903122:solanddogedogeleadweekendrallyasshortsgetliquidated": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/asia-morning-briefing-bittensor-s-dtao-shows-a-retail-path-to-ai-exposure-beyond-robinhood-s-spvs:asiamorningbriefingbittensorsdtaoshowsaretailpathtoaiexposurebeyondrobinhoodsspvs": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341906/bitmine-stock-climbs-tom-lee-firm-boosts-ethereum-holdings-11-billion:bitminestockclimbsastomleesfirmboostsethereumholdingsto11billion": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://x.com/jup_uplink/status/1968344309201277377:jupstakersareeligibleformetairdropbymeteora": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "optimism forum:https://gov.optimism.io/t/season-8-security-council-elections-cohort-a-and-lead/10303:season8securitycouncilelectionscohortaandlead": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/policy/2025/09/17/sec-makes-spot-crypto-etf-listing-process-easier-approves-grayscale-s-large-cap-crypto-fund:secmakesspotcryptoetflistingprocesseasierapprovesgrayscaleslargecapcryptofund": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/cipher-is-the-latest-bitcoin-miner-to-pivot-to-ai-price-target-raised-to-usd16-canaccord:cipheristhelatestbitcoinminertopivottoaipricetargetraisedto16canaccord": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:hereswhathappenedincryptotoday": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://app.galxe.com/quest/jrytz7vaw3l8jt3hubkuky/gc7z1t8ivb:updatemembitgalxequest": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmikwfbvv95cuxoafzdndnpq2s1z3npbknrek1mvw1fqjf5ajy4mk5dzhfiaunhdmzxrxjivup2d3jpemptos01rhbsqvjkzdhcwejuvlzyym1gykrhbfzky21ms2ptrnl0bhjxwlbim0dwrxy2c3puvlbmsxu4uxrvwm5euknwmxn2ujn5ujlpz1zssktndmz4unh4bvk?oc=5:powellcutratesagainbitcoinsmeltupmaybestartingrightonschedulebitcoinmagazine": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "ethereum magicians:https://ethereum-magicians.org/t/the-case-for-eip-8032-in-glamsterdam-tree-depth-based-storage-gas-pricing/25619:thecaseforeip8032inglamsterdamtreedepthbasedstoragegaspricing": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368367348:btcwhaletransfers116mbeforefedratedecision": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/aster-airdrop-vesting-consideration?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:asterweighsvestingschedulesfortokenairdroprecipients": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340074/sell-the-news-bitcoin-market-shrugs-off-fed:sellthenewsbitcoinmarketshrugsofffedmovesanalysis": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "ethereum magicians:https://ethereum-magicians.org/t/rpc-standards-13-september-29-2025/25618:rpcstandards13september292025": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "ethereum magicians:https://ethereum-magicians.org/t/i-appreciate-any-guidance-from-the-community-or-the-team/25504:iappreciateanyguidancefromthecommunityortheteam": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/privacy-america?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:yourmoneyyourdatayourchoicethroughdefi": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "the defiant:https://thedefiant.io/news/research-and-opinion/tokenized-assets-shift-from-wrappers-to-building-blocks-in-defi:tokenizedassetsshiftfromwrapperstobuildingblocksindefi": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/crypto-etps-812-million-outflows-solana-shines-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:cryptofundsbleed812mbutsolanabucksthetrendwithgains": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368369212:soleyes4bboostasforwardindustriesfilesmassiveraise": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/coindesk-indices/2025/09/29/coindesk-20-performance-update-aptos-apt-rises-4-1-as-index-trades-higher:coindesk20performanceupdateaptosaptrises41asindextradeshigher": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/17/first-u-s-xrp-etf-launches-sept-18-cme-to-list-options-on-xrp-futures-oct-13:firstusxrpetflaunchessept18cmetolistoptionsonxrpfuturesoct13": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmiqafbvv95cuxqavfmavg1lwfrrfrxsm9jmkc1ena0njvvdnnozlj5vkhvduxtclv3wufiavhxdfnecwjsumlhm1htbw9xzudbnzdtqjdwttf0ujjsmedrcxj0bdh2c0tox1z3vzb5oep3z0y3r25mbnrrdju5anhrmhb6ufvqd19uq2linxhrddlmcjfwuvviwjjqx25daji0b2fnck0wqnkwyme4mer4yk8?oc=5:strategykeepsbuyingbitcoinboostsholdingsto640000btcbitcoinmagazine": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "the defiant:https://thedefiant.io/news/blockchains/mantle-becomes-largest-zk-rollup-chain-after-latest-upgrade:mantlebecomeslargestzkrollupchainafterlatestupgrade": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://t.me/zksrzkshmrchannel/837:httpstmezksrzkshmrchannel837": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368367179:solandxrpoptionslaunchatcmegroupinoctober": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341822/morning-minute-vanguard-flirts-with-crypto:morningminutevanguardflirtswithcrypto": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/17/crypto-platform-bullish-s-second-quarter-earnings-beats-wall-street-s-estimates:cryptoplatformbullishssecondquarterearningsbeatswallstreetsestimates": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/business/2025/09/29/chainlink-teams-with-major-financial-institutions-to-fix-usd58b-corporate-actions-problem:chainlinkteamswithmajorfinancialinstitutionstofix58bcorporateactionsproblem": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/cme-group-options-solana-xrp-futures-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:cmegrouptolaunchoptionsonsolanaxrpfuturesinoctober": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmi1gfbvv95cuxny2vgyxl4r0jrzxlmvzbaujnxnm9sa1mxcvnkbezbcnhtszvoq2n1bm93r2e4nm4zvy1sazvhotuwadloujnxbktsa1boaedxctvwnuljos1lnk1ddw45a3zgenfsc3u4y3deyi1jx3becs1yv1nstmhzzmz0qmxbutlwbfpvre5mbhhnunrfx09yduvcnljbt2pjemnyshzfbfbqm25pzvbun3qwm2lvowexx1nsbngywu9ou0xwdgnbregwutlpwwfrutjicxnmeungnlbr?oc=5:planbnetworklaunches850kbitcoinpitchcontestcyphertanktapstetherandblockstreamchiefsasjudgesbitcoinmagazine": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368367157:ukcryptorulestarget2026launchafterfcaconsultation": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/chainlink-poised-to-power-tradfi-shift-to-blockchain-jefferies-says:chainlinkpoisedtopowertradfishifttoblockchainjefferiessays": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340067/backed-chose-switzerland-xstocks-avoid-whitelisting-tokenized-tesla-shares-ceo:xstocksissuerchoseswitzerlandtoavoidwhitelistingtokenizedteslasharesceo": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://t.me/airdropfinder_base/719520:httpstmeairdropfinderbase719520akwowkwo": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368369119:btctreasurycrisisas25offirmstradebelownav": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "ethereum magicians:https://ethereum-magicians.org/t/stateless-implementers-call-43-october-6-2025/25617:statelessimplementerscall43october62025": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/339935/trump-visit-china-2025-prediction-markets-betting:willtrumpvisitchinain2025predictionmarketsarebettingonit": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/earning-in-bitcoin-and-ether-in-2025?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:fromcoderstoceoswhosearninginbitcoinandetherin2025": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/335519/7-largest-publicly-traded-ethereum-treasury-firms:the7largestpubliclytradedethereumtreasuryfirms": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341829/new-york-citys-bitcoin-mayor-eric-adams-drops-out-of-race-for-reelection:newyorkcitysbitcoinmayorericadamsdropsoutofraceforreelection": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/340038/china-ban-nvidia-chips-means-ai-race:whatchinabanningnvidiachipsmeansfortheairace": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://t.me/airdropfinder_base/719343:kontek": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/crypto-execs-bitcoin-reserve-market-structure-roundtable?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:cryptoexecsmeetuslawmakersdiscussbitcoinreservemarketstructurebills": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cointelegraph:https://cointelegraph.com/news/who-accepts-bitcoin-ether-and-xrp-in-2025?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:fromcoffeeshopstoairlineswhoacceptsbitcoinetherandxrpin2025": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-loses-dollar115k-level-after-fed-rolls-out-quarter-point-rate-cut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoinslipsbelow115kafterfedimplementsquarterpointinterestratecut": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "arbitrum forum:https://forum.arbitrum.foundation/t/about-the-dao-event-budget-category/30036:aboutthedaoeventbudgetcategory": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "bankless:https://www.bankless.com/read/fed-cuts-rates-by-25bps-eyes-two-more-this-year:fedcutsinterestratesbyquarterpoint": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://degen.aevo.xyz/r/san-af-72:eventaevoairdropfinder": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/339929/myriad-users-bet-big-rekt-drink-drop-moonpay:myriadusersbetbigonrektsnextdrinkdropwithmoonpay": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/business/2025/09/29/bitmine-immersion-eth-holdings-rise-to-2-66m-tokens-more-than-2-of-total-supply:bitmineimmersionethholdingsriseto266mtokensmorethan2oftotalsupply": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://docs.google.com/forms/d/13jmobwvcjovrtzqzrz1uznrr-bwmv_0xd7btjya5vhs/viewform:updatesysfinexusbetatesters": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/strategy-added-196-bitcoin-for-usd22-1m:strategybuys196bitcoinfor221m": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "messari:https://messari.io/article/moonbeam-q2-2025-brief:moonbeamq22025brief": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://app.falcon.finance/claims:httpsappfalconfinanceclaims": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "the defiant:https://thedefiant.io/news/markets/crypto-markets-slump-after-fed-cuts-rates-by-0-25:cryptomarketsslumpafterfedcutsratesby025": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341811/meme-coin-launchpad-bonding-curve-volumes-drop-below-1b-heres-what-it-means:memecoinlaunchpadbondingcurvevolumesdropbelow1bhereswhatitmeans": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "bankless:https://www.bankless.com/pump-streaming-payday:pumpsstreamtoearnpayday": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/crypto-markets-today-warning-signals-as-bitcoin-s-strongest-month-of-the-year-approaches:cryptomarketstodaywarningsignalsasbitcoinsstrongestmonthoftheyearapproaches": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://portal.irys.xyz:updateirys": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/markets/2025/09/29/ibit-s-options-market-fuels-bitcoin-etf-dominance-report-suggests:ibitsoptionsmarketfuelsbitcoinetfdominancereportsuggests": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmiugfbvv95cuxquwpbcgz6rs1sngdmb0s0vkhjsho3c2zom0y5atfkd3vgnfe2vhjrbu9totvflwxpbu5rexzzteftn21rx1vtcndtx3pyeln0wjjwv1drczu0vhdsoddmv2njc0jirtdxczuycgj3bdnyck5dx0j2efraawzbuvd3qlhbs1bzofftzehxs3h0ql8ydg9wwuzqul9ltdryn1himldhdi1als1qc0rsevlonew5uhnioueya3c?oc=5:federalreservecutsinterestratesby25basispointsbitcoinclimbsabove116000bitcoinmagazine": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "makerdao forum:https://forum.sky.money/t/potential-revival-of-unclaimed-spark-airdrop-tokens/27236:potentialrevivalofunclaimedsparkairdroptokens": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/business/2025/09/17/crypto-exchange-kraken-sees-handful-of-senior-execs-depart-source:cryptoexchangekrakenseeshandfulofseniorexecsdepartsource": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "decrypt:https://decrypt.co/341810/bitcoin-recovers-above-112000-boosted-by-weekend-gains:bitcoinrecoversabove112000boostedbyweekendgains": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/339832/bitcoin-steady-fed-cuts-interest-rate:bitcoinsteadyasfedcutsinterestratesforfirsttimesincedecember": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://www.instagram.com/reel/dpalndpe-rq/?igsh=njruytfsmdz1djc=:mintatutordongbangbiarkayaginimasakannyagmn": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/16/fed-cuts-fed-fund-rate-by-25-basis-points-in-first-reduction-since-december:fedcutsrateinriskmanagementmoveasbitcoineyespossibleupside": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://newshare.bwb.global/en/earncoinstasks?uuid=8804c413-c853-4c2f-9c1d-e04cc27e596a&_nocache=true&_nobar=true&_needchain=base:bitgetwalletairdroprp117miliar": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://t.me/airdropfind/113874?comment=501529:lineraanswerpuzzle": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/daybook-us/2025/09/29/bitcoin-faces-cme-gap-ahead-of-uptober-crypto-daybook-americas:bitcoinfacescmegapaheadofuptobercryptodaybookamericas": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/339958/40-million-free-money-glitch-crypto-prediction-markets:the40millionfreemoneyglitchincryptopredictionmarkets": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "coindesk:https://www.coindesk.com/business/2025/09/29/quatrefoil-data-launches-to-build-benchmarks-for-institutional-crypto-products:quatrefoildatadebutstobuildbenchmarksforinstitutionalcryptoproducts": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/coindesk-indices/2025/09/17/now-is-the-time-for-active-management-in-digital-assets:nowisthetimeforactivemanagementindigitalassets": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "dappradar:https://dappradar.com/blog/ultimate-guide-to-nft-strategy-tokens-punkstrategy-and-top-alternatives-for-2025:ultimateguidetonftstrategytokenspunkstrategyandtopalternativesfor2025": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmixafbvv95cuxqsnlxewj3sm0zqvnommhhsja0mgi5cdfozfzuwutgd1h4yzj2n09mmg5uvzfub3vkbxvplxqtmfrboxzlnxawwezhutvwzxzncvyycjjxtw5xoelzawdsyudgyulua3cwvs0wunppnm52lxfobu5id01mnwnwwxjgbth4sldorgteew1izfhzu3fidthxuxhpnthitjbrcurqsdlum3jrdxvbr0lurgy3depleg50dg5pemhfzwpgy2nsrwxw?oc=5:michaelsaylorpushesdigitalcapitalnarrativeatbitcointreasuriesunconferencebitcoinmagazine": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://bscscan.com/token/0xac23b90a79504865d52b49b327328411a23d4db2?a=0x73d8bd54f7cf5fab43fe4ef40a62d390644946db:userbinance": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/coindesk-indices/2025/09/17/why-we-need-more-stablecoins:whyweneedmorestablecoins": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://t.me/airdropfind/114152:reminderouinexdontforgettocompleteanothertasks": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "the defiant:https://thedefiant.io/news/infrastructure/ethereum-foundation-creates-ai-team:ethereumjoinstheracetobecometheaieconomysbaselayer": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://upbit.com/service_center/notice?id=5592:done": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "bankless:https://www.bankless.com/read/arthur-hayes-leads-6-9m-raise-for-bio-protocol:arthurhayesleads69mraiseforbioprotocol": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:https://mail.dmail.ai/events/giveaways:soneiumxdmailcollectexclusivenfttoboostyouronchainscore": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "the defiant:https://thedefiant.io/news/defi/wormhole-jumps-11-on-revised-tokenomics-and-reserve-initiative:wormholejumps11onrevisedtokenomicsandreserveinitiative": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "cupang ventures:https://t.me/pemulungairdropid/81617:httpstmepemulungairdropid81617": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://t.me/archerhunterpretgeairdropbot?start=515933843:newairdropsarcherhunterpretge": {
-      "timestamp": "2025-09-18T14:06:32.209Z",
+    "airdrop finder:http://claim.anoma.foundation:nowyoucancheckallocation": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/339925/myriad-users-betting-color-fed-chair-powell-tie:whyaremyriadusersbettingonthecoloroffedchairpowellstietoday": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "arbitrum forum:https://forum.arbitrum.foundation/t/any-plans-by-the-arbitrum-dao-for-devcon-2025/30034:anyplansbythearbitrumdaofordevcon2025": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/339923/bullish-shares-jump-4-as-crypto-exchange-eyes-us-expansion-after-receving-ny-license:bullishsharesjump5ascryptoexchangeeyesusexpansionafterrecevingnylicense": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "airdrop finder:https://opensea.io/collection/soneium-score-season-1-badge/overview:claimsoneiumscoreseason1badge": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrops.io:https://airdrops.io/blog/binance-fed-rate-massive-capital-surge-trader-positioning/:massive21bcapitalsurgewhytradersareflockingtobinanceaheadoffeddecision": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "decrypt:https://decrypt.co/341801/pharma-bro-martin-shkreli-wu-tang-clan-album-copies:pharmabromartinshkrelicanbesuedoverwutangclanalbumcopiesjudgerules": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/business/2025/09/17/moneygram-makes-stablecoins-the-backbone-of-its-next-generation-app:moneygrammakesstablecoinsthebackboneofitsnextgenerationapp": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "cupang ventures:https://t.me/airdropfind/114369:knpyagkbisadibuka": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/339922/metaplanet-stock-slides-japanese-bitcoin-treasury-miami:metaplanetstockslidesastopjapanesebitcointreasurysetsupshopinmiami": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "cupang ventures:https://www.mantle.xyz/dapp?filters=lending:caranyasamakayaygdulupernahgwjelasin": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "ethereum magicians:https://ethereum-magicians.org/t/eip-8025-optional-execution-proofs/25500:eip8025optionalexecutionproofs": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "airdrop finder:https://nft.haust.network/claim:nftcp296mintislive": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmigafbvv95cuxqrgfsdkmtuwvcy2htumhoamvlavnsefjpoxzvq2tktxytx05urzzgdu1os1pdq0lxtfbtu2fqq3noczg1m0czumtlnlpdru10rwhymexuazl2dhvvvc03wtrzz2ntzwzocdf5zwpprwftbwhome1jx2rozxzsvuzomg?oc=5:arkandsparkthechannelfactorieswevebeenwaitingforbitcoinmagazine": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "cupang ventures:https://announcements.bybit.com/en/article/bybit-launchpool-stake-mnt-or-usdt-to-earn-a-share-of-20-000-000-f--blt2da772b134dee556/:httpsannouncementsbybitcomenarticlebybitlaunchpoolstakemntorusdttoearnashareof20": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/policy/2025/09/17/democrats-in-congress-call-foul-on-status-of-trump-s-crypto-czar-david-sacks:democratsincongresscallfoulonstatusoftrumpscryptoczardavidsacks": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "airdrop finder:https://eclipseralab.xyz/airdrop:newairdropseclipseera": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:http://checker.lstcoins.org:bigweeklstcheckerislive": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "decrypt:https://decrypt.co/341799/telegram-founder-alleges-french-role-moldova-vote-censorship:telegramfounderallegesfrenchroleinmoldovavotecensorship": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/business/2025/09/17/curve-finance-pitches-usd60m-yield-basis-plan-aiming-to-turn-crv-into-income-asset:curvefinancepitchesyieldbasisa60mplantoturncrvintoanincomeasset": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "airdrop finder:https://foundation.openeden.com/claims?chain=mainnet:edenairdropcheckerislive": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "cupang ventures:https://www.binance.com/en/futures/0gusdt:0g": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "decrypt:https://decrypt.co/341790/solana-dogecoin-and-others-lead-gains-as-short-liquidations-top-260m:solanadogecoinandothersleadgainsasshortliquidationstop260m": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://t.me/airdropfind/66470:bigweeksoon": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "decrypt:https://decrypt.co/341787/solana-developers-consider-removing-block-limits-alpenglow:solanadevelopersconsiderremovingblocklimitspostalpenglowupgrade": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/17/stellar-s-xlm-rebounds-from-usd0-38-lows-as-institutional-demand-fuels-recovery:stellarsxlmreboundsfrom038lowsasinstitutionaldemandfuelsrecovery": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "ethereum magicians:https://ethereum-magicians.org/t/rip-8031-mevless-protocol-the-way-to-anti-mev/25615:rip8031mevlessprotocolthewaytoantimev": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:http://claim.lombard.finance:bigweekreminderforclaimairdrops": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368884443:cathiewoodcompareshyperliquidtoearlystagesolanagrowth": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "bankless:https://www.bankless.com/read/bullish-wins-new-york-bitlicense:bullishscoresnewyorkbitlicense": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368884405:singaporeanduaetopsglobalcryptoadoptionrankings": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/17/hbar-retreats-amid-constrained-range-trading-and-diminishing-volumes:hbarretreatsamidconstrainedrangetradinganddiminishingvolumes": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368885250:governmentbtcreservesriskpricemanipulationsaysokxexec": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/tech/2025/09/17/the-protocol-eth-exit-queue-gridlocks-as-validators-pile-up:theprotocolethexitqueuegridlocksasvalidatorspileup": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368884341:bitcoinsub107kcreatesmassivebuyingopportunitysaysanalyst": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/17/bullish-shares-rise-5-ahead-of-earnings-after-securing-new-york-bitlicense:bullishsharesrise5aheadofearningsaftercryptoexchangesecuresnewyorkbitlicense": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368885209:altcoinseasonemergesasbtcunderperformsinq3": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/17/bnb-price-jumps-on-report-binance-is-nearing-a-doj-deal-to-end-compliance-monitoring:bnbpricejumpsonreportbinanceisnearingadojdealtoendcompliancemonitoring": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "airdrop finder:http://t.cdapp.net/4flrfu:newairdropsgdog": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/videos/interviews/dtkh2ice/fed-decision-today-cz-may-be-returning-creator-coins-head-south:feddecisiontodayczmaybereturningcreatorcoinsheadsouth": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368885185:btcoptionsdrivepathto10trillionmarketcap": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/markets/2025/09/17/analyst-predicts-uptober-rally-for-bitcoin-regardless-of-fed-s-fomc-decision:analystpredictsuptoberrallyforbitcoinregardlessoffedsfomcdecision": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368884265:ethetfsrecordworstweekwith796moutflows": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/339915/elizabeth-warren-probing-trump-ai-crypto-czar-broke-ethics-rules:elizabethwarrenprobingwhethertrumpsaiandcryptoczardavidsacksbrokeethicsrules": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368884223:soletfapprovalsexpectedwithinweeksafterfilingupdates": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368352608:circleinvestsinhyperliquidwhilelaunchingnativeusdc": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368884192:wlfiburns143mintokensafterdefirevenuebuyback": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "decrypt:https://decrypt.co/339907/uk-fca-seeks-feedback-on-crypto-standards-ahead-of-2026-legislation-rollout:ukfcaseeksfeedbackoncryptostandardsaheadof2026legislationrollout": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368885033:babysharktokenplunges90afterbranddisownsstoryprotocollaunch": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368352601:gdcultureplunges28on875millionbtcdeal": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "decrypt:https://decrypt.co/341782/bitcoin-etfs-four-week-streak-quarter-end-rebalancing:bitcoinetfsendfourweekstreakonquarterendrebalancingwhatsnext": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "airdrop finder:https://t.me/cachewalletcexairdropbot?start=657188428:newairdropscachewallet": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
+    "airdrop finder:https://app.galxe.com/quest/zeebu/gc1rbt6km1:checkyourresultzeebu": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     },
-    "coindesk:https://www.coindesk.com/business/2025/09/17/mavryk-network-raises-usd10m-for-uae-real-estate-tokenization-plans:mavryknetworkraises10mforuaerealestatetokenizationplans": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368351596:arkinvestexpandsbullishholdingsto129million": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/339904/solana-treasuries-forward-industries-4-billion-raise:solanatreasuryfirmholdingscoulddoubleasforwardindustriesunveils4billionraise": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "makerdao forum:https://forum.sky.money/t/non-profit-entity-as-new-star/27185:nonprofitentityasnewstar": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://www.asterdex.com/en/spot/asterusdt:gwpostingmasih008coktdserius": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://defillama.com/perps:httpsdefillamacomperps": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368352569:lmaxgroupdebutsinstitutionalcryptoperpetuals": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/defi/botanix-launches-yield-bearing-bitcoin-standard:botanixlaunchesyieldbearingbitcoinstandard": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "messari:https://messari.io/article/understanding-virtuals-protocol-a-comprehensive-overview:understandingvirtualsprotocolacomprehensiveoverview": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/circle-launches-native-usdc-on-hyperliquids-hyperevm:circlelaunchesnativeusdconhyperliquidshyperevm": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368352547:xrptreasuryfirmclaims65discountthroughminingstrategy": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368354481:ethfirmfilessecregistrationforpublictrading": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmi4gfbvv95cuxptxq3sfg2dml3qvvbrgn5agzhrjvyturpy1ziqvaxwxbmlvrummcwehrnqnfrb0jrujd2mmlim1o5vzvxmej6dkt1cnh2blvwynzjlunwa29pb1poq1lpdm40d2zvr29uagvvnlj6c2ktb0xlsf92mg1tcw9fegflbhrimnnfa0v4sknxbhzfmfvkr1nqswfqzno3zjhsnuzbcfdvqtj1atjev2turgywvmfimej1uzrnmg91mvvdvup5n2zpcdnyavm0lugxekvcyxq2znh1ewdkek1dzy13y01b?oc=5:btcincandstrategyagreetofiveyearstrategicpartnershiprenewalextendingbitcoinforcorporationsinitiativebitcoinmagazine": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/339867/bitcoin-whales-awake-move-millions-ahead-of-highly-anticipated-fed-rate-decision:bitcoinwhalesawakemovemillionsaheadofhighlyanticipatedfedratedecision": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/cefi/us-retail-traders-prefer-bitcoin-chainalysis:usretailinvestorsbuynearlytwiceasmuchbtcasethchainalysis": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/339866/morning-minute-polymarket-token-speculation-soars-along-with-10b-valuation:morningminutepolymarkettokenspeculationsoarsalongwith10bvaluation": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "airdrops.io:https://airdrops.io/blog/binance-franklin-templeton-partnership/:binancefranklintempletonpartnershiprevolutionarybridgebetweentraditionalfinanceandcryptoairdrops": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/339864/coinbase-slams-patchwork-state-crypto-laws-calls-for-federal-preemption:coinbaseslamspatchworkstatecryptolawscallsforfederalpreemption": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmiygfbvv95cuxnwxvcbe05cnrvcnbfrmftvehocju4qmoyyvvdu1ljtlbrzwfzei1fwevhuxbzr1kyutvhd08twev6zlk5mi1fx1lwrlzozi0tmkvmsvjzn3owv2jndvo3nnowt3z6zkflqvdsrwjlsvj0evhszdvbohrdqum0rjm3rzjbukhrswtbou9twu1tbhdxotrgbgpvdudplxdxruowcwctb1jkltzkwnl2rtrkve5wnvc2tvrmbnfozjfdnf9iyuj0albcnfpn?oc=5:bitcoinpricestaysabove116000asmetaplanetannouncestocloseagiantraisetobuybitcoinbitcoinmagazine": {
-      "timestamp": "2025-09-18T14:06:32.210Z",
-      "analysisResult": null
-    },
-    "ethereum/go-ethereum:https://github.com/ethereum/go-ethereum/commit/b9e2eb5944bbb63cabdcb541a3b99fc129b821c4:beaconconfigfixloadforkswithnonstringvalues32609": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "prysmaticlabs/prysm:https://github.com/offchainlabs/prysm/commit/6b89d839f630b486829668d9ad644d4386c96d33:fixprysmctlpanicwhenbasefeeisnotsetingenesisjson15687": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/58547dd0e9a29d855ed15be80ded940e91999235:opnoderemoveelsyncenabledasitisanoop17425": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "matter-labs/zksync-era:https://github.com/matter-labs/zksync-era/commit/782c8b9bd49bc1a87386e1d381db7351db7e2303:fixonlyapplyensealcriteriachecksonv29protocol4491": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "mystenlabs/sui:https://github.com/mystenlabs/sui/commit/f63c9fc78e2171fa174dc43e757ded416c204558:mfpenablemysticetifastpathhandlersonmainnet23650": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "mystenlabs/sui:https://github.com/mystenlabs/sui/commit/f3fb2816c79f7727cd9e9c26a078687bc2029eb7:suibridgeindexeraltaddcomprehensivemetricstobridgeindexerhandlers23640": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340285/kevin-durant-access-bitcoin-coinbase-account:kevindurantregainsaccesstobitcoinheldincoinbaseaccount": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "optimism forum:https://gov.optimism.io/t/maintenance-upgrade-proposal-u16a/10288:maintenanceupgradeproposalu16a": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://www.gaiai.io/register?code=l1x5ps:newtestnetgaiaitestnetislive": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/research-and-opinion/stablecoins-are-set-to-transform-global-payments-ey-parthenon:stablecoinsaresettotransformglobalpaymentseyparthenon": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://t.me/+avx9708wwogwnmuy:mostcryptochannelsjustthrowchartsandhypeatyou": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/london-stock-exchange-lists-new-bitcoin-staking-etp?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:londonstockexchangelistsnewbitcoinstakingetp": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/defi/aster-token-soars-as-perpetual-dex-mania-rages-on:astertokensoarsasperpetualdexmaniarageson": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/syndicates-community-token-launch-makes-waves:syndicatescommunitytokenlaunchmakeswaves": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340310/canada-confiscates-56m-bitcoin-xrp-crypto-shutters-exchange-tradeogre:canadaseizes56minbitcoinxrpandothercryptoasitshuttersexchangetradeogre": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/ex-kraken-clo-says-solana-delivers-on-promises-ethereum-made-almost-a-decade-ago:exkrakenclosayssolanadeliversonpromisesethereummadealmostadecadeago": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/business/2025/09/18/paypal-s-usd1-3b-stablecoin-expands-to-9-new-blockchains-with-layerzero-integration:paypals13bstablecoinexpandsto9newblockchainswithlayerzerointegration": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/blockchains/avalanche-ecosystem-takes-off-as-avax-surges:avalancheecosystemtakesoffasavaxsurges": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/coinbase-defi-offer-yield-usdc-holdings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:coinbasetapsdefitoofferupto108yieldonusdcholdings": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340284/kalshi-prediction-markets-1-billion-state-regulators-loom:kalshipredictionmarketsarepullingin1billionmonthlyasstateregulatorsloom": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340290/paypals-stablecoin-1-3-billion-pyusd-expands-tron-avalanche:paypalstablecointops13billionaspyusdexpandstotronavalanche": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "makerdao forum:https://forum.sky.money/t/anemoy-tokenized-apollo-diversified-credit-fund-risk-assessment/27186:anemoytokenizedapollodiversifiedcreditfundriskassessment": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/are-pure-play-bitcoin-miners-going-to-reprice-like-ai-hpc-miners:arepureplaybitcoinminersgoingtorepricelikeaihpcminers": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/nftstrategy-extending-punkstrategy:nftstrategyextendingthepunkstrategyflywheel": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340262/intel-spikes-23-deal-nvidia-ai:intelspikes23ondealwithnvidiatodevelopaihardware": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "messari:https://messari.io/article/mocaverse-and-moca-chain-ecosystem-overview:anecosystemoverviewofmocaversemocachain": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "arbitrum forum:https://forum.arbitrum.foundation/t/certik-candidate-for-security-council-september-2025/29991:certikcandidateforsecuritycouncilseptember2025": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/policy/2025/09/18/is-binance-cutting-deals-with-team-trump-that-s-what-senate-democrats-are-asking:isbinancecuttingdealswithteamtrumpthatswhatsenatedemocratsareasking": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "arbitrum forum:https://forum.arbitrum.foundation/t/entropy-advisors-transparency-report-q4/29990:entropyadvisorstransparencyreportq4": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/defi/eigencloud-surges-25-after-partnering-with-google-to-boost-trust-in-ai-payments:eigencloudsurges25afterpartneringwithgoogletoboosttrustinaipayments": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmilafbvv95cuxpvjzjse96azl6cmnqsjj6mefcoxlvdgnjvggydly3begtcgrvuvpkcxp0zndnoet1rhjxr09md19vrvnkyzg4q0wybjnoa3blchzttexvwknot3fid1q5sthobk5ftfzqyxdsbwnkavmzrk1xdzhnsxrfbndkmu5pv2x6wfdsa05cbvlqlv9bs1v5uvji?oc=5:letsnotcreate200trillionincreditontopofbitcoinbitcoinmagazine": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/5-plays-to-double-dip-a-base-airdrop:5playstodoubledipabaseairdrop": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340178/why-bitcoin-settled-prediction-markets-might-smart-bet:whybitcoinsettledpredictionmarketsmightbeasmartbet": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/chainlink-s-link-surges-6-on-treasury-purchase-etf-anticipation:chainlinkslinksurges6ontreasurypurchaseetfanticipation": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340248/xrp-climbs-first-us-spot-etf-sees-serious-demand:xrpclimbsasfirstusspotetfseesseriousdemand": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://twinelabs.xyz/:newwaitlisttwinelbas": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/business/2025/09/18/coinbase-adds-usdc-lending-with-morpho-and-steakhouse-financial:coinbaseaddsusdclendingwithmorphoandsteakhousefinancial": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/first-u-s-dogecoin-etf-launches:firstusdogecoinetflaunches": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340241/myriad-moves-odds-rise-xrp-all-time-high-plummet-bitcoin-dominance:myriadmovesoddsriseonxrpalltimehighplummetonbitcoindominance": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/markets/crypto-rebounds-after-fed-rate-cut-bnb-hits-new-all-time-high:cryptoreboundsafterfedratecutbnbhitsnewalltimehigh": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/xlm-technicals-signal-bullish-strength-amid-4-rally:xlmtechnicalssignalbullishstrengthamid4rally": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/bnb-hits-1-000-for-the-first-time:bnbhits1000forthefirsttime": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/business/2025/09/18/tristan-thompson-taps-somnia-to-bring-basketball-fandom-on-chain:tristanthompsontapssomniatobringbasketballfandomonchain": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/hbar-climbs-7-as-strong-volumes-drive-breakout-toward-key-resistance:hbarclimbs7asstrongvolumesdrivebreakouttowardkeyresistance": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340238/elizabeth-warren-slams-trump-doj-lack-cooperation-binance-inquiry:elizabethwarrenslamstrumpdojforlackofcooperationwithbinanceinquiry": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://t.me/archerhunternewairdropbot?start=515933843:newairdropsarcherhunternewround": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "messari:https://messari.io/article/shaga-gameplay-action-pairs-the-data-powering-google-s-genie3:shagagameplayactionpairsthedatapoweringgooglesgenie3": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/grayscale-prepares-stake-ether-holdings-sec-arkham?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:grayscalepreparestostakeetherholdingsamidshiftingsecstancearkham": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/resources/what-is-base-coinbases-layer-2-chain:whatisbasetheethereumlayer2networklaunchedbycoinbase": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/crypto-exchange-gemini-s-stock-trades-below-ipo-price-despite-day-s-gains:cryptoexchangegeminisstocktradesbelowipopricedespitedaysgains": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340233/solana-solmate-300-million-treasury-firm-stock-surges-500:solanagetssolmatevia300milliontreasuryfirmasstocksurges500": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340224/dogecoin-rises-first-us-doge-etf-destroys-expectations-early-trading:dogecoinrisesasfirstusdogeetfdestroysexpectationsinearlytrading": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/policy/2025/09/18/rcmp-seizes-usd56m-cad-in-crypto-shuts-down-tradeogre-in-canada-s-largest-digital-asset-bust:rcmpseizes56mcadincryptoshutsdowntradeogreincanadaslargestdigitalassetbust": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://speedrun.enso.build/:finallapproofofhumanity": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/etfs-offering-exposure-to-xrp-doge-debut-in-u-s:etfsofferingexposuretoxrpdogedebutinus": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340177/grayscale-etf-tracking-xrp-solana-cardano-hit-wall-street-sec-pause:grayscaleetftrackingxrpsolanaandcardanotohitwallstreetaftersecpause": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/tech/2025/09/18/plasma-to-launch-mainnet-beta-blockchain-for-stablecoins-next-week:plasmatolaunchmainnetbetablockchainforstablecoinsnextweek": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://requests.megaphone.xyz/ofc/:updateonfootballclubofcpretgeportaltroubleshooting": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-has-70percent-chance-of-hitting-new-highs-in-2-weeks-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoinhas70chanceofhittingnewhighsin2weeksanalyst": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://pro.whales.market/pre/base/base:httpsprowhalesmarketprebasebase": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/videos/interviews/rujt3kod/btc-solana-jump-up-bnb-crosses-1-000-hype-hits-ath:btcsolanajumpupbnbcrosses1000hypehitsath": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "arbitrum forum:https://forum.arbitrum.foundation/t/josef-ackee-candidate-for-security-council/29989:josefackeecandidateforsecuritycouncil": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://xconnect.bscs.finance/x-connect/68c6394a67374e015f30322f?ref=459155643:newairdropsphronai": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340149/bitcoin-dominance-slips-altcoin-rally-how-low:bitcoindominanceslipsasaltcoinrallytakesholdhowlowwillitgo": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/strategy-up-7-nears-200-day-simple-moving-average-as-bitcoin-rallies:strategyup7nears200daysimplemovingaverageasbitcoinrallies": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/blockchains/plasma-stablecoin-chain-mainnet-beta-tge-launch-date:stablecoinl1plasmaunveilslaunchdateformainnetbetatge": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-repeats-may-breakout-move-analysis-expects-118k-showdown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoinrepeatsmaybreakoutmoveasanalysisexpects118kshowdown": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/business/2025/09/18/solmate-joins-solana-treasury-push-with-usd300m-funding-from-uae-investors-ark-invest:solmatejoinssolanatreasurypushwith300mfundingfromuaeinvestorsarkinvest": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://hypurrscan.io/address/0xc0feb2e990c8d6d3b5143a7c4a09c993222cd3a3:oneofhypestopholderswhounstaked507mhype295mlastweeksoldmorehypetoday": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368397782:geministockfallsbelowipopriceafterwallstreetdebut": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/shiba-inu-s-realized-volatility-tanks-as-whale-moves-7t-hits-record-low-against-dogecoin:shibainusrealizedvolatilitytanksaswhalemoves7thitsrecordlowagainstdogecoin": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340151/bitcoin-etfs-break-7-day-investment-streak-in-healthy-rebalancing:bitcoinetfsbreak7dayinvestmentstreakinhealthyrebalancing": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368396048:bullishreports108millionprofitinipodebut": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/18/bullish-shares-jump-as-citi-canaccord-praise-ipo-debut-and-bitlicense-win:bullishsharesjumpasciticanaccordpraiseipodebutandbitlicensewin": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368391905:krw1stablecoindebutsonavalanchenetwork": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://crypto-fundraising.info/projects/apollox/:apxmergerikutaster": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/business/2025/09/18/defi-tvl-rebounds-to-usd170b-erasing-terra-era-bear-market-losses:defitvlreboundsto170berasingterraerabearmarketlosses": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://crypto-fundraising.info/projects/astherus/:httpscryptofundraisinginfoprojectsastherus": {
-      "timestamp": "2025-09-19T00:59:10.264Z",
-      "analysisResult": null
-    },
-    "arbitrum forum:https://forum.arbitrum.foundation/t/consensys-diligence-candidate-for-security-council-elections-september-2025/29988:consensysdiligencecandidateforsecuritycouncilelectionsseptember2025": {
-      "timestamp": "2025-09-19T00:59:10.265Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368395190:bitgoexpandseuropeanoperationswithtradinglicense": {
-      "timestamp": "2025-09-19T00:59:10.265Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://wheelx.fi/r/102093:updatewheelxcommunitydividendprogram": {
-      "timestamp": "2025-09-19T00:59:10.265Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/business/2025/09/18/nvidia-to-invest-usd5b-in-intel-and-develop-data-centers-pcs:nvidiatoinvest5binintelanddevelopdatacenterspcsaitokensclimb": {
-      "timestamp": "2025-09-19T00:59:10.265Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/coindesk-indices/2025/09/18/coindesk-20-performance-update-index-gains-2-8-as-all-constituents-move-higher:coindesk20performanceupdateindexgains28asallconstituentsmovehigher": {
-      "timestamp": "2025-09-19T00:59:10.265Z",
-      "analysisResult": null
-    },
-    "ethereum magicians:https://ethereum-magicians.org/t/erc-8028-data-anchoring-token-dat/25512:erc8028dataanchoringtokendat": {
-      "timestamp": "2025-09-19T00:59:10.265Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/sec-fast-tracks-crypto-etf-listing-standards:secfasttrackscryptoetflistingstandards": {
-      "timestamp": "2025-09-19T00:59:10.265Z",
-      "analysisResult": null
-    },
-    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/206a409e6aa091bb5a0dd36c4f4e60289440245d:opdeployercreategenericforgebytesscriptencoder17524": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "scroll-tech/scroll:https://github.com/scroll-tech/scroll/commit/9e520e77696054889d11e7075720c425c8c1d690:feattxsenderaddmultiplewriteclientsformorereliabletxsubmission1740": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://mantra.zone/my-overview:updatemantraclaimvestingom": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://x.com/tradekifi/status/1887959946354114642:newwaitlistkifi": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "arbitrum forum:https://forum.arbitrum.foundation/t/report-benchmarking-stylus-starkex-verifier/29993:reportbenchmarkingstylusstarkexverifier": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/19/ark-buys-usd162m-of-shares-in-sol-treasury-company-solmate-formerly-brera-holdings:arkbuys162mofsharesinsoltreasurycompanysolmateformerlybreraholdings": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "arbitrum forum:https://forum.arbitrum.foundation/t/daniel-goldman-candidate-for-security-council-september-2025/29992:danielgoldmancandidateforsecuritycouncilseptember2025": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://airdrop.0gfoundation.ai:reminderkyc0gisrequiredforclaimingyourairdropsoonwillbeclosedonsep210000utc": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://airdrop.0gfoundation.ai/allocations:check0galokasihttpsairdrop0gfoundationaiallocations": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-price-150k-target-analyst-sees-weeks-to-all-time-highs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoinprice150ktargetcomesasanalystseesweekstoalltimehighs": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/business/2025/09/19/ig-group-buys-majority-stake-in-australian-crypto-exchange-independent-reserve-for-usd72m:iggroupbuysmajoritystakeinaustraliancryptoexchangeindependentreservefor72m": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://x.com/billions_ntwk/status/1968937526636241323:updatebillionswantaguaranteedfreemintofsupermasksnftburnyourgenesisnftandyoullget": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/policy/2025/09/19/michigan-s-stalled-bitcoin-reserve-bill-advances-after-7-months:michigansstalledbitcoinreservebilladvancesafter7months": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/19/bitcoin-traders-continue-to-buy-downside-protection-after-fed-rate-cut-deribit:bitcointradersbuymoredownsideprotectionafterfedratecutderibit": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://hub.playprovidence.io:newairdropsprovidence": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340337/immutablex-token-leads-gains-amid-broader-altcoin-rally:immutabletokenleadsgainsamidbroaderaltcoinrally": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://app.galxe.com/quest/sei/gcpstt89f5:newairdropsarcherhunterxseigalxe": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/ethereum-fusaka-upgrade-moves-december-blob-capacity-doubling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:ethereumsfusakaupgrademovestodecemberblobstodoubleafter": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://bscscan.com/token/0x000ae314e2a2172a039b26378814c252734f556a:ternyatadahbisawdges": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-quantum-computing-breakthrough-2030-prediction-solana-founder?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoinmustactfasttobeatquantumby2030solanafounder": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://app.galxe.com/quest/bitway/gcivtt8tdu:newairdropsbitway": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://x.com/cz_binance/status/1968896917565284860:trustwalletmauikutikutanbikinperpdex": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340335/michigan-bitcoin-reserve-bill-moves-forward-after-months-of-delay:michiganbitcoinreservebillmovesforwardaftermonthsofdelay": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/bitcoiners-criticize-vietnam-closing-86m-bank-accounts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:whywebitcoinvietnamcloses86mbankaccountsthatfailbiometrics": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/19/xrp-and-doge-etfs-smash-records-with-usd54-million-combined-day-one-volume:xrpanddogeetfssmashrecordswith547mcombineddayonevolume": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340333/eu-eyes-boost-pensions-crypto-oversight-before-2026:eueyesboosttopensionscryptooversightbefore2026": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://bapps.citrea.xyz/quest/8:phase2ofunfreezeappscampaigncontinues": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "makerdao forum:https://forum.sky.money/t/atlas-edit-weekly-cycle-proposal-week-of-2025-09-22/27188:atlaseditweeklycycleproposalweekof20250922": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368425798:coinbaselaunchesusdconchainlendingfeaturewith108yields": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://t.me/airdropfind/113702:reminderhyperventnormal": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368425629:soltreasurystockjumps500after300mfundinground": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368426464:paypalpyusdexpandstotronavalanchethroughlayerzerobridge": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-price-drawdown-bear-market-buying-dip-benjamin-cowen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoincouldcopa70drawdownnextbearmarketcryptoanalyst": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://opensea.io/rewards:openseavoyager": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368426394:dogepricesurges8asfirstusetfsees6mopeninghourvolume": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368426337:xrppriceclimbsasfirstusspotetfseesstrongdemand": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://s.trex.xyz/lliqab:newairdropstrex": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://t.me/data_did_bot/datadid?startapp=y29kzt03u2jqbte:newairdropsmemolabs": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "messari:https://messari.io/article/time-will-tell-what-s-next-for-prediction-markets-volume-growth-strategies-continuous-information-perps-and-capitalizing-on-momentum:timewilltellwhatsnextforpredictionmarketsvolumegrowthstrategiescontinuousinformationperpsandcapitalizingonmomentum": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://debank.com/profile/0x8f52f5eaffa522ffef4577687041188e34fe8081/:tolongygtemennyapantauwalletalmkasihkekeluarganya": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmirgfbvv95cuxodjfkmm5lcy1wdjbazfk3mtrvwnrlmwdus2y5uu9itwxgbvvodc1ebfbrmmrfa1o0tzrzqlvfyvpwvfbfagy3z0f0yxgxzxjltxlovwratvvrndnpzhdmx0xvuxbmwxhprna0akc2stncnw5stdlztvppn20zyjnqyvdwbxfvdlj2ndm5quzttkpymhbkdfjrogs2nv9ss0hsalp5zxuzaezladftaee?oc=5:warsawstockexchangedebutsbitcoinbetaetfexpandingcryptomarketaccessbitcoinmagazine": {
-      "timestamp": "2025-09-19T09:39:06.307Z",
-      "analysisResult": null
-    },
-    "ethereum/go-ethereum:https://github.com/ethereum/go-ethereum/commit/2b3d617e04a45d2aa5bd9e64dc016e68b8200369:internalethapiskiptxgaslimitcheckforcalls32641": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "mystenlabs/sui:https://github.com/mystenlabs/sui/commit/f0c3f7efc875f000f7bfbdd0a9bbf465a72be1bf:graphqlaltaddvalidatorpagination23639": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "layr-labs/eigenda:https://github.com/layr-labs/eigenda/commit/b2ef6b0a276935940106aef94e3bcd54231bec5d:chorecollapsenodestartintotheconstructor2018": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "messari:https://messari.io/article/state-of-flock-q2-2025:stateofflockq22025": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/blockchains/movement-pivots-to-layer1-blockchain:movementpivotstolayer1asonchainactivitydeclines": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/canada-seizes-40m-in-crypto-from-tradeogre-dismantles-platform-without-charges:canadaseizes40mincryptofromtradeogredismantlesplatformwithoutcharges": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "ethereum magicians:https://ethereum-magicians.org/t/discussion-erc-multitrust-credential-mtc-core-zk-proof-optional/25526:discussionercmultitrustcredentialmtccorezkproofoptional": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/france-rogue-bitcoin-pumps-fed-cut-global-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:francegoesroguebitcoinpumpsonfedratecutglobalexpress": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/white-house-considering-new-cftc-chair-picks-amid-quintenz-stalemate-bloomberg:whitehouseconsideringnewcftcchairpicksamidquintenzstalematebloomberg": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/lubin-says-metamask-native-token-coming-soon:lubinsaysmetamasknativetokencomingsoon": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/bhutan-bitcoin-transfer-fed-rate-cut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bhutantransfers107minbitcoinaswhalesstirafterfedcut": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368441770:grvtraises19mseriesaforzksynchybriddex": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340360/morning-minute-metamask-confirms-token-airdrop-szn-incoming:morningminutemetamaskconfirmstokenairdropsznincoming": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340367/pump-funs-pump-slumps-as-meme-coin-market-stumbles:pumpfunspumpslumpsasmemecoinmarketstumbles": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/business/2025/09/19/ethereum-developers-set-fusaka-upgrade-for-december-ahead-of-blob-capacity-boosts:ethereumdeveloperssetfusakaupgradefordecemberaheadofblobcapacityboosts": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368446144:ethereumfusakaupgradescheduledfordec3launch": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368441888:xrpanddogeetfsdebutwith55mcombinedvolume": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368445179:nubankplansstablecoincreditcardintegration": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368445214:londonexchangelistsfirstbtcstakingetp": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coinmarketcap announcements:https://coinmarketcap.com/community/post/368441986:btccouldface70drawdowninnextbearmarket": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://t.me/airdropfind/88235:oranggatauetikakayagitu": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "arbitrum forum:https://forum.arbitrum.foundation/t/mss-handover-reporting-june-2025-august-2025/29994:msshandoverreportingjune2025august2025": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/19/crypto-markets-today-treading-cautiously-with-smaller-tokens-showing-froth:cryptomarketstodaytreadingcautiouslywithsmallertokensshowingfroth": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/explained/why-el-salvador-split-678m-in-bitcoin-to-guard-against-a-quantum-threat-that-isnt-here-yet?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:whyelsalvadorsplit678minbitcointoguardagainstaquantumthreatthatisnthereyet": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-illiquid-supply-hits-record-14-3m-btc-investors-accumulate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoinilliquidsupplyhitsrecord143mbtcasbiginvestorsaccumulate": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "bankless:https://www.bankless.com/read/ethereum-sets-fusaka-mainnet-launch-for-december-3:ethereumsetsfusakamainnetlaunchfordecember3": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/daybook-us/2025/09/19/doge-xrp-get-etfs-traders-say-meh-crypto-daybook-americas:dogexrpgetetfstokentraderssaymehcryptodaybookamericas": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://app.galxe.com/quest/kucoinweb3wallet/gck8dt8dmy:kucoinxnumineround5wapshare": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://app.layer3.xyz/campaigns/the-road-to-upteaber:teafixkatanaonlayer3": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/why-ethereum-price-can-surge-75-versus-bitcoin-by-new-year-s?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:whyetherspricemaysurge75versusbitcoinbynewyears": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/explained/can-bitcoins-hard-cap-of-21-million-be-changed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:canbitcoinshardcapof21millionbechanged": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "cosmos hub:https://forum.cosmos.network/t/cosmos-atom-interests-not-paid/16198:cosmosatominterestsnotpaid": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/business/2025/09/19/grvt-raises-usd19m-to-bring-privacy-and-scale-to-on-chain-finance:grvtraises19mtobringprivacyandscaletoonchainfinance": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://airdrop.fatty.io?code=earlyaccess:newairdropsfatty": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340345/bank-of-canada-calls-for-guardrails-as-stablecoins-go-mainstream:bankofcanadacallsforguardrailsasstablecoinsgomainstream": {
-      "timestamp": "2025-09-19T14:19:53.924Z",
-      "analysisResult": null
-    },
-    "ethereum/go-ethereum:https://github.com/ethereum/go-ethereum/commit/1601f398d4558e6c060a158fa10b7570ce58cd6b:coretxpoolblobpoolremoveconversioningetblobs32578": {
-      "timestamp": "2025-09-19T14:30:34.510Z",
-      "analysisResult": null
-    },
-    "cupang ventures:https://consensys.io/:dianaiklagikrnmetamaskmaubuattoken": {
-      "timestamp": "2025-09-19T14:30:34.510Z",
-      "analysisResult": null
-    },
-    "airdrop finder:https://t.me/archerhunternewcexairdropbot?start=657188428:newairdropsarcherhunternewround": {
-      "timestamp": "2025-09-19T14:30:34.510Z",
-      "analysisResult": null
-    },
-    "messari:https://messari.io/article/state-of-velo-q2-2025:stateofveloq22025": {
-      "timestamp": "2025-09-19T14:30:34.510Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/coindesk-indices/2025/09/19/coindesk-20-performance-update-index-drops-2-as-nearly-all-constituents-trade-lower:coindesk20performanceupdateindexdrops2asnearlyallconstituentstradelower": {
-      "timestamp": "2025-09-19T14:30:34.510Z",
-      "analysisResult": null
-    },
-    "mystenlabs/sui:https://github.com/mystenlabs/sui/commit/54fe2ce1e8fabac10585f8f9756fcb48bab70114:mfpfixsubmittxtypeparsing23658": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/videos/interviews/uk27kwsf/crypto-falls-stocks-hit-another-ath-sol-defi-coins-soar:cryptofallsstockshitanotherathsoldeficoinssoar": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "decrypt:https://decrypt.co/340398/crypto-rebounds-fed-cut-what-charts-say-bitcoin-cardano-near:cryptoreboundsafterfedcutwhatthechartssayaboutbitcoincardanoandnear": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/policy/2025/09/19/u-s-treasury-takes-next-step-in-turning-genius-act-into-stablecoin-regulations:ustreasurytakesnextstepinturninggeniusactintostablecoinregulations": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "arbitrum forum:https://forum.arbitrum.foundation/t/wakeup-labs-candidate-for-security-council-september-2025/29997:wakeuplabscandidateforsecuritycouncilseptember2025": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "arbitrum forum:https://forum.arbitrum.foundation/t/dvp-quorum-for-arbitrumdao/29996:dvpquorumforarbitrumdao": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "the defiant:https://thedefiant.io/news/nfts-and-web3/trust-wallet-reveals-100x-perps-prediction-markets-twt-soars:twtsoarsnearly40astrustwalletrevealsplanstoadd100xperpspredictionmarkets": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/19/bank-of-japan-s-historic-etf-unwind-sparks-market-selloff-dip-in-crypto:bankofjapanshistoricetfunwindsparksmarketselloffdipincrypto": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/19/valour-debuts-bitcoin-staking-etp-on-london-stock-exchange-in-move-outside-mainland-europe:valourdebutsbitcoinstakingetponlondonstockexchangeinmoveoutsidemainlandeurope": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "cointelegraph:https://cointelegraph.com/news/bitcoin-price-forecasts-110k-target-4-9t-options-expiry?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoinpriceforecastseye110ktargetas49toptionsexpiryarrives": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "coindesk:https://www.coindesk.com/markets/2025/09/19/u-s-stablecoin-battle-could-be-zero-sum-game-jpmorgan:usstablecoinbattlecouldbezerosumgamejpmorgan": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
-      "analysisResult": null
-    },
-    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmif0fvx3lxte1kb3dpshjbodvpzna0metncljuu0zhq2pqwhdttgtzexdosei0u2wwog5suf9yogdtszvlaws1ekvzv2pwmvpzzxq5yldxaen5sws2sw54cdjfmjrqtdj4sdjea2donwh4vjzmajdgskt2dfplumzfawnuefzedfe?oc=5:willbitcoinpricedefydiminishingreturnsthiscyclebitcoinmagazine": {
-      "timestamp": "2025-09-19T15:54:23.793Z",
+    "airdrop finder:https://stargate.finance/bridge:stargatexsoneium": {
+      "timestamp": "2025-09-30T03:33:19.127Z",
       "analysisResult": null
     }
   },
-  "lastUpdated": "2025-09-19T15:54:23.796Z"
+  "lastUpdated": "2025-09-30T03:33:19.138Z"
 }
