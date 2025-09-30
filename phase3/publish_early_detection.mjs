@@ -394,6 +394,29 @@ async function publishEarlyDetection() {
   
   const dedupResult = deduplication.filterSignalsForPublishing(allAnalysesForDedup, dedupOptions);
   
+  // Ensure dedupResult is valid
+  if (!dedupResult || typeof dedupResult !== 'object') {
+    console.error('❌ Invalid dedupResult:', dedupResult);
+    return {
+      hot: 0,
+      early: 0,
+      watch: 0,
+      risk: 0,
+      duplicates: 0,
+      publish: { total: 0, sent: 0, failed: 0, failedMessages: [] }
+    };
+  }
+  
+  // Ensure dedupResult has required properties
+  if (!Array.isArray(dedupResult.approved)) {
+    console.error('❌ dedupResult.approved is not an array:', dedupResult.approved);
+    dedupResult.approved = [];
+  }
+  if (!Array.isArray(dedupResult.duplicates)) {
+    console.error('❌ dedupResult.duplicates is not an array:', dedupResult.duplicates);
+    dedupResult.duplicates = [];
+  }
+  
   console.log(`\n📊 Deduplication Results:`);
   console.log(`   ✅ Approved for publishing: ${dedupResult.approved.length}`);
   console.log(`   ❌ Duplicates filtered: ${dedupResult.duplicates.length}`);
@@ -402,7 +425,11 @@ async function publishEarlyDetection() {
   if (dedupResult.duplicates.length > 0) {
     console.log(`\n❌ Duplicate Details:`);
     dedupResult.duplicates.slice(0, 5).forEach((dup, index) => {
-      console.log(`   ${index + 1}. ${dup.signal.project_name} - ${dup.reasons.join(', ')}`);
+      if (dup && dup.signal && dup.reasons) {
+        console.log(`   ${index + 1}. ${dup.signal.project_name} - ${dup.reasons.join(', ')}`);
+      } else {
+        console.log(`   ${index + 1}. Invalid duplicate object:`, dup);
+      }
     });
     if (dedupResult.duplicates.length > 5) {
       console.log(`   ... and ${dedupResult.duplicates.length - 5} more duplicates`);
