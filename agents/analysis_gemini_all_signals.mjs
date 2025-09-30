@@ -170,10 +170,13 @@ async function processBatchWithGeminiAllSignals(signals, batchIndex, keyManager)
       const genAI = new GoogleGenerativeAI(keyInfo.key);
       // Try a sequence of model ids to avoid 404s on restricted versions
       const preferred = process.env.GEMINI_MODEL && process.env.GEMINI_MODEL.trim();
+      // ONLY use gemini-2.0-flash-exp - all other models are deprecated
       const candidateModels = [
         ...(preferred ? [preferred] : []),
         'gemini-2.0-flash-exp'
       ];
+      
+      console.log(`🔧 Available models: ${candidateModels.join(', ')}`);
 
       let result;
       let lastModelError = null;
