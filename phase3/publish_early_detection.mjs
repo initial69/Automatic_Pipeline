@@ -364,13 +364,21 @@ async function publishEarlyDetection() {
         signal.url === analysis.evidence[0]
       ) || null;
     }
+    
+    // Create a more unique key for deduplication
+    const link = analysis.evidence?.[0] || '';
+    const projectName = analysis.project_name || 'Unknown';
+    const opportunityType = analysis.opportunity_type || 'Unknown';
+    
     // Enrich analysis with fields used by dedup tracker
     return {
       ...analysis,
       source: originalSignal?.source || 'Unknown',
-      title: analysis.project_name || 'Unknown', // use project name as title key
-      link: analysis.evidence?.[0] || '',
-      content: analysis.investment_angle || ''
+      title: `${projectName} - ${opportunityType}`, // More specific title
+      link: link,
+      content: `${analysis.investment_angle || ''} ${analysis.reasoning || ''}`.trim(), // Combine content
+      // Add URL-based deduplication key
+      url_key: link.split('?')[0].split('#')[0] // Clean URL for dedup
     };
   }
 
@@ -383,16 +391,38 @@ async function publishEarlyDetection() {
   ];
   const allAnalysesForDedup = allAnalyses.map(enrichForDedup);
   
+  // Pre-filter by URL to prevent same URL being analyzed multiple times
+  console.log('\n🔍 Pre-filtering by URL to prevent duplicate analysis...');
+  const urlSeen = new Set();
+  const urlFilteredAnalyses = [];
+  const urlDuplicates = [];
+  
+  for (const analysis of allAnalysesForDedup) {
+    if (analysis.url_key && urlSeen.has(analysis.url_key)) {
+      urlDuplicates.push(analysis);
+      console.log(`❌ URL duplicate filtered: ${analysis.url_key}`);
+    } else {
+      if (analysis.url_key) {
+        urlSeen.add(analysis.url_key);
+      }
+      urlFilteredAnalyses.push(analysis);
+    }
+  }
+  
+  console.log(`📊 URL filtering results:`);
+  console.log(`   ✅ Unique URLs: ${urlFilteredAnalyses.length}`);
+  console.log(`   ❌ URL duplicates: ${urlDuplicates.length}`);
+  
   // Apply advanced deduplication
   console.log('\n🔍 Applying Advanced Deduplication...');
   const dedupOptions = {
-    contentSimilarityThreshold: 0.8,
-    titleSimilarityThreshold: 0.9,
-    maxSourcePerHour: 3,
-    maxSignalsPerRun: 50
+    contentSimilarityThreshold: 0.7, // More strict - 70% similarity
+    titleSimilarityThreshold: 0.8,   // More strict - 80% similarity
+    maxSourcePerHour: 2,             // More strict - 2 per hour
+    maxSignalsPerRun: 30             // More strict - 30 per run
   };
   
-  const dedupResult = deduplication.filterSignalsForPublishing(allAnalysesForDedup, dedupOptions);
+  const dedupResult = deduplication.filterSignalsForPublishing(urlFilteredAnalyses, dedupOptions);
   
   // Ensure dedupResult is valid
   if (!dedupResult || typeof dedupResult !== 'object') {
@@ -419,8 +449,10 @@ async function publishEarlyDetection() {
   
   console.log(`\n📊 Deduplication Results:`);
   console.log(`   ✅ Approved for publishing: ${dedupResult.approved.length}`);
-  console.log(`   ❌ Duplicates filtered: ${dedupResult.duplicates.length}`);
+  console.log(`   ❌ Content duplicates filtered: ${dedupResult.duplicates.length}`);
+  console.log(`   ❌ URL duplicates filtered: ${urlDuplicates.length}`);
   console.log(`   📈 Total processed: ${allAnalyses.length}`);
+  console.log(`   📈 Total duplicates: ${dedupResult.duplicates.length + urlDuplicates.length}`);
   
   if (dedupResult.duplicates.length > 0) {
     console.log(`\n❌ Duplicate Details:`);
@@ -727,7 +759,9 @@ async function publishEarlyDetection() {
     early: finalEarlySignals.length,
     watch: finalWatchClosely.length,
     risk: finalPotentialRisks.length,
-    duplicates: dedupResult.duplicates.length,
+    duplicates: dedupResult.duplicates.length + urlDuplicates.length,
+    url_duplicates: urlDuplicates.length,
+    content_duplicates: dedupResult.duplicates.length,
     publish: publishResults
   };
 }
