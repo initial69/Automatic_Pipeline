@@ -7,6 +7,7 @@ import path from 'node:path';
 // Import analysis modules
 import { analyzeAllSignalsWithGemini } from '../agents/analysis_gemini_all_signals.mjs';
 import { AnalysisTracker } from '../utils/analysis_tracker.mjs';
+import { AdvancedDeduplication } from '../utils/advanced_deduplication.mjs';
 
 // Main analysis function - PHASE 2: Analyze signals with incremental tracking
 async function analyzeAllSignals() {
@@ -53,15 +54,46 @@ async function analyzeAllSignals() {
     tracker.finalize();
     return { gemini_analysis: null };
   }
+
+  // Apply deduplication to new signals before analysis
+  console.log('\n🔍 Applying deduplication to new signals...');
+  const deduplication = new AdvancedDeduplication();
+  const dedupOptions = {
+    contentSimilarityThreshold: 0.8,
+    titleSimilarityThreshold: 0.9,
+    maxSourcePerHour: 5, // More lenient for analysis phase
+    maxSignalsPerRun: 100
+  };
+  
+  // Enrich signals for deduplication
+  const enrichedSignals = newSignals.map(signal => ({
+    ...signal,
+    content: signal.title || signal.judul || '', // Use title as content for dedup
+    source: signal.source || signal.repo || 'Unknown'
+  }));
+  
+  const dedupResult = deduplication.filterSignalsForPublishing(enrichedSignals, dedupOptions);
+  const uniqueSignals = dedupResult.approved;
+  const duplicateSignals = dedupResult.duplicates;
+  
+  console.log(`📊 Deduplication results:`);
+  console.log(`   ✅ Unique signals for analysis: ${uniqueSignals.length}`);
+  console.log(`   ❌ Duplicates filtered: ${duplicateSignals.length}`);
+  
+  if (uniqueSignals.length === 0) {
+    console.log('✅ No unique signals to analyze after deduplication.');
+    tracker.finalize();
+    return { gemini_analysis: null };
+  }
   
   let analysisResults = null;
   let geminiResults = null;
   
-  // Gemini AI Analysis (Primary) - Analyze NEW signals only
+  // Gemini AI Analysis (Primary) - Analyze UNIQUE signals only
   if (process.env.GEMINI_API_KEY1) {
-    console.log(`\n🧠 Gemini AI Analysis (Primary) - Analyzing ${newSignals.length} NEW signals...`);
+    console.log(`\n🧠 Gemini AI Analysis (Primary) - Analyzing ${uniqueSignals.length} UNIQUE signals...`);
     try {
-      geminiResults = await analyzeAllSignalsWithGemini(newSignals);
+      geminiResults = await analyzeAllSignalsWithGemini(uniqueSignals);
       if (geminiResults) {
         console.log(`✅ Gemini analysis complete: ${geminiResults.all_analyses.length} analyses identified`);
         console.log(`   Analyzed: ${geminiResults.analyzed_signals}/${geminiResults.total_signals} signals`);
@@ -69,7 +101,7 @@ async function analyzeAllSignals() {
         
         // Mark new analyses for Phase 3 publishing
         geminiResults.new_analyses = geminiResults.all_analyses.filter(analysis => 
-          newSignals.some(signal => 
+          uniqueSignals.some(signal => 
             signal.link === analysis.evidence?.[0] || 
             signal.url === analysis.evidence?.[0]
           )
@@ -77,7 +109,7 @@ async function analyzeAllSignals() {
         console.log(`📤 New analyses for publishing: ${geminiResults.new_analyses.length}`);
         
         // Mark analyzed signals in tracker
-        newSignals.forEach(signal => {
+        uniqueSignals.forEach(signal => {
           tracker.markAsAnalyzed(signal);
         });
       }
@@ -171,11 +203,16 @@ ${index + 1}. ${analysis.project_name} - ${analysis.opportunity_type} (Score: ${
   console.log(`📊 Analysis Tracker Stats:`);
   console.log(`   Today: ${tracker.getStats().today} signals analyzed`);
   console.log(`   Global: ${tracker.getStats().global} signals tracked`);
+  console.log(`📊 Deduplication Stats:`);
+  console.log(`   Unique signals analyzed: ${uniqueSignals.length}`);
+  console.log(`   Duplicates filtered: ${duplicateSignals.length}`);
   
   return {
     gemini_analysis: geminiResults,
     incremental_stats: {
       new_signals: newSignals.length,
+      unique_signals: uniqueSignals.length,
+      duplicates_filtered: duplicateSignals.length,
       skipped_signals: skippedSignals.length,
       total_analyzed: tracker.getStats().global
     }
