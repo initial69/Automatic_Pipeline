@@ -171,6 +171,12 @@ export class AdvancedDeduplication {
     const oneHourAgo = new Date(now.getTime() - 60 * 60 * 1000);
     
     const sourceKey = source.toLowerCase().trim();
+    
+    // Ensure source_hashes exists and is an object
+    if (!this.tracker.source_hashes || typeof this.tracker.source_hashes !== 'object') {
+      this.tracker.source_hashes = {};
+    }
+    
     const sourceHistory = this.tracker.source_hashes[sourceKey] || [];
     
     // Filter recent posts (last hour)
@@ -300,6 +306,11 @@ export class AdvancedDeduplication {
 
     // Add to source frequency tracking
     if (signal.source) {
+      // Ensure source_hashes exists and is an object
+      if (!this.tracker.source_hashes || typeof this.tracker.source_hashes !== 'object') {
+        this.tracker.source_hashes = {};
+      }
+      
       const sourceKey = signal.source.toLowerCase().trim();
       if (!this.tracker.source_hashes[sourceKey]) {
         this.tracker.source_hashes[sourceKey] = [];

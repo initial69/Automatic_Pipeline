@@ -38,6 +38,11 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci --no-audit --no-fund
+          
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
 
       - name: Verify code deployment
         run: |
@@ -118,8 +123,9 @@ jobs:
           cat > data/deduplication_tracker.json << 'EOF'
           {
             "published": {},
-            "contentHashes": {},
-            "titleHashes": {},
+            "content_hashes": {},
+            "title_hashes": {},
+            "source_hashes": {},
             "lastUpdated": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)"
           }
           EOF
@@ -158,8 +164,9 @@ jobs:
             cat > data/deduplication_tracker.json << 'EOF'
           {
             "published": {},
-            "contentHashes": {},
-            "titleHashes": {},
+            "content_hashes": {},
+            "title_hashes": {},
+            "source_hashes": {},
             "lastUpdated": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)"
           }
           EOF
@@ -167,7 +174,38 @@ jobs:
           
           echo "✅ Trackers initialized (incremental mode)"
 
+      - name: Verify pipeline files
+        run: |
+          echo "🔍 Verifying all required pipeline files exist..."
+          required_files=(
+            "complete_phase.mjs"
+            "phase1/collect_data.mjs"
+            "phase2/analyze_all_signals.mjs"
+            "phase3/publish_early_detection.mjs"
+            "utils/advanced_deduplication.mjs"
+            "agents/analysis_gemini_all_signals.mjs"
+            "package.json"
+          )
+          
+          for file in "${required_files[@]}"; do
+            if [ -f "$file" ]; then
+              echo "✅ $file exists"
+            else
+              echo "❌ $file is missing!"
+              exit 1
+            fi
+          done
+          
+          echo "🔍 Checking file permissions..."
+          chmod +x complete_phase.mjs
+          chmod +x phase1/collect_data.mjs
+          chmod +x phase2/analyze_all_signals.mjs
+          chmod +x phase3/publish_early_detection.mjs
+          
+          echo "✅ All pipeline files verified and permissions set"
+
       - name: Run complete phase
+        timeout-minutes: 60
         env:
           # Telegram bot/channel
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
@@ -190,9 +228,43 @@ jobs:
         run: |
           echo "🚀 Starting Crypto Early Detection Pipeline..."
           echo "📅 Run time: $(date)"
+          echo "🔍 Environment check:"
+          echo "  - Node.js version: $(node --version)"
+          echo "  - NPM version: $(npm --version)"
+          echo "  - Working directory: $(pwd)"
+          echo "  - Files in current dir: $(ls -la)"
+          
+          # Check if deduplication tracker exists and has correct structure
+          echo "🔍 Checking deduplication tracker structure..."
+          if [ -f "data/deduplication_tracker.json" ]; then
+            echo "📊 Deduplication tracker exists, checking structure..."
+            cat data/deduplication_tracker.json | jq '.' || echo "⚠️  Could not parse JSON, will be recreated"
+          else
+            echo "📝 Creating deduplication tracker..."
+            mkdir -p data
+            cat > data/deduplication_tracker.json << 'EOF'
+          {
+            "published": {},
+            "content_hashes": {},
+            "title_hashes": {},
+            "source_hashes": {},
+            "lastUpdated": "$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)"
+          }
+          EOF
+          fi
+          
           echo "🔄 Running complete phase..."
-          node complete_phase.mjs
-          echo "✅ Pipeline completed successfully!"
+          if node complete_phase.mjs; then
+            echo "✅ Pipeline completed successfully!"
+          else
+            echo "❌ Pipeline failed with exit code $?"
+            echo "🔍 Checking for error logs..."
+            if [ -f "data/$(date +%Y-%m-%d)/failed_telegram_messages.json" ]; then
+              echo "📄 Failed messages found:"
+              cat "data/$(date +%Y-%m-%d)/failed_telegram_messages.json" | jq '.' || echo "Could not parse failed messages"
+            fi
+            exit 1
+          fi
 
       - name: Upload daily data artifacts
         if: always()
