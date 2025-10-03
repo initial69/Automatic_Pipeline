@@ -1,7 +1,821 @@
 {
-  "published": {},
-  "content_hashes": {},
-  "title_hashes": {},
-  "source_hashes": {},
-  "lastUpdated": "2025-09-30T03:56:37.833Z"
+  "published": {
+    "cointelegraph:https://cointelegraph.com/news/near-foundation-ai-delegates-dao-voting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:nearfoundation": {
+      "timestamp": "2025-10-03T04:31:52.709Z",
+      "source": "CoinTelegraph",
+      "title": "Near Foundation",
+      "link": "https://cointelegraph.com/news/near-foundation-ai-delegates-dao-voting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/369055135:cmegroup": {
+      "timestamp": "2025-10-03T04:31:55.126Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "CME Group",
+      "link": "https://coinmarketcap.com/community/post/369055135"
+    },
+    "cointelegraph:https://cointelegraph.com/news/crypto-com-morpho-lending-stablecoin-yield-cronos?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:cryptocommorpho": {
+      "timestamp": "2025-10-03T04:31:57.560Z",
+      "source": "CoinTelegraph",
+      "title": "Crypto.com & Morpho",
+      "link": "https://cointelegraph.com/news/crypto-com-morpho-lending-stablecoin-yield-cronos?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "decrypt:https://decrypt.co/342743/myriad-moves-bitcoin-odds-all-time-high-jump-50:bitcoin": {
+      "timestamp": "2025-10-03T04:31:59.990Z",
+      "source": "Decrypt",
+      "title": "Bitcoin",
+      "link": "https://decrypt.co/342743/myriad-moves-bitcoin-odds-all-time-high-jump-50"
+    },
+    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmijafbvv95cuxpa0nzzxbzvvn0stzlrefpyxdkwmkya2hmq2htm1jmqjltufrxbfnwejjudgj1q1fzqk0ytepbx1nssf9wzm1snde3shzhmtmwb1bknjzmtddfdfrewgdkovrfn0lyvzvkzlbhttbvcnfrdnd6dkdmq1zrov8wbxhqbmvntwpvuzzptgl3mg?oc=5:bitcoin": {
+      "timestamp": "2025-10-03T04:32:02.442Z",
+      "source": "Bitcoin Magazine (GNews)",
+      "title": "Bitcoin",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPa0NZZXBzVVN0STZlREFpYXdKWmkya2hMQ2hTM1JmQjltUFRxbFNWejJUdGJ1Q1FZQk0yTEpBX1NsSF9WZm1SNDE3SHZHMTMwb1BkNjZmTDdFdFREWGdkOVRfN0lYVzVKZlBHTTBVcnFRdnd6dkdMQ1ZROV8wbXhqbmVnTWpvUzZPTGl3Mg?oc=5"
+    },
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/369042563:bitcoinetfs": {
+      "timestamp": "2025-10-03T04:32:04.864Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "Bitcoin ETFs",
+      "link": "https://coinmarketcap.com/community/post/369042563"
+    },
+    "bankless:https://www.bankless.com/read/news/perp-dex-monthly-trading-volume-tops-1-trillion-as-aster-overtakes-hyperliquid:perpdexs": {
+      "timestamp": "2025-10-03T04:32:07.295Z",
+      "source": "Bankless",
+      "title": "Perp DEXs",
+      "link": "https://www.bankless.com/read/news/perp-dex-monthly-trading-volume-tops-1-trillion-as-aster-overtakes-hyperliquid"
+    },
+    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmigafbvv95cuxpenn0axnvmmvidhvsq0dnvhpusgfyzzktre5rd1revdk5cdmwwnpidlrkou53zwo1vutrutbsakzqykraelgtrdnpagw1dnfmd2hwx2lyotrjmzvoqutnb2lkbnhnadbjbtdxskqtvy1wu2furjrfuzlsa1d3c2ftna?oc=5:bitcoinjpmorgananalysis": {
+      "timestamp": "2025-10-03T04:32:09.716Z",
+      "source": "Bitcoin Magazine (GNews)",
+      "title": "Bitcoin (JPMorgan Analysis)",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPenN0aXNVMmVIdHVsQ0dnVHpuSGFYZzktRE5rd1REVDk5cDMwWnpIdlRKOU53ZWo1VUtrUTBSakZqYkRaelgtRDNPaGw1dnFmd2hWX2lYOTRjMzVOQUtnb2lkbnhnaDBjbTdxSkQtVy1wU2FURjRfUzlsa1d3c2FtNA?oc=5"
+    },
+    "makerdao forum:https://forum.sky.money/t/grove-risk-assessment-pt-usde-pt-susde/27254:grove": {
+      "timestamp": "2025-10-03T04:32:12.151Z",
+      "source": "MakerDAO Forum",
+      "title": "Grove",
+      "link": "https://forum.sky.money/t/grove-risk-assessment-pt-usde-pt-susde/27254"
+    },
+    "cointelegraph:https://cointelegraph.com/news/bitcoin-clears-dollar120k-as-onchain-data-points-to-a-new-btc-accumulation-phase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoin": {
+      "timestamp": "2025-10-03T04:32:14.585Z",
+      "source": "CoinTelegraph",
+      "title": "Bitcoin",
+      "link": "https://cointelegraph.com/news/bitcoin-clears-dollar120k-as-onchain-data-points-to-a-new-btc-accumulation-phase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "bankless:https://www.bankless.com/read/news/cme-to-launch-24-7-trading-for-crypto-futures-and-options-in-2026:cme": {
+      "timestamp": "2025-10-03T04:32:17.165Z",
+      "source": "Bankless",
+      "title": "CME",
+      "link": "https://www.bankless.com/read/news/cme-to-launch-24-7-trading-for-crypto-futures-and-options-in-2026"
+    },
+    "decrypt:https://decrypt.co/342709/cme-group-24-7-trading-options-futures-ahead-xrp-solana-debut:cmegroup": {
+      "timestamp": "2025-10-03T04:32:19.667Z",
+      "source": "Decrypt",
+      "title": "CME Group",
+      "link": "https://decrypt.co/342709/cme-group-24-7-trading-options-futures-ahead-xrp-solana-debut"
+    },
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/369030342:coinbase1inch": {
+      "timestamp": "2025-10-03T04:32:22.105Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "Coinbase, 1inch",
+      "link": "https://coinmarketcap.com/community/post/369030342"
+    },
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/369026501:avalancheavax": {
+      "timestamp": "2025-10-03T04:32:24.500Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "Avalanche (AVAX)",
+      "link": "https://coinmarketcap.com/community/post/369026501"
+    },
+    "coinmarketcap announcements:https://coinmarketcap.com/community/post/369029356:bitcoinbtc": {
+      "timestamp": "2025-10-03T04:32:27.132Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "Bitcoin (BTC)",
+      "link": "https://coinmarketcap.com/community/post/369029356"
+    },
+    "decrypt:https://decrypt.co/342682/bitcoin-soars-above-120k-us-government-shutdown-continues:bitcoinbtc": {
+      "timestamp": "2025-10-03T04:32:29.565Z",
+      "source": "Decrypt",
+      "title": "Bitcoin (BTC)",
+      "link": "https://decrypt.co/342682/bitcoin-soars-above-120k-us-government-shutdown-continues"
+    },
+    "coindesk:https://www.coindesk.com/markets/2025/10/02/dnp-bitcoin-breaks-usd120k-with-traders-eyeing-bullish-october-rally:bitcoin": {
+      "timestamp": "2025-10-03T04:32:32.007Z",
+      "source": "CoinDesk",
+      "title": "Bitcoin",
+      "link": "https://www.coindesk.com/markets/2025/10/02/dnp-bitcoin-breaks-usd120k-with-traders-eyeing-bullish-october-rally"
+    },
+    "bitcoin magazine (gnews):https://news.google.com/rss/articles/cbmirwfbvv95cuxnnmyza2pfqw1cse5zsujtaensdvr2aeo3tznwzmfsakzudug4vffdunrkytzsqwraevbxmlplufvqahftmkitmwkxetdbste0as1rvu9qcjnyvnfmqxj4oghun3vsauwwykzewgdpcm5znexzwfnuoxnvtvvfv2w4lujmlvjecefxb2plvlh4rs1uswruoevwyldyx3z1ykdzxzvkdhpsaul0oc1ir0y4?oc=5:bitcoin": {
+      "timestamp": "2025-10-03T04:32:34.425Z",
+      "source": "Bitcoin Magazine (GNews)",
+      "title": "Bitcoin",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNmYza2pFQW1CSE5zSUJTaENsdVR2aEo3TzNwZmFSakZUdUg4VFFDUnRKYTZSQWRaeVBxMlplUFVqaHFTMkItMWkxeTdBSTE0aS1RVU9qcjNYVnFMQXJ4OGhUN3VsaUwwYkZEWGdpcm5zNExzWFNUOXNVTVVfV2w4LUJmLVJEcEFXb2plVlh4RS1uSWRuOEVWYldyX3Z1YkdZXzVkdHpSaUl0OC1IR0Y4?oc=5"
+    },
+    "decrypt:https://decrypt.co/342693/thief-snaps-photo-of-victims-seed-phrase-in-apartment-steals-1-7m-in-crypto:securitybreach": {
+      "timestamp": "2025-10-03T04:32:36.844Z",
+      "source": "Decrypt",
+      "title": "Security Breach",
+      "link": "https://decrypt.co/342693/thief-snaps-photo-of-victims-seed-phrase-in-apartment-steals-1-7m-in-crypto"
+    },
+    "cointelegraph:https://cointelegraph.com/explained/why-saylor-s-strategy-keeps-buying-bitcoin-the-long-term-bet-explained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound:bitcoinmicrostrategy": {
+      "timestamp": "2025-10-03T04:32:50.346Z",
+      "source": "CoinTelegraph",
+      "title": "Bitcoin/Microstrategy",
+      "link": "https://cointelegraph.com/explained/why-saylor-s-strategy-keeps-buying-bitcoin-the-long-term-bet-explained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "coindesk:https://www.coindesk.com/business/2025/10/02/cme-group-to-launch-24-7-crypto-futures-and-options-trading-in-early-2026:cmegroup": {
+      "timestamp": "2025-10-03T04:32:52.764Z",
+      "source": "CoinDesk",
+      "title": "CME Group",
+      "link": "https://www.coindesk.com/business/2025/10/02/cme-group-to-launch-24-7-crypto-futures-and-options-trading-in-early-2026"
+    },
+    "the defiant:https://thedefiant.io/news/markets/zcash-price-rally-crypto-privacy:zcashzec": {
+      "timestamp": "2025-10-03T04:32:55.192Z",
+      "source": "The Defiant",
+      "title": "Zcash (ZEC)",
+      "link": "https://thedefiant.io/news/markets/zcash-price-rally-crypto-privacy"
+    },
+    "coindesk:https://www.coindesk.com/business/2025/10/02/crypto-market-maker-gsr-to-acquire-finra-registered-broker-dealer-equilibrium-capital-services:gsr": {
+      "timestamp": "2025-10-03T04:32:57.622Z",
+      "source": "CoinDesk",
+      "title": "GSR",
+      "link": "https://www.coindesk.com/business/2025/10/02/crypto-market-maker-gsr-to-acquire-finra-registered-broker-dealer-equilibrium-capital-services"
+    },
+    "coindesk:https://www.coindesk.com/business/2025/10/02/mantle-launches-tokenization-platform-adds-wlfi-s-usd1-stablecoin-in-rwa-push:mantle": {
+      "timestamp": "2025-10-03T04:33:00.064Z",
+      "source": "CoinDesk",
+      "title": "Mantle",
+      "link": "https://www.coindesk.com/business/2025/10/02/mantle-launches-tokenization-platform-adds-wlfi-s-usd1-stablecoin-in-rwa-push"
+    },
+    "decrypt:https://decrypt.co/342679/bitcoin-etfs-pull-in-676m-as-btc-price-tops-119k:bitcoinetfs": {
+      "timestamp": "2025-10-03T04:33:02.473Z",
+      "source": "Decrypt",
+      "title": "Bitcoin ETFs",
+      "link": "https://decrypt.co/342679/bitcoin-etfs-pull-in-676m-as-btc-price-tops-119k"
+    },
+    "decrypt:https://decrypt.co/342676/morning-minute-polymarket-prepares-for-imminent-u-s-launch:polymarket": {
+      "timestamp": "2025-10-03T04:33:04.984Z",
+      "source": "Decrypt",
+      "title": "Polymarket",
+      "link": "https://decrypt.co/342676/morning-minute-polymarket-prepares-for-imminent-u-s-launch"
+    },
+    "coindesk:https://www.coindesk.com/markets/2025/10/02/crypto-markets-today-bitcoin-breaks-usd119k-as-altcoins-surge-traders-eye-record-highs:bitcoinandaltcoins": {
+      "timestamp": "2025-10-03T04:33:07.463Z",
+      "source": "CoinDesk",
+      "title": "Bitcoin and Altcoins",
+      "link": "https://www.coindesk.com/markets/2025/10/02/crypto-markets-today-bitcoin-breaks-usd119k-as-altcoins-surge-traders-eye-record-highs"
+    },
+    "coindesk:https://www.coindesk.com/business/2025/10/02/avalanche-treasury-co-going-public-in-usd675m-spac-deal-backed-by-avax-ecosystem:avalanchetreasuryco": {
+      "timestamp": "2025-10-03T04:33:09.944Z",
+      "source": "CoinDesk",
+      "title": "Avalanche Treasury Co.",
+      "link": "https://www.coindesk.com/business/2025/10/02/avalanche-treasury-co-going-public-in-usd675m-spac-deal-backed-by-avax-ecosystem"
+    },
+    "coindesk:https://www.coindesk.com/business/2025/10/02/polygon-standard-chartered-enlisted-for-alloyx-tokenized-money-market-fund:polygonstandardcharteredalloyx": {
+      "timestamp": "2025-10-03T04:33:12.384Z",
+      "source": "CoinDesk",
+      "title": "Polygon, Standard Chartered, AlloyX",
+      "link": "https://www.coindesk.com/business/2025/10/02/polygon-standard-chartered-enlisted-for-alloyx-tokenized-money-market-fund"
+    },
+    "coindesk:https://www.coindesk.com/business/2025/10/02/eth-treasury-firm-to-tokenize-nasdaq-listed-shares-on-ethereum-with-securitize:ethereumsecuritize": {
+      "timestamp": "2025-10-03T04:33:14.815Z",
+      "source": "CoinDesk",
+      "title": "Ethereum, Securitize",
+      "link": "https://www.coindesk.com/business/2025/10/02/eth-treasury-firm-to-tokenize-nasdaq-listed-shares-on-ethereum-with-securitize"
+    },
+    "coindesk:https://www.coindesk.com/markets/2025/10/02/blackrock-s-ibit-enters-top-20-etfs-by-assets-sees-biggest-inflow-since-mid-august:blackrockibitetf": {
+      "timestamp": "2025-10-03T04:33:17.245Z",
+      "source": "CoinDesk",
+      "title": "BlackRock IBIT ETF",
+      "link": "https://www.coindesk.com/markets/2025/10/02/blackrock-s-ibit-enters-top-20-etfs-by-assets-sees-biggest-inflow-since-mid-august"
+    },
+    "the defiant:https://thedefiant.io/news/defi/pancakeswap-posts-record-usd749-billion-in-q3-trading-volumes:pancakeswap": {
+      "timestamp": "2025-10-03T04:33:19.699Z",
+      "source": "The Defiant",
+      "title": "PancakeSwap",
+      "link": "https://thedefiant.io/news/defi/pancakeswap-posts-record-usd749-billion-in-q3-trading-volumes"
+    },
+    "ethereum/go-ethereum:https://github.com/ethereum/go-ethereum/commit/f0dc47aae393abe0bb7b084345daf9108ad8897a:goethereum": {
+      "timestamp": "2025-10-03T04:33:20.125Z",
+      "source": "ethereum/go-ethereum",
+      "title": "go-ethereum",
+      "link": "https://github.com/ethereum/go-ethereum/commit/f0dc47aae393abe0bb7b084345daf9108ad8897a"
+    },
+    "nethermindeth/nethermind:https://github.com/nethermindeth/nethermind/commit/b7c40248d9800068d7fa8a63066b13659fdc2571:nethermind": {
+      "timestamp": "2025-10-03T04:33:22.568Z",
+      "source": "NethermindEth/nethermind",
+      "title": "Nethermind",
+      "link": "https://github.com/NethermindEth/nethermind/commit/b7c40248d9800068d7fa8a63066b13659fdc2571"
+    },
+    "erigontech/erigon:https://github.com/erigontech/erigon/commit/8193d8236a0416b6a93cdda139fe555d40470ff0:erigon": {
+      "timestamp": "2025-10-03T04:34:17.700Z",
+      "source": "erigontech/erigon",
+      "title": "Erigon",
+      "link": "https://github.com/erigontech/erigon/commit/8193d8236a0416b6a93cdda139fe555d40470ff0"
+    },
+    "consensys/teku:https://github.com/consensys/teku/commit/9770297aa9ef92a785874848a659c5fff3847840:teku": {
+      "timestamp": "2025-10-03T04:33:27.712Z",
+      "source": "ConsenSys/teku",
+      "title": "Teku",
+      "link": "https://github.com/Consensys/teku/commit/9770297aa9ef92a785874848a659c5fff3847840"
+    },
+    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/2f98ab5772c03e45f201305cae924b89816cfd28:optimism": {
+      "timestamp": "2025-10-03T04:34:20.333Z",
+      "source": "ethereum-optimism/optimism",
+      "title": "Optimism",
+      "link": "https://github.com/ethereum-optimism/optimism/commit/2f98ab5772c03e45f201305cae924b89816cfd28"
+    },
+    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/2717a0dd8467ffb2223acef5297d0d493e185378:optimism": {
+      "timestamp": "2025-10-03T04:34:22.781Z",
+      "source": "ethereum-optimism/optimism",
+      "title": "Optimism",
+      "link": "https://github.com/ethereum-optimism/optimism/commit/2717a0dd8467ffb2223acef5297d0d493e185378"
+    },
+    "ethereum-optimism/optimism:https://github.com/ethereum-optimism/optimism/commit/4d5dfc2f1cdbfc6802573e1d3dd21ae2ca171826:optimism": {
+      "timestamp": "2025-10-03T04:33:35.484Z",
+      "source": "ethereum-optimism/optimism",
+      "title": "Optimism",
+      "link": "https://github.com/ethereum-optimism/optimism/commit/4d5dfc2f1cdbfc6802573e1d3dd21ae2ca171826"
+    },
+    "scroll-tech/scroll:https://github.com/scroll-tech/scroll/releases/tag/vdrawin-bridge-history-rc0:scroll": {
+      "timestamp": "2025-10-03T04:33:50.914Z",
+      "source": "scroll-tech/scroll",
+      "title": "Scroll",
+      "link": "https://github.com/scroll-tech/scroll/releases/tag/vdrawin-bridge-history-rc0"
+    },
+    "scroll-tech/scroll:https://github.com/scroll-tech/scroll/releases/tag/vshadowfork-darwin:scroll": {
+      "timestamp": "2025-10-03T04:33:53.568Z",
+      "source": "scroll-tech/scroll",
+      "title": "Scroll",
+      "link": "https://github.com/scroll-tech/scroll/releases/tag/vShadowfork-darwin"
+    },
+    "taikoxyz/taiko-mono:https://github.com/taikoxyz/taiko-mono/commit/29512d4e481e3f81f095993e121b318bcd4f8f24:taiko": {
+      "timestamp": "2025-10-03T04:33:56.202Z",
+      "source": "taikoxyz/taiko-mono",
+      "title": "Taiko",
+      "link": "https://github.com/taikoxyz/taiko-mono/commit/29512d4e481e3f81f095993e121b318bcd4f8f24"
+    },
+    "taikoxyz/taiko-mono:https://github.com/taikoxyz/taiko-mono/commit/d678497d961027ae041b631414b37528b7e331b5:taiko": {
+      "timestamp": "2025-10-03T04:33:58.837Z",
+      "source": "taikoxyz/taiko-mono",
+      "title": "Taiko",
+      "link": "https://github.com/taikoxyz/taiko-mono/commit/d678497d961027ae041b631414b37528b7e331b5"
+    },
+    "mystenlabs/sui:https://github.com/mystenlabs/sui/commit/553e16bfa447f9f21337d0926a8ca4dc37558283:sui": {
+      "timestamp": "2025-10-03T04:34:01.481Z",
+      "source": "MystenLabs/sui",
+      "title": "Sui",
+      "link": "https://github.com/MystenLabs/sui/commit/553e16bfa447f9f21337d0926a8ca4dc37558283"
+    },
+    "aptos-labs/aptos-core:https://github.com/aptos-labs/aptos-core/commit/6c9c453b68393bcaba3f246aaed445ad1e648c60:aptos": {
+      "timestamp": "2025-10-03T04:34:04.125Z",
+      "source": "aptos-labs/aptos-core",
+      "title": "Aptos",
+      "link": "https://github.com/aptos-labs/aptos-core/commit/6c9c453b68393bcaba3f246aaed445ad1e648c60"
+    },
+    "mystenlabs/sui:https://github.com/mystenlabs/sui/commit/aa2884ad0da50fa20f6c5dfc531bff6401ac07c8:sui": {
+      "timestamp": "2025-10-03T04:34:06.835Z",
+      "source": "MystenLabs/sui",
+      "title": "Sui",
+      "link": "https://github.com/MystenLabs/sui/commit/aa2884ad0da50fa20f6c5dfc531bff6401ac07c8"
+    },
+    "mystenlabs/sui:https://github.com/mystenlabs/sui/commit/6ae40fa4ee2be14baa6903de5fdd23f12c42b15d:sui": {
+      "timestamp": "2025-10-03T04:34:09.436Z",
+      "source": "MystenLabs/sui",
+      "title": "Sui",
+      "link": "https://github.com/MystenLabs/sui/commit/6ae40fa4ee2be14baa6903de5fdd23f12c42b15d"
+    },
+    "aptos-labs/aptos-core:https://github.com/aptos-labs/aptos-core/releases/tag/aptos-node-v1.35.5-hotfix:aptos": {
+      "timestamp": "2025-10-03T04:34:12.135Z",
+      "source": "aptos-labs/aptos-core",
+      "title": "Aptos",
+      "link": "https://github.com/aptos-labs/aptos-core/releases/tag/aptos-node-v1.35.5-hotfix"
+    },
+    "aptos-labs/aptos-core:https://github.com/aptos-labs/aptos-core/commit/ec3523b71a46049a4e438c8c1f5a4e42fdff0521:aptos": {
+      "timestamp": "2025-10-03T04:34:25.227Z",
+      "source": "aptos-labs/aptos-core",
+      "title": "Aptos",
+      "link": "https://github.com/aptos-labs/aptos-core/commit/ec3523b71a46049a4e438c8c1f5a4e42fdff0521"
+    },
+    "celestiaorg/celestia-app:https://github.com/celestiaorg/celestia-app/commit/088e0338efa1ee6cf892e864eb83532d99d25579:celestia": {
+      "timestamp": "2025-10-03T04:34:17.207Z",
+      "source": "celestiaorg/celestia-app",
+      "title": "Celestia",
+      "link": "https://github.com/celestiaorg/celestia-app/commit/088e0338efa1ee6cf892e864eb83532d99d25579"
+    }
+  },
+  "content_hashes": {
+    "k1tz44": {
+      "timestamp": "2025-10-03T04:31:52.709Z",
+      "source": "CoinTelegraph",
+      "title": "Near Foundation"
+    },
+    "qwwuza": {
+      "timestamp": "2025-10-03T04:31:55.126Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "CME Group"
+    },
+    "t8pd1z": {
+      "timestamp": "2025-10-03T04:31:57.560Z",
+      "source": "CoinTelegraph",
+      "title": "Crypto.com & Morpho"
+    },
+    "5ul0gv": {
+      "timestamp": "2025-10-03T04:31:59.990Z",
+      "source": "Decrypt",
+      "title": "Bitcoin"
+    },
+    "o8miuk": {
+      "timestamp": "2025-10-03T04:32:02.442Z",
+      "source": "Bitcoin Magazine (GNews)",
+      "title": "Bitcoin"
+    },
+    "gikh7b": {
+      "timestamp": "2025-10-03T04:32:04.864Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "Bitcoin ETFs"
+    },
+    "hsjcop": {
+      "timestamp": "2025-10-03T04:32:07.295Z",
+      "source": "Bankless",
+      "title": "Perp DEXs"
+    },
+    "j5a1e6": {
+      "timestamp": "2025-10-03T04:32:09.716Z",
+      "source": "Bitcoin Magazine (GNews)",
+      "title": "Bitcoin (JPMorgan Analysis)"
+    },
+    "skpvhq": {
+      "timestamp": "2025-10-03T04:32:12.151Z",
+      "source": "MakerDAO Forum",
+      "title": "Grove"
+    },
+    "1rtmdu": {
+      "timestamp": "2025-10-03T04:32:14.585Z",
+      "source": "CoinTelegraph",
+      "title": "Bitcoin"
+    },
+    "f9etdz": {
+      "timestamp": "2025-10-03T04:32:17.165Z",
+      "source": "Bankless",
+      "title": "CME"
+    },
+    "b9muk3": {
+      "timestamp": "2025-10-03T04:32:19.667Z",
+      "source": "Decrypt",
+      "title": "CME Group"
+    },
+    "7ywhk8": {
+      "timestamp": "2025-10-03T04:32:22.105Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "Coinbase, 1inch"
+    },
+    "o2bclj": {
+      "timestamp": "2025-10-03T04:32:24.500Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "Avalanche (AVAX)"
+    },
+    "6sfe36": {
+      "timestamp": "2025-10-03T04:32:27.132Z",
+      "source": "CoinMarketCap Announcements",
+      "title": "Bitcoin (BTC)"
+    },
+    "8kenh9": {
+      "timestamp": "2025-10-03T04:32:29.565Z",
+      "source": "Decrypt",
+      "title": "Bitcoin (BTC)"
+    },
+    "c24mtf": {
+      "timestamp": "2025-10-03T04:32:32.007Z",
+      "source": "CoinDesk",
+      "title": "Bitcoin"
+    },
+    "1r7vg": {
+      "timestamp": "2025-10-03T04:32:34.425Z",
+      "source": "Bitcoin Magazine (GNews)",
+      "title": "Bitcoin"
+    },
+    "mfapfu": {
+      "timestamp": "2025-10-03T04:32:36.844Z",
+      "source": "Decrypt",
+      "title": "Security Breach"
+    },
+    "yy6ora": {
+      "timestamp": "2025-10-03T04:32:50.346Z",
+      "source": "CoinTelegraph",
+      "title": "Bitcoin/Microstrategy"
+    },
+    "ab4p0o": {
+      "timestamp": "2025-10-03T04:32:52.764Z",
+      "source": "CoinDesk",
+      "title": "CME Group"
+    },
+    "6pqrln": {
+      "timestamp": "2025-10-03T04:32:55.192Z",
+      "source": "The Defiant",
+      "title": "Zcash (ZEC)"
+    },
+    "d1l2eb": {
+      "timestamp": "2025-10-03T04:32:57.622Z",
+      "source": "CoinDesk",
+      "title": "GSR"
+    },
+    "ad3c3w": {
+      "timestamp": "2025-10-03T04:33:00.064Z",
+      "source": "CoinDesk",
+      "title": "Mantle"
+    },
+    "ecfs2w": {
+      "timestamp": "2025-10-03T04:33:02.473Z",
+      "source": "Decrypt",
+      "title": "Bitcoin ETFs"
+    },
+    "utc3jy": {
+      "timestamp": "2025-10-03T04:33:04.984Z",
+      "source": "Decrypt",
+      "title": "Polymarket"
+    },
+    "fhwyup": {
+      "timestamp": "2025-10-03T04:33:07.463Z",
+      "source": "CoinDesk",
+      "title": "Bitcoin and Altcoins"
+    },
+    "pbwt4x": {
+      "timestamp": "2025-10-03T04:33:09.944Z",
+      "source": "CoinDesk",
+      "title": "Avalanche Treasury Co."
+    },
+    "3to23n": {
+      "timestamp": "2025-10-03T04:33:12.384Z",
+      "source": "CoinDesk",
+      "title": "Polygon, Standard Chartered, AlloyX"
+    },
+    "9d3caj": {
+      "timestamp": "2025-10-03T04:33:14.815Z",
+      "source": "CoinDesk",
+      "title": "Ethereum, Securitize"
+    },
+    "jp55r7": {
+      "timestamp": "2025-10-03T04:33:17.245Z",
+      "source": "CoinDesk",
+      "title": "BlackRock IBIT ETF"
+    },
+    "4shjyx": {
+      "timestamp": "2025-10-03T04:33:19.699Z",
+      "source": "The Defiant",
+      "title": "PancakeSwap"
+    },
+    "ul2g8e": {
+      "timestamp": "2025-10-03T04:33:20.125Z",
+      "source": "ethereum/go-ethereum",
+      "title": "go-ethereum"
+    },
+    "yp38fl": {
+      "timestamp": "2025-10-03T04:33:22.568Z",
+      "source": "NethermindEth/nethermind",
+      "title": "Nethermind"
+    },
+    "9wrv2q": {
+      "timestamp": "2025-10-03T04:34:17.700Z",
+      "source": "erigontech/erigon",
+      "title": "Erigon"
+    },
+    "einuzx": {
+      "timestamp": "2025-10-03T04:33:27.712Z",
+      "source": "ConsenSys/teku",
+      "title": "Teku"
+    },
+    "c5q0ks": {
+      "timestamp": "2025-10-03T04:34:20.333Z",
+      "source": "ethereum-optimism/optimism",
+      "title": "Optimism"
+    },
+    "505mt5": {
+      "timestamp": "2025-10-03T04:34:22.781Z",
+      "source": "ethereum-optimism/optimism",
+      "title": "Optimism"
+    },
+    "px0xc9": {
+      "timestamp": "2025-10-03T04:33:35.484Z",
+      "source": "ethereum-optimism/optimism",
+      "title": "Optimism"
+    },
+    "6gfklh": {
+      "timestamp": "2025-10-03T04:33:50.914Z",
+      "source": "scroll-tech/scroll",
+      "title": "Scroll"
+    },
+    "afcarg": {
+      "timestamp": "2025-10-03T04:33:53.568Z",
+      "source": "scroll-tech/scroll",
+      "title": "Scroll"
+    },
+    "31lrul": {
+      "timestamp": "2025-10-03T04:33:56.202Z",
+      "source": "taikoxyz/taiko-mono",
+      "title": "Taiko"
+    },
+    "ngmick": {
+      "timestamp": "2025-10-03T04:33:58.837Z",
+      "source": "taikoxyz/taiko-mono",
+      "title": "Taiko"
+    },
+    "69fsuj": {
+      "timestamp": "2025-10-03T04:34:01.481Z",
+      "source": "MystenLabs/sui",
+      "title": "Sui"
+    },
+    "i2v650": {
+      "timestamp": "2025-10-03T04:34:04.125Z",
+      "source": "aptos-labs/aptos-core",
+      "title": "Aptos"
+    },
+    "mm976q": {
+      "timestamp": "2025-10-03T04:34:06.835Z",
+      "source": "MystenLabs/sui",
+      "title": "Sui"
+    },
+    "ge948e": {
+      "timestamp": "2025-10-03T04:34:09.436Z",
+      "source": "MystenLabs/sui",
+      "title": "Sui"
+    },
+    "u3sdyc": {
+      "timestamp": "2025-10-03T04:34:12.135Z",
+      "source": "aptos-labs/aptos-core",
+      "title": "Aptos"
+    },
+    "a7y78b": {
+      "timestamp": "2025-10-03T04:34:25.227Z",
+      "source": "aptos-labs/aptos-core",
+      "title": "Aptos"
+    },
+    "vck6rj": {
+      "timestamp": "2025-10-03T04:34:17.207Z",
+      "source": "celestiaorg/celestia-app",
+      "title": "Celestia"
+    }
+  },
+  "title_hashes": {
+    "oy27h1": {
+      "timestamp": "2025-10-03T04:31:52.709Z",
+      "source": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/near-foundation-ai-delegates-dao-voting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "n4h9ye": {
+      "timestamp": "2025-10-03T04:32:52.764Z",
+      "source": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2025/10/02/cme-group-to-launch-24-7-crypto-futures-and-options-trading-in-early-2026"
+    },
+    "hrieft": {
+      "timestamp": "2025-10-03T04:31:57.560Z",
+      "source": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-com-morpho-lending-stablecoin-yield-cronos?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "1p5asi": {
+      "timestamp": "2025-10-03T04:32:34.425Z",
+      "source": "Bitcoin Magazine (GNews)",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNmYza2pFQW1CSE5zSUJTaENsdVR2aEo3TzNwZmFSakZUdUg4VFFDUnRKYTZSQWRaeVBxMlplUFVqaHFTMkItMWkxeTdBSTE0aS1RVU9qcjNYVnFMQXJ4OGhUN3VsaUwwYkZEWGdpcm5zNExzWFNUOXNVTVVfV2w4LUJmLVJEcEFXb2plVlh4RS1uSWRuOEVWYldyX3Z1YkdZXzVkdHpSaUl0OC1IR0Y4?oc=5"
+    },
+    "xrx6yq": {
+      "timestamp": "2025-10-03T04:33:02.473Z",
+      "source": "Decrypt",
+      "link": "https://decrypt.co/342679/bitcoin-etfs-pull-in-676m-as-btc-price-tops-119k"
+    },
+    "bh7wax": {
+      "timestamp": "2025-10-03T04:32:07.295Z",
+      "source": "Bankless",
+      "link": "https://www.bankless.com/read/news/perp-dex-monthly-trading-volume-tops-1-trillion-as-aster-overtakes-hyperliquid"
+    },
+    "k6ilv4": {
+      "timestamp": "2025-10-03T04:32:09.716Z",
+      "source": "Bitcoin Magazine (GNews)",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPenN0aXNVMmVIdHVsQ0dnVHpuSGFYZzktRE5rd1REVDk5cDMwWnpIdlRKOU53ZWo1VUtrUTBSakZqYkRaelgtRDNPaGw1dnFmd2hWX2lYOTRjMzVOQUtnb2lkbnhnaDBjbTdxSkQtVy1wU2FURjRfUzlsa1d3c2FtNA?oc=5"
+    },
+    "1mpytv": {
+      "timestamp": "2025-10-03T04:32:12.151Z",
+      "source": "MakerDAO Forum",
+      "link": "https://forum.sky.money/t/grove-risk-assessment-pt-usde-pt-susde/27254"
+    },
+    "243f": {
+      "timestamp": "2025-10-03T04:32:17.165Z",
+      "source": "Bankless",
+      "link": "https://www.bankless.com/read/news/cme-to-launch-24-7-trading-for-crypto-futures-and-options-in-2026"
+    },
+    "p1djy5": {
+      "timestamp": "2025-10-03T04:32:22.105Z",
+      "source": "CoinMarketCap Announcements",
+      "link": "https://coinmarketcap.com/community/post/369030342"
+    },
+    "9m0y6f": {
+      "timestamp": "2025-10-03T04:32:24.500Z",
+      "source": "CoinMarketCap Announcements",
+      "link": "https://coinmarketcap.com/community/post/369026501"
+    },
+    "ey6r0v": {
+      "timestamp": "2025-10-03T04:32:29.565Z",
+      "source": "Decrypt",
+      "link": "https://decrypt.co/342682/bitcoin-soars-above-120k-us-government-shutdown-continues"
+    },
+    "ll4rw1": {
+      "timestamp": "2025-10-03T04:32:36.844Z",
+      "source": "Decrypt",
+      "link": "https://decrypt.co/342693/thief-snaps-photo-of-victims-seed-phrase-in-apartment-steals-1-7m-in-crypto"
+    },
+    "fhck6f": {
+      "timestamp": "2025-10-03T04:32:50.346Z",
+      "source": "CoinTelegraph",
+      "link": "https://cointelegraph.com/explained/why-saylor-s-strategy-keeps-buying-bitcoin-the-long-term-bet-explained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "nvglsr": {
+      "timestamp": "2025-10-03T04:32:55.192Z",
+      "source": "The Defiant",
+      "link": "https://thedefiant.io/news/markets/zcash-price-rally-crypto-privacy"
+    },
+    "277q": {
+      "timestamp": "2025-10-03T04:32:57.622Z",
+      "source": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2025/10/02/crypto-market-maker-gsr-to-acquire-finra-registered-broker-dealer-equilibrium-capital-services"
+    },
+    "hvui7h": {
+      "timestamp": "2025-10-03T04:33:00.064Z",
+      "source": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2025/10/02/mantle-launches-tokenization-platform-adds-wlfi-s-usd1-stablecoin-in-rwa-push"
+    },
+    "ijk7aw": {
+      "timestamp": "2025-10-03T04:33:04.984Z",
+      "source": "Decrypt",
+      "link": "https://decrypt.co/342676/morning-minute-polymarket-prepares-for-imminent-u-s-launch"
+    },
+    "a3sfdw": {
+      "timestamp": "2025-10-03T04:33:07.463Z",
+      "source": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2025/10/02/crypto-markets-today-bitcoin-breaks-usd119k-as-altcoins-surge-traders-eye-record-highs"
+    },
+    "9dccqk": {
+      "timestamp": "2025-10-03T04:33:09.944Z",
+      "source": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2025/10/02/avalanche-treasury-co-going-public-in-usd675m-spac-deal-backed-by-avax-ecosystem"
+    },
+    "n67g80": {
+      "timestamp": "2025-10-03T04:33:12.384Z",
+      "source": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2025/10/02/polygon-standard-chartered-enlisted-for-alloyx-tokenized-money-market-fund"
+    },
+    "pt50dg": {
+      "timestamp": "2025-10-03T04:33:14.815Z",
+      "source": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2025/10/02/eth-treasury-firm-to-tokenize-nasdaq-listed-shares-on-ethereum-with-securitize"
+    },
+    "hweb7b": {
+      "timestamp": "2025-10-03T04:33:17.245Z",
+      "source": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2025/10/02/blackrock-s-ibit-enters-top-20-etfs-by-assets-sees-biggest-inflow-since-mid-august"
+    },
+    "psktpk": {
+      "timestamp": "2025-10-03T04:33:19.699Z",
+      "source": "The Defiant",
+      "link": "https://thedefiant.io/news/defi/pancakeswap-posts-record-usd749-billion-in-q3-trading-volumes"
+    },
+    "hdhxi7": {
+      "timestamp": "2025-10-03T04:33:20.125Z",
+      "source": "ethereum/go-ethereum",
+      "link": "https://github.com/ethereum/go-ethereum/commit/f0dc47aae393abe0bb7b084345daf9108ad8897a"
+    },
+    "jpr0ba": {
+      "timestamp": "2025-10-03T04:33:22.568Z",
+      "source": "NethermindEth/nethermind",
+      "link": "https://github.com/NethermindEth/nethermind/commit/b7c40248d9800068d7fa8a63066b13659fdc2571"
+    },
+    "leyfrq": {
+      "timestamp": "2025-10-03T04:34:17.700Z",
+      "source": "erigontech/erigon",
+      "link": "https://github.com/erigontech/erigon/commit/8193d8236a0416b6a93cdda139fe555d40470ff0"
+    },
+    "2480r": {
+      "timestamp": "2025-10-03T04:33:27.712Z",
+      "source": "ConsenSys/teku",
+      "link": "https://github.com/Consensys/teku/commit/9770297aa9ef92a785874848a659c5fff3847840"
+    },
+    "1b2z90": {
+      "timestamp": "2025-10-03T04:34:22.781Z",
+      "source": "ethereum-optimism/optimism",
+      "link": "https://github.com/ethereum-optimism/optimism/commit/2717a0dd8467ffb2223acef5297d0d493e185378"
+    },
+    "f0eqer": {
+      "timestamp": "2025-10-03T04:33:53.568Z",
+      "source": "scroll-tech/scroll",
+      "link": "https://github.com/scroll-tech/scroll/releases/tag/vShadowfork-darwin"
+    },
+    "1tkb28": {
+      "timestamp": "2025-10-03T04:33:58.837Z",
+      "source": "taikoxyz/taiko-mono",
+      "link": "https://github.com/taikoxyz/taiko-mono/commit/d678497d961027ae041b631414b37528b7e331b5"
+    },
+    "2g5j": {
+      "timestamp": "2025-10-03T04:34:09.436Z",
+      "source": "MystenLabs/sui",
+      "link": "https://github.com/MystenLabs/sui/commit/6ae40fa4ee2be14baa6903de5fdd23f12c42b15d"
+    },
+    "1je0uh": {
+      "timestamp": "2025-10-03T04:34:25.227Z",
+      "source": "aptos-labs/aptos-core",
+      "link": "https://github.com/aptos-labs/aptos-core/commit/ec3523b71a46049a4e438c8c1f5a4e42fdff0521"
+    },
+    "f9lib0": {
+      "timestamp": "2025-10-03T04:34:17.207Z",
+      "source": "celestiaorg/celestia-app",
+      "link": "https://github.com/celestiaorg/celestia-app/commit/088e0338efa1ee6cf892e864eb83532d99d25579"
+    }
+  },
+  "source_hashes": {
+    "cointelegraph": [
+      "2025-10-03T04:31:52.709Z",
+      "2025-10-03T04:31:57.560Z",
+      "2025-10-03T04:32:14.585Z",
+      "2025-10-03T04:32:50.346Z"
+    ],
+    "coinmarketcap announcements": [
+      "2025-10-03T04:31:55.126Z",
+      "2025-10-03T04:32:04.864Z",
+      "2025-10-03T04:32:22.105Z",
+      "2025-10-03T04:32:24.500Z",
+      "2025-10-03T04:32:27.132Z"
+    ],
+    "decrypt": [
+      "2025-10-03T04:31:59.990Z",
+      "2025-10-03T04:32:19.667Z",
+      "2025-10-03T04:32:29.565Z",
+      "2025-10-03T04:32:36.844Z",
+      "2025-10-03T04:33:02.473Z",
+      "2025-10-03T04:33:04.984Z"
+    ],
+    "bitcoin magazine (gnews)": [
+      "2025-10-03T04:32:02.442Z",
+      "2025-10-03T04:32:09.716Z",
+      "2025-10-03T04:32:34.425Z"
+    ],
+    "bankless": [
+      "2025-10-03T04:32:07.295Z",
+      "2025-10-03T04:32:17.165Z"
+    ],
+    "makerdao forum": [
+      "2025-10-03T04:32:12.151Z"
+    ],
+    "coindesk": [
+      "2025-10-03T04:32:32.007Z",
+      "2025-10-03T04:32:52.764Z",
+      "2025-10-03T04:32:57.622Z",
+      "2025-10-03T04:33:00.064Z",
+      "2025-10-03T04:33:07.463Z",
+      "2025-10-03T04:33:09.944Z",
+      "2025-10-03T04:33:12.384Z",
+      "2025-10-03T04:33:14.815Z",
+      "2025-10-03T04:33:17.245Z"
+    ],
+    "the defiant": [
+      "2025-10-03T04:32:55.192Z",
+      "2025-10-03T04:33:19.699Z"
+    ],
+    "ethereum/go-ethereum": [
+      "2025-10-03T04:33:20.125Z"
+    ],
+    "nethermindeth/nethermind": [
+      "2025-10-03T04:33:22.568Z"
+    ],
+    "erigontech/erigon": [
+      "2025-10-03T04:33:24.993Z",
+      "2025-10-03T04:34:17.700Z"
+    ],
+    "consensys/teku": [
+      "2025-10-03T04:33:27.712Z"
+    ],
+    "ethereum-optimism/optimism": [
+      "2025-10-03T04:33:30.154Z",
+      "2025-10-03T04:33:32.845Z",
+      "2025-10-03T04:33:35.484Z",
+      "2025-10-03T04:34:20.333Z",
+      "2025-10-03T04:34:22.781Z"
+    ],
+    "scroll-tech/scroll": [
+      "2025-10-03T04:33:50.914Z",
+      "2025-10-03T04:33:53.568Z"
+    ],
+    "taikoxyz/taiko-mono": [
+      "2025-10-03T04:33:56.202Z",
+      "2025-10-03T04:33:58.837Z"
+    ],
+    "mystenlabs/sui": [
+      "2025-10-03T04:34:01.481Z",
+      "2025-10-03T04:34:06.835Z",
+      "2025-10-03T04:34:09.436Z"
+    ],
+    "aptos-labs/aptos-core": [
+      "2025-10-03T04:34:04.125Z",
+      "2025-10-03T04:34:12.135Z",
+      "2025-10-03T04:34:14.605Z",
+      "2025-10-03T04:34:25.227Z"
+    ],
+    "celestiaorg/celestia-app": [
+      "2025-10-03T04:34:17.207Z"
+    ]
+  },
+  "lastUpdated": "2025-10-03T04:34:27.235Z"
 }
