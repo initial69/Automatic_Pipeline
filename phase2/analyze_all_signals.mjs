@@ -57,16 +57,43 @@ async function analyzeAllSignals() {
 
   // Apply deduplication to new signals before analysis
   console.log('\n🔍 Applying deduplication to new signals...');
+  
+  // Pre-filter by URL to prevent same URL being analyzed multiple times
+  console.log('🔍 Pre-filtering by URL to prevent duplicate analysis...');
+  const urlSeen = new Set();
+  const urlFilteredSignals = [];
+  const urlDuplicates = [];
+  
+  for (const signal of newSignals) {
+    const url = signal.link || signal.url || '';
+    const cleanUrl = url.split('?')[0].split('#')[0]; // Clean URL
+    
+    if (cleanUrl && urlSeen.has(cleanUrl)) {
+      urlDuplicates.push(signal);
+      console.log(`❌ URL duplicate filtered: ${cleanUrl}`);
+    } else {
+      if (cleanUrl) {
+        urlSeen.add(cleanUrl);
+      }
+      urlFilteredSignals.push(signal);
+    }
+  }
+  
+  console.log(`📊 URL filtering results:`);
+  console.log(`   ✅ Unique URLs: ${urlFilteredSignals.length}`);
+  console.log(`   ❌ URL duplicates: ${urlDuplicates.length}`);
+  
+  // Apply advanced deduplication
   const deduplication = new AdvancedDeduplication();
   const dedupOptions = {
-    contentSimilarityThreshold: 0.8,
-    titleSimilarityThreshold: 0.9,
-    maxSourcePerHour: 5, // More lenient for analysis phase
-    maxSignalsPerRun: 100
+    contentSimilarityThreshold: 0.7, // More strict
+    titleSimilarityThreshold: 0.8,   // More strict
+    maxSourcePerHour: 3,             // More strict
+    maxSignalsPerRun: 50             // More strict
   };
   
   // Enrich signals for deduplication
-  const enrichedSignals = newSignals.map(signal => ({
+  const enrichedSignals = urlFilteredSignals.map(signal => ({
     ...signal,
     content: signal.title || signal.judul || '', // Use title as content for dedup
     source: signal.source || signal.repo || 'Unknown'
@@ -78,7 +105,9 @@ async function analyzeAllSignals() {
   
   console.log(`📊 Deduplication results:`);
   console.log(`   ✅ Unique signals for analysis: ${uniqueSignals.length}`);
-  console.log(`   ❌ Duplicates filtered: ${duplicateSignals.length}`);
+  console.log(`   ❌ Content duplicates filtered: ${duplicateSignals.length}`);
+  console.log(`   ❌ URL duplicates filtered: ${urlDuplicates.length}`);
+  console.log(`   📈 Total duplicates: ${duplicateSignals.length + urlDuplicates.length}`);
   
   if (uniqueSignals.length === 0) {
     console.log('✅ No unique signals to analyze after deduplication.');
@@ -205,14 +234,18 @@ ${index + 1}. ${analysis.project_name} - ${analysis.opportunity_type} (Score: ${
   console.log(`   Global: ${tracker.getStats().global} signals tracked`);
   console.log(`📊 Deduplication Stats:`);
   console.log(`   Unique signals analyzed: ${uniqueSignals.length}`);
-  console.log(`   Duplicates filtered: ${duplicateSignals.length}`);
+  console.log(`   Content duplicates filtered: ${duplicateSignals.length}`);
+  console.log(`   URL duplicates filtered: ${urlDuplicates.length}`);
+  console.log(`   Total duplicates: ${duplicateSignals.length + urlDuplicates.length}`);
   
   return {
     gemini_analysis: geminiResults,
     incremental_stats: {
       new_signals: newSignals.length,
       unique_signals: uniqueSignals.length,
-      duplicates_filtered: duplicateSignals.length,
+      content_duplicates_filtered: duplicateSignals.length,
+      url_duplicates_filtered: urlDuplicates.length,
+      total_duplicates_filtered: duplicateSignals.length + urlDuplicates.length,
       skipped_signals: skippedSignals.length,
       total_analyzed: tracker.getStats().global
     }
