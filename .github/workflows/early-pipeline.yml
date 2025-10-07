@@ -44,8 +44,10 @@ jobs:
       - name: Cache deduplication tracker
         uses: actions/cache@v4
         with:
-          path: data/deduplication_tracker.json
-          key: dedup-tracker-${{ runner.os }}-${{ hashFiles('data/deduplication_tracker.json') }}
+          path: |
+            data/deduplication_tracker.json
+            data
+          key: dedup-tracker-${{ runner.os }}-v1
           restore-keys: |
             dedup-tracker-${{ runner.os }}-
 

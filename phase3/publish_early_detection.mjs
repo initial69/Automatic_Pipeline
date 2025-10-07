@@ -563,6 +563,22 @@ async function publishEarlyDetection() {
       };
       deduplication.markAsProcessed(signalForTracking);
       
+      // Final duplicate guard right before sending
+      const preSendDupCheck = deduplication.checkDeduplication(signalForTracking, {
+        contentSimilarityThreshold: 0.6,
+        titleSimilarityThreshold: 0.7,
+        maxSourcePerHour: 1,
+        checkContent: true,
+        checkTitle: true,
+        checkSource: true,
+        checkAlreadyPublished: true,
+        checkURLProcessed: true
+      });
+      if (preSendDupCheck.isDuplicate) {
+        console.log(`❌ Skipping send (final guard): ${preSendDupCheck.reasons.join(', ')}`);
+        continue;
+      }
+      
       publishResults.total++;
       const result = await sendToTelegramBot(message, botConfig);
       if (result.success) {
@@ -618,6 +634,22 @@ async function publishEarlyDetection() {
       };
       deduplication.markAsProcessed(signalForTracking);
       
+      // Final duplicate guard right before sending
+      const preSendDupCheck = deduplication.checkDeduplication(signalForTracking, {
+        contentSimilarityThreshold: 0.6,
+        titleSimilarityThreshold: 0.7,
+        maxSourcePerHour: 1,
+        checkContent: true,
+        checkTitle: true,
+        checkSource: true,
+        checkAlreadyPublished: true,
+        checkURLProcessed: true
+      });
+      if (preSendDupCheck.isDuplicate) {
+        console.log(`❌ Skipping send (final guard): ${preSendDupCheck.reasons.join(', ')}`);
+        continue;
+      }
+      
       publishResults.total++;
       const result = await sendToTelegramBot(message, botConfig);
       if (result.success) {
@@ -664,6 +696,27 @@ async function publishEarlyDetection() {
       console.log(`   Title: ${analysis.project_name} - ${analysis.opportunity_type}`);
       console.log(`   Score: ${Math.round(analysis.score / 10)}/10`);
       
+      // Final duplicate guard right before sending
+      const preSendDupCheck = deduplication.checkDeduplication({
+        source: originalSignal?.source || 'Unknown',
+        title: analysis.project_name,
+        link: analysis.evidence?.[0] || '',
+        content: analysis.investment_angle || ''
+      }, {
+        contentSimilarityThreshold: 0.6,
+        titleSimilarityThreshold: 0.7,
+        maxSourcePerHour: 1,
+        checkContent: true,
+        checkTitle: true,
+        checkSource: true,
+        checkAlreadyPublished: true,
+        checkURLProcessed: true
+      });
+      if (preSendDupCheck.isDuplicate) {
+        console.log(`❌ Skipping send (final guard): ${preSendDupCheck.reasons.join(', ')}`);
+        continue;
+      }
+      
       const result = await sendToTelegramBot(message, botConfig);
       if (result.success) {
         console.log(`✅ Watch item ${i + 1} sent successfully`);
@@ -705,6 +758,27 @@ async function publishEarlyDetection() {
       console.log(`📤 Sending risk alert ${i + 1}/${Math.min(finalPotentialRisks.length, 10)}...`);
       console.log(`   Title: ${analysis.project_name} - ${analysis.opportunity_type}`);
       console.log(`   Score: ${Math.round(analysis.score / 10)}/10`);
+      
+      // Final duplicate guard right before sending
+      const preSendDupCheck = deduplication.checkDeduplication({
+        source: originalSignal?.source || 'Unknown',
+        title: analysis.project_name,
+        link: analysis.evidence?.[0] || '',
+        content: analysis.investment_angle || ''
+      }, {
+        contentSimilarityThreshold: 0.6,
+        titleSimilarityThreshold: 0.7,
+        maxSourcePerHour: 1,
+        checkContent: true,
+        checkTitle: true,
+        checkSource: true,
+        checkAlreadyPublished: true,
+        checkURLProcessed: true
+      });
+      if (preSendDupCheck.isDuplicate) {
+        console.log(`❌ Skipping send (final guard): ${preSendDupCheck.reasons.join(', ')}`);
+        continue;
+      }
       
       const result = await sendToTelegramBot(message, botConfig);
       if (result.success) {
