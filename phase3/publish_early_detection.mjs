@@ -585,8 +585,9 @@ async function publishEarlyDetection() {
         publishResults.sent++;
         console.log(`✅ Hot opportunity ${i + 1} sent successfully`);
         
-        // Mark as published in deduplication tracker
+        // Mark as published in deduplication tracker and persist immediately
         deduplication.markAsPublished(signalForTracking);
+        deduplication.finalize();
       } else {
         publishResults.failed++;
         publishResults.failedMessages.push({
@@ -656,8 +657,9 @@ async function publishEarlyDetection() {
         publishResults.sent++;
         console.log(`✅ Early signal ${i + 1} sent successfully`);
         
-        // Mark as published in deduplication tracker
+        // Mark as published in deduplication tracker and persist immediately
         deduplication.markAsPublished(signalForTracking);
+        deduplication.finalize();
       } else {
         publishResults.failed++;
         publishResults.failedMessages.push({
@@ -728,6 +730,7 @@ async function publishEarlyDetection() {
           content: analysis.investment_angle || ''
         };
         deduplication.markAsPublished(signalForTracking);
+        deduplication.finalize();
       } else {
         console.log(`❌ Failed to send watch item ${i + 1}`);
       }
@@ -791,6 +794,7 @@ async function publishEarlyDetection() {
           content: analysis.investment_angle || ''
         };
         deduplication.markAsPublished(signalForTracking);
+        deduplication.finalize();
       } else {
         console.log(`❌ Failed to send risk alert ${i + 1}`);
       }

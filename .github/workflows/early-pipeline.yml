@@ -45,11 +45,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            data/deduplication_tracker.json
-            data
-          key: dedup-tracker-${{ runner.os }}-v1
+            data/**
+          key: dedup-tracker-${{ runner.os }}-v1-${{ github.run_id }}
           restore-keys: |
-            dedup-tracker-${{ runner.os }}-
+            dedup-tracker-${{ runner.os }}-v1-
 
       - name: Install dependencies
         run: |
@@ -280,6 +279,16 @@ jobs:
               cat "data/$(date +%Y-%m-%d)/failed_telegram_messages.json" | jq '.' || echo "Could not parse failed messages"
             fi
             exit 1
+          fi
+
+      - name: Show tracker after run
+        if: always()
+        run: |
+          echo "🔎 Tracker after run:"
+          ls -l data || true
+          if [ -f data/deduplication_tracker.json ]; then
+            echo "📄 Last 50 lines of deduplication_tracker.json:"
+            tail -n 50 data/deduplication_tracker.json || true
           fi
 
       - name: Upload daily data artifacts
