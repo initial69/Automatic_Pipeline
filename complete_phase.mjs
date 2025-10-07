@@ -18,6 +18,7 @@ async function runCompletePhase() {
     analyzeDuplicates();
   } catch (error) {
     console.log('⚠️  Could not run duplicate analysis:', error.message);
+    console.log('📝 Continuing with pipeline execution...');
   }
   
   try {

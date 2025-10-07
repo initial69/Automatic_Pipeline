@@ -22,10 +22,24 @@ function analyzeDuplicates() {
   }
   
   try {
-    const tracker = JSON.parse(readFileSync(dedupFile, 'utf8'));
+    const trackerData = readFileSync(dedupFile, 'utf8');
+    let tracker;
+    
+    try {
+      tracker = JSON.parse(trackerData);
+    } catch (parseError) {
+      console.log('⚠️  Invalid JSON in tracker file, creating fresh tracker...');
+      tracker = {
+        published: {},
+        content_hashes: {},
+        title_hashes: {},
+        source_hashes: {},
+        lastUpdated: new Date().toISOString()
+      };
+    }
     
     console.log(`📊 Deduplication Tracker Analysis`);
-    console.log(`📅 Last Updated: ${tracker.lastUpdated}`);
+    console.log(`📅 Last Updated: ${tracker.lastUpdated || 'N/A'}`);
     console.log(`🔄 Reset Reason: ${tracker.resetReason || 'N/A'}`);
     console.log(`🔄 Reset Timestamp: ${tracker.resetTimestamp || 'N/A'}`);
     
@@ -35,12 +49,15 @@ function analyzeDuplicates() {
     
     console.log(`\n📤 Published Items: ${publishedCount}`);
     
+    // Initialize variables for analysis
+    const sourceGroups = {};
+    const urlSet = new Set();
+    const duplicateUrls = [];
+    let recentCount = 0;
+    let dailyCount = 0;
+    
     if (publishedCount > 0) {
       // Group by source
-      const sourceGroups = {};
-      const urlSet = new Set();
-      const duplicateUrls = [];
-      
       for (const [key, item] of Object.entries(publishedItems)) {
         const source = item.source || 'Unknown';
         if (!sourceGroups[source]) {
@@ -91,9 +108,6 @@ function analyzeDuplicates() {
       const now = new Date();
       const oneHourAgo = new Date(now.getTime() - 60 * 60 * 1000);
       const oneDayAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
-      
-      let recentCount = 0;
-      let dailyCount = 0;
       
       for (const item of Object.values(publishedItems)) {
         if (item.timestamp) {
