@@ -396,8 +396,17 @@ async function publishEarlyDetection() {
   const urlSeen = new Set();
   const urlFilteredAnalyses = [];
   const urlDuplicates = [];
+  const alreadyProcessedDuplicates = [];
   
   for (const analysis of allAnalysesForDedup) {
+    // Skip if URL already processed in previous runs (strong guard)
+    const cleanUrl = analysis.url_key || '';
+    if (cleanUrl && deduplication.checkURLAlreadyProcessed(cleanUrl)) {
+      alreadyProcessedDuplicates.push(analysis);
+      console.log(`❌ Already processed (tracker): ${cleanUrl}`);
+      continue;
+    }
+    
     if (analysis.url_key && urlSeen.has(analysis.url_key)) {
       urlDuplicates.push(analysis);
       console.log(`❌ URL duplicate filtered: ${analysis.url_key}`);
@@ -412,6 +421,7 @@ async function publishEarlyDetection() {
   console.log(`📊 URL filtering results:`);
   console.log(`   ✅ Unique URLs: ${urlFilteredAnalyses.length}`);
   console.log(`   ❌ URL duplicates: ${urlDuplicates.length}`);
+  console.log(`   ❌ Already-processed (tracker): ${alreadyProcessedDuplicates.length}`);
   
   // Apply advanced deduplication
   console.log('\n🔍 Applying Advanced Deduplication...');
