@@ -416,10 +416,15 @@ async function publishEarlyDetection() {
   // Apply advanced deduplication
   console.log('\n🔍 Applying Advanced Deduplication...');
   const dedupOptions = {
-    contentSimilarityThreshold: 0.7, // More strict - 70% similarity
-    titleSimilarityThreshold: 0.8,   // More strict - 80% similarity
-    maxSourcePerHour: 2,             // More strict - 2 per hour
-    maxSignalsPerRun: 30             // More strict - 30 per run
+    contentSimilarityThreshold: 0.6, // More strict - 60% similarity
+    titleSimilarityThreshold: 0.7,   // More strict - 70% similarity
+    maxSourcePerHour: 1,             // More strict - 1 per hour
+    maxSignalsPerRun: 20,            // More strict - 20 per run
+    checkURLProcessed: true,         // Enable URL-based deduplication
+    checkAlreadyPublished: true,     // Enable published check
+    checkContent: true,              // Enable content similarity
+    checkTitle: true,                // Enable title similarity
+    checkSource: true                // Enable source frequency
   };
   
   const dedupResult = deduplication.filterSignalsForPublishing(urlFilteredAnalyses, dedupOptions);
@@ -539,6 +544,15 @@ async function publishEarlyDetection() {
       console.log(`   Title: ${analysis.project_name} - ${analysis.opportunity_type}`);
       console.log(`   Score: ${Math.round(analysis.score / 10)}/10`);
       
+      // Mark as processed BEFORE sending to prevent duplicate processing
+      const signalForTracking = {
+        source: originalSignal?.source || 'Unknown',
+        title: analysis.project_name,
+        link: analysis.evidence?.[0] || '',
+        content: analysis.investment_angle || ''
+      };
+      deduplication.markAsProcessed(signalForTracking);
+      
       publishResults.total++;
       const result = await sendToTelegramBot(message, botConfig);
       if (result.success) {
@@ -546,12 +560,6 @@ async function publishEarlyDetection() {
         console.log(`✅ Hot opportunity ${i + 1} sent successfully`);
         
         // Mark as published in deduplication tracker
-        const signalForTracking = {
-          source: originalSignal?.source || 'Unknown',
-          title: analysis.project_name,
-          link: analysis.evidence?.[0] || '',
-          content: analysis.investment_angle || ''
-        };
         deduplication.markAsPublished(signalForTracking);
       } else {
         publishResults.failed++;
@@ -591,6 +599,15 @@ async function publishEarlyDetection() {
       console.log(`   Title: ${analysis.project_name} - ${analysis.opportunity_type}`);
       console.log(`   Score: ${Math.round(analysis.score / 10)}/10`);
       
+      // Mark as processed BEFORE sending to prevent duplicate processing
+      const signalForTracking = {
+        source: originalSignal?.source || 'Unknown',
+        title: analysis.project_name,
+        link: analysis.evidence?.[0] || '',
+        content: analysis.investment_angle || ''
+      };
+      deduplication.markAsProcessed(signalForTracking);
+      
       publishResults.total++;
       const result = await sendToTelegramBot(message, botConfig);
       if (result.success) {
@@ -598,12 +615,6 @@ async function publishEarlyDetection() {
         console.log(`✅ Early signal ${i + 1} sent successfully`);
         
         // Mark as published in deduplication tracker
-        const signalForTracking = {
-          source: originalSignal?.source || 'Unknown',
-          title: analysis.project_name,
-          link: analysis.evidence?.[0] || '',
-          content: analysis.investment_angle || ''
-        };
         deduplication.markAsPublished(signalForTracking);
       } else {
         publishResults.failed++;

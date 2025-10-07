@@ -202,6 +202,30 @@ export class AdvancedDeduplication {
     return this.tracker.published.hasOwnProperty(signalKey);
   }
 
+  // Check if URL was already processed (new method)
+  checkURLAlreadyProcessed(url) {
+    if (!url) return false;
+    
+    // Clean URL for comparison
+    const cleanUrl = url.split('?')[0].split('#')[0].toLowerCase();
+    
+    // Check in published items
+    for (const [key, value] of Object.entries(this.tracker.published)) {
+      if (value.link && value.link.toLowerCase().includes(cleanUrl)) {
+        return true;
+      }
+    }
+    
+    // Check in content hashes (for analysis results)
+    for (const [key, value] of Object.entries(this.tracker.content_hashes)) {
+      if (value.link && value.link.toLowerCase().includes(cleanUrl)) {
+        return true;
+      }
+    }
+    
+    return false;
+  }
+
   // Generate unique key for signal
   generateSignalKey(signal) {
     const source = (signal.source || '').toLowerCase();
@@ -219,7 +243,8 @@ export class AdvancedDeduplication {
       checkContent = true,
       checkTitle = true,
       checkSource = true,
-      checkAlreadyPublished = true
+      checkAlreadyPublished = true,
+      checkURLProcessed = true
     } = options;
 
     const results = {
@@ -228,7 +253,17 @@ export class AdvancedDeduplication {
       details: {}
     };
 
-    // 1. Check if already published
+    // 1. Check if URL was already processed (most important check)
+    if (checkURLProcessed && signal.link) {
+      if (this.checkURLAlreadyProcessed(signal.link)) {
+        results.isDuplicate = true;
+        results.reasons.push('url_already_processed');
+        results.details.urlProcessed = true;
+        return results;
+      }
+    }
+
+    // 2. Check if already published
     if (checkAlreadyPublished) {
       if (this.checkAlreadyPublished(signal)) {
         results.isDuplicate = true;
@@ -238,7 +273,7 @@ export class AdvancedDeduplication {
       }
     }
 
-    // 2. Check content similarity
+    // 3. Check content similarity
     if (checkContent && signal.content) {
       const contentCheck = this.checkContentSimilarity(signal.content, contentSimilarityThreshold);
       if (contentCheck.isDuplicate) {
@@ -248,7 +283,7 @@ export class AdvancedDeduplication {
       }
     }
 
-    // 3. Check title similarity
+    // 4. Check title similarity
     if (checkTitle && signal.title) {
       const titleCheck = this.checkTitleSimilarity(signal.title, titleSimilarityThreshold);
       if (titleCheck.isDuplicate) {
@@ -258,7 +293,7 @@ export class AdvancedDeduplication {
       }
     }
 
-    // 4. Check source frequency
+    // 5. Check source frequency
     if (checkSource && signal.source) {
       const sourceCheck = this.checkSourceFrequency(signal.source, maxSourcePerHour);
       if (sourceCheck.isDuplicate) {
@@ -290,7 +325,8 @@ export class AdvancedDeduplication {
       this.tracker.content_hashes[contentHash] = {
         timestamp: now,
         source: signal.source,
-        title: signal.title
+        title: signal.title,
+        link: signal.link  // Add link to content hash for URL checking
       };
     }
 
@@ -324,6 +360,33 @@ export class AdvancedDeduplication {
     }
   }
 
+  // Mark signal as processed (before publishing) - new method
+  markAsProcessed(signal) {
+    const signalKey = this.generateSignalKey(signal);
+    const now = new Date().toISOString();
+    
+    // Mark as processed (but not yet published)
+    this.tracker.published[signalKey] = {
+      timestamp: now,
+      source: signal.source,
+      title: signal.title,
+      link: signal.link,
+      status: 'processed'  // Mark as processed, not published
+    };
+
+    // Add to content hash for URL checking
+    if (signal.content) {
+      const contentHash = this.generateContentHash(signal.content);
+      this.tracker.content_hashes[contentHash] = {
+        timestamp: now,
+        source: signal.source,
+        title: signal.title,
+        link: signal.link,
+        status: 'processed'
+      };
+    }
+  }
+
   // Filter signals for publishing
   filterSignalsForPublishing(signals, options = {}) {
     const {
@@ -347,7 +410,8 @@ export class AdvancedDeduplication {
         checkContent: true,
         checkTitle: true,
         checkSource: true,
-        checkAlreadyPublished: true
+        checkAlreadyPublished: true,
+        checkURLProcessed: true
       });
 
       if (dedupResult.isDuplicate) {
