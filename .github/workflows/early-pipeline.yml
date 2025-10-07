@@ -35,6 +35,20 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'package-lock.json'
 
+      # Ensure data directory exists before restoring cache
+      - name: Ensure data dir
+        run: |
+          mkdir -p data
+
+      # Cache deduplication tracker for idempotency across runs
+      - name: Cache deduplication tracker
+        uses: actions/cache@v4
+        with:
+          path: data/deduplication_tracker.json
+          key: dedup-tracker-${{ runner.os }}-${{ hashFiles('data/deduplication_tracker.json') }}
+          restore-keys: |
+            dedup-tracker-${{ runner.os }}-
+
       - name: Install dependencies
         run: |
           npm ci --no-audit --no-fund

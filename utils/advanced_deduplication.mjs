@@ -228,10 +228,15 @@ export class AdvancedDeduplication {
 
   // Generate unique key for signal
   generateSignalKey(signal) {
+    const rawLink = (signal.link || '').toLowerCase();
+    const cleanLink = rawLink ? rawLink.split('?')[0].split('#')[0] : '';
+    if (cleanLink) {
+      // Prefer URL-only key so it is stable across runs even if titles/sources vary
+      return `url:${cleanLink}`;
+    }
     const source = (signal.source || '').toLowerCase();
-    const link = (signal.link || '').toLowerCase();
     const title = (signal.title || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-    return `${source}:${link}:${title}`;
+    return `${source}:${title}`;
   }
 
   // Comprehensive deduplication check
@@ -358,6 +363,9 @@ export class AdvancedDeduplication {
       this.tracker.source_hashes[sourceKey] = this.tracker.source_hashes[sourceKey]
         .filter(timestamp => new Date(timestamp) > oneDayAgo);
     }
+
+    // Persist immediately to survive job interruptions
+    this.saveTracker();
   }
 
   // Mark signal as processed (before publishing) - new method
@@ -385,6 +393,9 @@ export class AdvancedDeduplication {
         status: 'processed'
       };
     }
+
+    // Persist immediately to survive job interruptions
+    this.saveTracker();
   }
 
   // Filter signals for publishing
