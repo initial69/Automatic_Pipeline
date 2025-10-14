@@ -12,7 +12,7 @@ const apiHash = process.env.API_HASH;
 const SESSION_PATH = 'config/telegram.session';
 
 // Channel IDs yang akan dibaca
-const CHANNELS = [-1002294721332, -1001182619094, -1001364412069, -1001390962936];
+const CHANNELS = [-1002294721332, -1001182619094, -1001364412069, -1001390962936, -1001146915409];
 
 // Using imported CRYPTO_KEYWORDS from keywords.mjs
 
